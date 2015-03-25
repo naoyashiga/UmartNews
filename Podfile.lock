@@ -21,16 +21,19 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bolts (1.1.4)
+  - PageMenu (1.2.3)
   - Parse (1.6.5):
     - Bolts (~> 1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - PageMenu
   - Parse (~> 1.6.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
+  PageMenu: 8cb34a6f62e55f16c04ca7880993a641b8a53a3f
   Parse: a21db4037d70a68a4ec64ecc0f327ed475cc14f8
 
 COCOAPODS: 0.36.0.rc.1

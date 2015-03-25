@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HID-DB-Hc1">
             <objects>
-                <navigationController id="MJa-Rv-uOX" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="MJa-Rv-uOX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DBi-KM-mo6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,16 +38,9 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6QO-5v-099" id="e91-l2-dsU"/>
-                            <outlet property="delegate" destination="6QO-5v-099" id="68w-SG-FNv"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="dWL-a6-CTB"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="tableView" destination="Dwj-so-mQk" id="bWw-ci-2cg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Inw-kb-wTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
