@@ -13,15 +13,15 @@ class JsonParserManager: NSObject {
     var tmpEntry:Entry!
     var eName: String!
     
-    func initWithURL(url:NSURL) -> AnyObject {
+    func initWithURL() -> AnyObject {
         entries = NSMutableArray()
         tmpEntry = Entry()
         eName = String()
-        startParse(url)
+//        startParse(url)
         return self
     }
     
-    func startParse(url:NSURL){
+    func startParse(url:NSURL,completion: (() -> Void)) -> (){
         let json = JSON(nsurl:url)
         
         for(i,feed) in json {
@@ -33,23 +33,23 @@ class JsonParserManager: NSObject {
                 
                 switch("\(key)"){
                     case "title":
-                        tmpEntry.title = "\(value)"
+                        tmpEntry.title = value.asString
                     case "source":
-                        tmpEntry.source = "\(value)"
+                        tmpEntry.source = value.asString
                     case "link":
-                        tmpEntry.link = "\(value)"
+                        tmpEntry.link = value.asString
                     case "pubDate":
-                        tmpEntry.date = "\(value)"
+                        tmpEntry.date = value.asString
                     default:
                         println("error feed")
                 }
-                
-                entries.addObject(tmpEntry)
-                
-                //初期化
-                tmpEntry = Entry()
             }
+            
+            entries.addObject(tmpEntry)
+            //初期化
+            tmpEntry = Entry()
         }
+        
+        completion()
     }
-   
 }

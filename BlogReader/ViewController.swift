@@ -20,7 +20,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         myEntries = NSMutableArray()
         
         tableView.registerNib(UINib(nibName: "Cell", bundle: nil), forCellReuseIdentifier: "Cell")
-        tableView.rowHeight = UIScreen.mainScreen().bounds.height / 7
+        
+        tableView.estimatedRowHeight = 100
+//        tableView.rowHeight = UIScreen.mainScreen().bounds.height / 7
+        tableView.rowHeight = UITableViewAutomaticDimension
         
 //        var websiteURL: String = "http://rssblog.ameba.jp/ebizo-ichikawa/rss20.xml"
 //        var websiteURL: String = "http://keiba.jp/rss/news.xml"
@@ -44,10 +47,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func loadRss(data:NSURL){
 //        var myParser:XmlParserManager = XmlParserManager.alloc().initWithURL(data) as XmlParserManager
-        var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL(data) as JsonParserManager
-        myEntries = myParser.entries
+        var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
+        myParser.startParse(data){
+            () in
+                println("finish")
+                self.myEntries = myParser.entries
+                self.tableView.reloadData()
+        }
+//        myEntries = myParser.entries
 //
-        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,13 +74,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as Cell
         let entry : Entry = myEntries[indexPath.row] as Entry
+//        cell.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height / 10)
         cell.titleLabel.text = entry.title
-        cell.titleLabel.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width / 2, 0)
+//        cell.titleLabel.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width / 2, 0)
 //        cell.titleLabel.adjustsFontSizeToFitWidth = false
         cell.titleLabel.sizeToFit()
         
         cell.dateLabel.text = entry.date
         cell.siteLabel.text = entry.source
+        
+        println("***********")
+        println(entry)
+        println(entry.title)
+        println(entry.source)
+        println(entry.date)
         
 //        var q_global: dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 //        var q_main: dispatch_queue_t  = dispatch_get_main_queue()
