@@ -22,11 +22,12 @@ class ViewController: UIViewController{
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        var controller : UIViewController = UIViewController(nibName: "MatomeViewController", bundle: nil)
+//        var controller : UIViewController = UIViewController(nibName: "MatomeViewController", bundle: nil)
+        var controller : MatomeViewController = MatomeViewController(nibName: "MatomeViewController", bundle: nil)
         controller.title = "2chまとめ"
         controllerArray.append(controller)
         
-        var predictController : UIViewController = UIViewController(nibName: "MatomeViewController", bundle: nil)
+        var predictController : PredictViewController = PredictViewController(nibName: "PredictViewController", bundle: nil)
         predictController.title = "予想"
         controllerArray.append(predictController)
         

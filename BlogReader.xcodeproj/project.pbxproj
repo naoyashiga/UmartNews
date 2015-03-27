@@ -22,10 +22,10 @@
 		9A9DF0ED1A4FDF99008749D5 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9DF0EB1A4FDF99008749D5 /* Cell.xib */; };
 		9ACB287F1A53838D00E684C6 /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB287E1A53838D00E684C6 /* XmlParserManager.swift */; };
 		9AD11F6A1AC2E8E500481308 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */; };
-		9AD11F6D1AC2EAD800481308 /* MatomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F6B1AC2EAD800481308 /* MatomeViewController.swift */; };
-		9AD11F6E1AC2EAD800481308 /* MatomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD11F6C1AC2EAD800481308 /* MatomeViewController.xib */; };
 		9AD11F711AC2ED0D00481308 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F6F1AC2ED0D00481308 /* PredictViewController.swift */; };
 		9AD11F721AC2ED0D00481308 /* PredictViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD11F701AC2ED0D00481308 /* PredictViewController.xib */; };
+		9AD11F751AC4461100481308 /* MatomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F731AC4461100481308 /* MatomeViewController.swift */; };
+		9AD11F761AC4461100481308 /* MatomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD11F741AC4461100481308 /* MatomeViewController.xib */; };
 		DE8822338284FB541C8A425E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80671B2A890EC158C19E9DB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,10 +61,10 @@
 		9A9DF0EB1A4FDF99008749D5 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		9ACB287E1A53838D00E684C6 /* XmlParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
 		9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
-		9AD11F6B1AC2EAD800481308 /* MatomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatomeViewController.swift; sourceTree = "<group>"; };
-		9AD11F6C1AC2EAD800481308 /* MatomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatomeViewController.xib; sourceTree = "<group>"; };
 		9AD11F6F1AC2ED0D00481308 /* PredictViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictViewController.swift; sourceTree = "<group>"; };
 		9AD11F701AC2ED0D00481308 /* PredictViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PredictViewController.xib; sourceTree = "<group>"; };
+		9AD11F731AC4461100481308 /* MatomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatomeViewController.swift; sourceTree = "<group>"; };
+		9AD11F741AC4461100481308 /* MatomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatomeViewController.xib; sourceTree = "<group>"; };
 		A8F3251B7566C6A323550142 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C80671B2A890EC158C19E9DB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,11 +120,11 @@
 			isa = PBXGroup;
 			children = (
 				9A9DF0C71A4FA315008749D5 /* AppDelegate.swift */,
+				9AD11F731AC4461100481308 /* MatomeViewController.swift */,
+				9AD11F741AC4461100481308 /* MatomeViewController.xib */,
 				9A9DF0C91A4FA315008749D5 /* ViewController.swift */,
-				9AD11F6B1AC2EAD800481308 /* MatomeViewController.swift */,
 				9AD11F6F1AC2ED0D00481308 /* PredictViewController.swift */,
 				9AD11F701AC2ED0D00481308 /* PredictViewController.xib */,
-				9AD11F6C1AC2EAD800481308 /* MatomeViewController.xib */,
 				9ACB287E1A53838D00E684C6 /* XmlParserManager.swift */,
 				9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */,
 				9A9DF0E81A4FC527008749D5 /* Entry.swift */,
@@ -266,7 +266,7 @@
 				9A947C401A50D2D100E33966 /* WebViewController.xib in Resources */,
 				9AD11F721AC2ED0D00481308 /* PredictViewController.xib in Resources */,
 				9A9DF0CF1A4FA315008749D5 /* Images.xcassets in Resources */,
-				9AD11F6E1AC2EAD800481308 /* MatomeViewController.xib in Resources */,
+				9AD11F761AC4461100481308 /* MatomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +340,9 @@
 				9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */,
 				9A9DF0CA1A4FA315008749D5 /* ViewController.swift in Sources */,
 				9A947C3F1A50D2D100E33966 /* WebViewController.swift in Sources */,
-				9AD11F6D1AC2EAD800481308 /* MatomeViewController.swift in Sources */,
 				9A9DF0C81A4FA315008749D5 /* AppDelegate.swift in Sources */,
 				9AD11F6A1AC2E8E500481308 /* CAPSPageMenu.swift in Sources */,
+				9AD11F751AC4461100481308 /* MatomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
