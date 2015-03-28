@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D2591AC1911600E5DCC1 /* json.swift */; };
 		9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */; };
+		9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B90F51AC64DA300916614 /* ArticleViewController.swift */; };
+		9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B90F61AC64DA300916614 /* ArticleViewController.xib */; };
 		9A947C3F1A50D2D100E33966 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A947C3D1A50D2D100E33966 /* WebViewController.swift */; };
 		9A947C401A50D2D100E33966 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A947C3E1A50D2D100E33966 /* WebViewController.xib */; };
 		9A9DF0C81A4FA315008749D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9DF0C71A4FA315008749D5 /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 		21A0CB1ECF9CB652CC79E093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A36D2591AC1911600E5DCC1 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserManager.swift; sourceTree = "<group>"; };
+		9A5B90F51AC64DA300916614 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		9A5B90F61AC64DA300916614 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		9A947C3D1A50D2D100E33966 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9A947C3E1A50D2D100E33966 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		9A9DF0C21A4FA315008749D5 /* BlogReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 		9A5B90F11AC642EA00916614 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A5B90F51AC64DA300916614 /* ArticleViewController.swift */,
+				9A5B90F61AC64DA300916614 /* ArticleViewController.xib */,
 				9AD11F731AC4461100481308 /* MatomeViewController.swift */,
 				9AD11F741AC4461100481308 /* MatomeViewController.xib */,
 				9AD11F6F1AC2ED0D00481308 /* PredictViewController.swift */,
@@ -294,6 +300,7 @@
 				9A9DF0D21A4FA315008749D5 /* LaunchScreen.xib in Resources */,
 				9A947C401A50D2D100E33966 /* WebViewController.xib in Resources */,
 				9AD11F721AC2ED0D00481308 /* PredictViewController.xib in Resources */,
+				9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */,
 				9A9DF0CF1A4FA315008749D5 /* Images.xcassets in Resources */,
 				9AD11F761AC4461100481308 /* MatomeViewController.xib in Resources */,
 			);
@@ -366,6 +373,7 @@
 				9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */,
 				9AD11F711AC2ED0D00481308 /* PredictViewController.swift in Sources */,
 				9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */,
+				9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */,
 				9A9DF0CA1A4FA315008749D5 /* ViewController.swift in Sources */,
 				9A947C3F1A50D2D100E33966 /* WebViewController.swift in Sources */,
 				9A9DF0C81A4FA315008749D5 /* AppDelegate.swift in Sources */,

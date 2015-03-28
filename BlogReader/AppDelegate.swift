@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var myNavigationController: UINavigationController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
+        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let viewController = ViewController()
+        myNavigationController = UINavigationController(rootViewController: viewController)
+        self.window!.rootViewController = myNavigationController
+        self.window!.makeKeyAndVisible()
         return true
     }
 
