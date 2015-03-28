@@ -10,14 +10,10 @@ import UIKit
 
 class MatomeViewController: UITableViewController {
 
-//    @IBOutlet var tableView: UITableView!
     var myEntries:NSMutableArray!
-    //    var ogpImage:[String] = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        self.addData()
         myEntries = NSMutableArray()
         
         tableView.registerNib(UINib(nibName: "Cell", bundle: nil), forCellReuseIdentifier: "Cell")
@@ -28,42 +24,21 @@ class MatomeViewController: UITableViewController {
         
         tableView.autoresizingMask = UIViewAutoresizing()
         
-        //        var websiteURL: String = "http://rssblog.ameba.jp/ebizo-ichikawa/rss20.xml"
-        //        var websiteURL: String = "http://keiba.jp/rss/news.xml"
-        //        var websiteURL: String = "http://feed.rssad.jp/rss/nikkansports/race/atom.xml"
-        //        var websiteURL: String = "http://api.plaza.rakuten.ne.jp/dailykeiba/rss/"
-        //        var websiteURL: String = "http://www.jra.go.jp/rss/jra-info.rdf"
-        //        var websiteURL: String = "http://umasoku.doorblog.jp/index.rdf"
-        var websiteURLs: [String] = [
-            "https://keiba-news-api.herokuapp.com/feed"
-            //            "http://blog.livedoor.jp/demuchi/index.rdf"
-        ]
-        
-        for websiteURL in websiteURLs{
-            let url:NSURL = NSURL(string: websiteURL)!
-            loadRss(url)
-        }
-        
-        //        getData()
-        //        getOGPImage()
+        let url:NSURL = NSURL(string: "https://keiba-news-api.herokuapp.com/matome")!
+        loadRss(url)
     }
     
     func loadRss(data:NSURL){
-        //        var myParser:XmlParserManager = XmlParserManager.alloc().initWithURL(data) as XmlParserManager
         var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
         myParser.startParse(data){
             () in
-            println("finish")
             self.myEntries = myParser.entries
             self.tableView.reloadData()
         }
-        //        myEntries = myParser.entries
-        //
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -77,20 +52,17 @@ class MatomeViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as Cell
         let entry : Entry = myEntries[indexPath.row] as Entry
-        //        cell.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height / 10)
         cell.titleLabel.text = entry.title
-        //        cell.titleLabel.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width / 2, 0)
-        //        cell.titleLabel.adjustsFontSizeToFitWidth = false
         cell.titleLabel.sizeToFit()
         
         cell.dateLabel.text = entry.date
         cell.siteLabel.text = entry.source
         
-        println("***********")
-        println(entry)
-        println(entry.title)
-        println(entry.source)
-        println(entry.date)
+//        println("***********")
+//        println(entry)
+//        println(entry.title)
+//        println(entry.source)
+//        println(entry.date)
       
         return cell
     }

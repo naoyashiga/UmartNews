@@ -16,13 +16,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
-        
-        // Create variables for all view controllers you want to put in the
-        // page menu, initialize them, and add each to the controller array.
-        // (Can be any UIViewController subclass)
-        // Make sure the title property of all view controllers is set
-        // Example:
-//        var controller : UIViewController = UIViewController(nibName: "MatomeViewController", bundle: nil)
+  
         var controller : MatomeViewController = MatomeViewController(nibName: "MatomeViewController", bundle: nil)
         controller.title = "2chまとめ"
         controllerArray.append(controller)
@@ -30,9 +24,7 @@ class ViewController: UIViewController{
         var predictController : PredictViewController = PredictViewController(nibName: "PredictViewController", bundle: nil)
         predictController.title = "予想"
         controllerArray.append(predictController)
-        
-        // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
-        // Example:
+ 
         var parameters: [String: AnyObject] = [
             "viewBackgroundColor":UIColor.blueColor(),
             "menuItemSeparatorWidth": 4.3,
@@ -52,6 +44,5 @@ class ViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

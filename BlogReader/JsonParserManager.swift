@@ -25,11 +25,11 @@ class JsonParserManager: NSObject {
         let json = JSON(nsurl:url)
         
         for(i,feed) in json {
-            println("-------------")
-            println(i)
+//            println("-------------")
+//            println(i)
             
             for (key, value) in feed {
-                println("\(key): \(value)")
+//                println("\(key): \(value)")
                 
                 switch("\(key)"){
                     case "title":
