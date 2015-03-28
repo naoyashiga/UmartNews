@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController,WKUIDelegate {
     var wkWebView: WKWebView?
     var progressBar: UIProgressView?
     var screenHeight: CGFloat?
@@ -20,15 +20,58 @@ class WebViewController: UIViewController {
     
     let footerHeight:CGFloat = 50.0
     let progressBarHeight: CGFloat = 2.0
+    let menuViewHeight: CGFloat = 80.0
     
-    @IBOutlet weak var webView: UIWebView!
+    var menuView = UIView()
+    var goBackBtn = UIButton()
+    var goForwardBtn = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        screenHeight = self.view.bounds.height
+//        screenHeight = self.view.bounds.height - tabBar.frame.size.height
+//        menuView = UINib(nibName: "WebViewMenu", bundle: nil).instantiateWithOwner(self, options: nil)[0] as UIView
+//        menuView = NSBundle.mainBundle().loadNibNamed("WebViewMenu", owner: self, options: nil)[0] as UIView
+//        menuView = WebViewBottomMenu.instance()
+        
+        println(menuView.frame.size.height)
+        screenHeight = self.view.bounds.height - menuViewHeight
         screenWidth = self.view.bounds.width
-//        initBackButton()
+        initBackButton()
         initProgressBar()
         initWebView()
+        initMenuView()
+    }
+    
+    func initMenuView(){
+        let btnSize : CGFloat = 50
+        let btnFontSize : CGFloat = 50.0
+        let menuLeftMargin : CGFloat = 50.0
+        let btnLeftMargin : CGFloat = 50.0
+        let goForwardBtnPosX = menuLeftMargin + btnFontSize + btnLeftMargin
+        
+        menuView = UIView(frame: CGRectMake(0, progressBarHeight + screenHeight! - menuViewHeight / 2, screenWidth!, menuViewHeight))
+        menuView.backgroundColor = UIColor.grayColor()
+        
+        goBackBtn.frame = CGRectMake(0, 0, btnSize, btnSize)
+        goBackBtn.setTitle("<", forState: UIControlState.Normal)
+        goBackBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        goBackBtn.layer.position = CGPoint(x: menuLeftMargin, y: menuViewHeight / 2 - btnFontSize / 4)
+        goBackBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
+        goBackBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        goForwardBtn.frame = CGRectMake(0, 0, btnSize, btnSize)
+        goForwardBtn.setTitle(">", forState: UIControlState.Normal)
+        goForwardBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        goForwardBtn.layer.position = CGPoint(x: goForwardBtnPosX, y: menuViewHeight / 2 - btnFontSize / 4)
+        goForwardBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
+        goForwardBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        menuView.addSubview(goBackBtn)
+        menuView.addSubview(goForwardBtn)
+        
+        self.view.addSubview(menuView)
     }
     
     func initProgressBar(){
@@ -42,6 +85,9 @@ class WebViewController: UIViewController {
     
     func initWebView(){
         wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
+//        wkWebView?.allowsBackForwardNavigationGestures = true
+        wkWebView?.UIDelegate = self
+        
         if let pageUrlNotOptional = pageUrl {
             var detailUrl = NSURL(string: pageUrlNotOptional)
             var detailUrlReq = NSURLRequest(URL: detailUrl!)
@@ -50,9 +96,42 @@ class WebViewController: UIViewController {
         self.view.addSubview(wkWebView!)
     }
     
+    func initBackButton() {
+        let backButton = UIBarButtonItem(title: "<", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
+        backButton.width = screenWidth! - 100
+        backButton.tintColor = UIColor.whiteColor()
+        self.navigationItem.leftBarButtonItem = backButton
+        self.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 12)!], forState: UIControlState.Normal)
+    }
+    
+    func back() {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
+    // ボタンを押したときの処理
+    func menuBtnTapped(sender:UIButton){
+        if sender.isEqual(goBackBtn){
+            wkWebView?.goBack()
+        }else if sender.isEqual(goForwardBtn){
+            wkWebView?.goForward()
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func webView(webView: WKWebView!, createWebViewWithConfiguration configuration: WKWebViewConfiguration!, forNavigationAction navigationAction: WKNavigationAction!, windowFeatures: WKWindowFeatures!) -> WKWebView! {
+        //別タブを開くリンク対策 再度ページの読み込みをする
+        if(navigationAction.targetFrame == nil){
+            webView.loadRequest(navigationAction.request)
+        }
+        return nil
+    }
+    
+    func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
     }
     
     

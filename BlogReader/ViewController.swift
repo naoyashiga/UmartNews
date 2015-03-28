@@ -17,6 +17,7 @@ class ViewController: UIViewController{
         
         var titleImageView: UIImageView? = UIImageView( image: UIImage(named: "cat"))
         self.navigationItem.title = "Umart News"
+        
         self.navigationController?.navigationBarHidden = false
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barTintColor = UIColor.brownColor()
@@ -33,7 +34,7 @@ class ViewController: UIViewController{
         matomeController.title = "2chまとめ"
         controllerArray.append(matomeController)
         
-        var predictController : ArticleViewController = ArticleViewController(nibName: "PredictViewController", bundle: nil)
+        var predictController : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         predictController.parentNavigationController = self.navigationController
         predictController.feedURL = "https://keiba-news-api.herokuapp.com/predict"
         predictController.title = "予想"
