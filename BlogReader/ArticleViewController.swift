@@ -69,11 +69,13 @@ class ArticleViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var webVC:WebViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebViewController") as WebViewController
+        var webVC = WebViewController()
         
         var entry:Entry = myEntries[indexPath.row] as Entry
-        webVC.entry = entry
-        self.navigationController?.pushViewController(webVC, animated: true)
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        webVC.pageUrl = entry.link
+        webVC.pageTitle = entry.title
+        
+        parentNavigationController?.pushViewController(webVC, animated: true)
+//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
