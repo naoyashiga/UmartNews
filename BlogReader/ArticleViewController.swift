@@ -25,17 +25,28 @@ class ArticleViewController: UITableViewController {
         
         tableView.autoresizingMask = UIViewAutoresizing()
         
-        let url:NSURL = NSURL(string: feedURL)!
-        loadRss(url)
+        var refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: Selector("refreshInvoked"), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl = refreshControl
+        
+        loadRss()
     }
     
-    func loadRss(data:NSURL){
+    func loadRss(){
+        let url:NSURL = NSURL(string: feedURL)!
         var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
-        myParser.startParse(data){
+        myParser.startParse(url){
             () in
             self.myEntries = myParser.entries
             self.tableView.reloadData()
         }
+    }
+    
+    func refreshInvoked() {
+        println("start refresh")
+        loadRss()
+        self.refreshControl?.endRefreshing()
+        println("end refresh")
     }
     
     override func didReceiveMemoryWarning() {
