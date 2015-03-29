@@ -37,9 +37,19 @@ class ArticleViewController: UITableViewController {
         var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
         myParser.startParse(url){
             () in
-            self.myEntries = myParser.entries
-            self.tableView.reloadData()
+            var q_main : dispatch_queue_t = dispatch_get_main_queue()
+            
+            dispatch_async(q_main, {() in
+                self.myEntries = myParser.entries
+                self.tableView.reloadData()
+            })
         }
+        
+//        myParser.startParse(url){
+//            () in
+//            self.myEntries = myParser.entries
+//            self.tableView.reloadData()
+//        }
     }
     
     func refreshInvoked() {
