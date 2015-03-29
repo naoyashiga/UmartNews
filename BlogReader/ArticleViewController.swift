@@ -11,16 +11,19 @@ import UIKit
 class ArticleViewController: UITableViewController {
     var parentNavigationController : UINavigationController?
     var myEntries:NSMutableArray!
+//    var myEntries = [String]()
     var feedURL:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setTableView(){
         myEntries = NSMutableArray()
         
         tableView.registerNib(UINib(nibName: "Cell", bundle: nil), forCellReuseIdentifier: "Cell")
         
         tableView.estimatedRowHeight = 100
-        //        tableView.rowHeight = UIScreen.mainScreen().bounds.height / 7
         tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.autoresizingMask = UIViewAutoresizing()
@@ -29,7 +32,42 @@ class ArticleViewController: UITableViewController {
         refreshControl.addTarget(self, action: Selector("refreshInvoked"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
-        loadRss()
+        reload()
+    }
+    
+    func reload() {
+        let URL = NSURL(string: feedURL)
+        let Req = NSURLRequest(URL: URL!)
+        let connection: NSURLConnection = NSURLConnection(request: Req, delegate: self, startImmediately: false)!
+        
+        NSURLConnection.sendAsynchronousRequest(Req,
+            queue: NSOperationQueue.mainQueue(),
+            completionHandler: self.fetchResponse)
+    }
+    
+    func fetchResponse(res: NSURLResponse!, data: NSData!, error: NSError!) {
+        let json: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
+        
+//        myEntries = [String]()
+        myEntries = NSMutableArray()
+        var tmpEntry = Entry()
+        
+        
+        for j in json {
+            tmpEntry.title = j["title"] as String
+            tmpEntry.source = j["source"] as String
+            tmpEntry.link = j["link"] as String
+            tmpEntry.date = j["pubDate"] as String
+            
+            
+            myEntries.addObject(tmpEntry)
+            //初期化
+            tmpEntry = Entry()
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+        })
     }
     
     func loadRss(){
