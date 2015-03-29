@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController,WKUIDelegate {
+class WebViewController: UIViewController,WKUIDelegate{
     var parentNavigationController : UINavigationController?
     var wkWebView: WKWebView?
     var progressBar: UIProgressView?
@@ -118,7 +118,28 @@ class WebViewController: UIViewController,WKUIDelegate {
     }
     
     func initWebView(){
-        wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
+        
+        if pageTitle == "動画" {
+            println("js execute")
+            var contentController = WKUserContentController();
+            if let path = NSBundle.mainBundle().pathForResource("script", ofType: "js") {
+                if let source = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) {
+                    var userScript = WKUserScript(source: source, injectionTime: WKUserScriptInjectionTime.AtDocumentEnd, forMainFrameOnly: true)
+                    contentController.addUserScript(userScript)
+//                    contentController.addScriptMessageHandler(
+//                        self,
+//                        name: "callbackHandler"
+//                    )
+                }
+            }
+
+            var config = WKWebViewConfiguration()
+            config.userContentController = contentController
+            wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!), configuration: config)
+            
+        }else {
+            wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
+        }
 //        wkWebView?.allowsBackForwardNavigationGestures = true
         wkWebView?.UIDelegate = self
         
@@ -172,6 +193,11 @@ class WebViewController: UIViewController,WKUIDelegate {
     func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
     }
     
+//    func userContentController(userContentController: WKUserContentController!,didReceiveScriptMessage message: WKScriptMessage!) {
+//        if(message.name == "callbackHandler") {
+//            println("JavaScript is sending a message \(message.body)")
+//        }
+//    }
     
     /*
     // MARK: - Navigation

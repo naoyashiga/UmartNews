@@ -41,7 +41,7 @@ class ArticleViewController: UITableViewController {
             
             dispatch_async(q_main, {() in
                 self.myEntries = myParser.entries
-                self.tableView.reloadData()
+//                self.tableView.reloadData()
             })
         }
         

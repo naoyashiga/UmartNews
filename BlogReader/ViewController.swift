@@ -43,12 +43,14 @@ class ViewController: UIViewController{
         var sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
         sponaviVC.pageUrl = "http://m.sports.yahoo.co.jp/keiba/schedule/list/"
+        sponaviVC.pageTitle = "レース結果"
         sponaviVC.title = "レース結果"
         controllerArray.append(sponaviVC)
         
         var movieVC: WebViewController = WebViewController()
         movieVC.parentNavigationController = self.navigationController
         movieVC.pageUrl = "https://www.google.co.jp/search?hl=ja&q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&gws_rd=ssl#q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&tbs=lr:lang_1ja,qdr:d,srcf:H4sIAAAAAAAAANOuzC8tKU1K1UvOz1XLy0zOL8tMSc3XyypQy03MBPIzMkHsosTs0pLUPKAiEM8kPTE3tUgvL7VELSUxM6cSKgwAr8rCCEsAAAA&tbm=vid"
+        movieVC.pageTitle = "動画"
         movieVC.title = "動画"
         controllerArray.append(movieVC)
  
