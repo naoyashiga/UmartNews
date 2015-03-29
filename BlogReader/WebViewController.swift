@@ -26,6 +26,10 @@ class WebViewController: UIViewController,WKUIDelegate {
     var goBackBtn = UIButton()
     var goForwardBtn = UIButton()
     
+    var navigationBarHeight : CGFloat?
+    
+    var isViaTableView: Bool = true
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,20 +52,19 @@ class WebViewController: UIViewController,WKUIDelegate {
     
     func setScreenHeight() -> CGFloat{
         var statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
-        var navigationBarHeight : CGFloat?
         
         if self.navigationController == nil {
             println("いきなりwebView")
             navigationBarHeight = parentNavigationController?.navigationBar.frame.size.height
+            isViaTableView = false
         }else{
             println("table view からのwebView")
             navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
+            isViaTableView = true
         }
         
-//        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
         println(statusBarHeight + navigationBarHeight!)
         return self.view.bounds.height - statusBarHeight - navigationBarHeight!
-//        return self.view.bounds.height - 64.0
     }
     
     func initMenuView(){
@@ -73,7 +76,16 @@ class WebViewController: UIViewController,WKUIDelegate {
         let btnLeftMargin : CGFloat = 40.0
         let goForwardBtnPosX = menuLeftMargin + btnFontSize + btnLeftMargin
         
-        menuView = UIView(frame: CGRectMake(screenWidth! / 2 - menuViewWidth / 2, progressBarHeight + screenHeight! - menuViewHeight, menuViewWidth, menuViewHeight))
+        var menuViewPosX : CGFloat = (screenWidth! - menuViewWidth) / 2
+        var menuViewPosY : CGFloat?
+        
+        if isViaTableView {
+            menuViewPosY = progressBarHeight + screenHeight! - menuViewHeight
+        }else{
+            menuViewPosY = progressBarHeight + screenHeight! - menuViewHeight * 1.5
+        }
+        
+        menuView = UIView(frame: CGRectMake(menuViewPosX, menuViewPosY!, menuViewWidth, menuViewHeight))
         menuView.backgroundColor = UIColor.hexStr("000000", alpha: 0.6)
         
         goBackBtn = UIButton(frame: CGRectMake(menuLeftMargin, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
@@ -106,11 +118,11 @@ class WebViewController: UIViewController,WKUIDelegate {
     }
     
     func initWebView(){
-        wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight + 64.0, screenWidth!, screenHeight!))
+        wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
 //        wkWebView?.allowsBackForwardNavigationGestures = true
         wkWebView?.UIDelegate = self
         
-        println(pageUrl)
+        println(pageUrl!)
         
         if let pageUrlNotOptional = pageUrl {
             println("not optional")
@@ -118,6 +130,7 @@ class WebViewController: UIViewController,WKUIDelegate {
             var detailUrlReq = NSURLRequest(URL: detailUrl!)
             wkWebView?.loadRequest(detailUrlReq)
         }
+        
         self.view.addSubview(wkWebView!)
     }
     
