@@ -20,6 +20,8 @@ class ViewController: UIViewController{
         
         let URL_SPONAVI = "http://m.sports.yahoo.co.jp/keiba/schedule/list/"
         let URL_MOVIE = "https://www.google.co.jp/search?hl=ja&q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&gws_rd=ssl#q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&tbs=lr:lang_1ja,qdr:d,srcf:H4sIAAAAAAAAANOuzC8tKU1K1UvOz1XLy0zOL8tMSc3XyypQy03MBPIzMkHsosTs0pLUPKAiEM8kPTE3tUgvL7VELSUxM6cSKgwAr8rCCEsAAAA&tbm=vid"
+        let URL_REALTIME = "http://realtime.search.yahoo.co.jp/search?fr=sfp_as&p=%E7%AB%B6%E9%A6%AC&ei=UTF-8&rkf=1"
+        let URL_NEWS = "https://www.google.co.jp/search?q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&gl=jp&authuser=0&tbas=0&tbs=lr:lang_1ja,qdr:d&tbm=nws&source=lnt&sa=X&ei=LvAXVZ-NHYWomgXDroHYCw&ved=0CBMQpwU&biw=320&bih=568&dpr=2"
         
         self.navigationItem.title = "Umart News"
         
@@ -36,7 +38,7 @@ class ViewController: UIViewController{
         var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         matomeVC.parentNavigationController = self.navigationController
         matomeVC.feedURL = API_PATH_MATOME
-        matomeVC.title = "2chまとめ"
+        matomeVC.title = "まとめ"
         matomeVC.setTableView()
         
         var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
@@ -48,8 +50,8 @@ class ViewController: UIViewController{
         var sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
         sponaviVC.pageUrl = URL_SPONAVI
-        sponaviVC.pageTitle = "レース結果"
-        sponaviVC.title = "レース結果"
+        sponaviVC.pageTitle = "結果"
+        sponaviVC.title = "結果"
         
         var movieVC: WebViewController = WebViewController()
         movieVC.parentNavigationController = self.navigationController
@@ -57,10 +59,24 @@ class ViewController: UIViewController{
         movieVC.pageTitle = "動画"
         movieVC.title = "動画"
         
+        var realtimeVC: WebViewController = WebViewController()
+        realtimeVC.parentNavigationController = self.navigationController
+        realtimeVC.pageUrl = URL_REALTIME
+        realtimeVC.pageTitle = "ツイート"
+        realtimeVC.title = "ツイート"
+        
+        var newsVC: WebViewController = WebViewController()
+        newsVC.parentNavigationController = self.navigationController
+        newsVC.pageUrl = URL_NEWS
+        newsVC.pageTitle = "ニュース"
+        newsVC.title = "ニュース"
+        
         controllerArray.append(sponaviVC)
+        controllerArray.append(newsVC)
         controllerArray.append(movieVC)
         controllerArray.append(matomeVC)
         controllerArray.append(predictVC)
+        controllerArray.append(realtimeVC)
  
         var parameters: [String: AnyObject] = [
             "scrollMenuBackgroundColor": UIColor.hexStr("d4f0fd", alpha: 1.0),
