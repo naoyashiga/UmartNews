@@ -111,8 +111,7 @@ class WebViewController: UIViewController,WKUIDelegate{
     }
     
     func initWebView(){
-        
-        if pageTitle == "動画" || pageTitle == "ニュース"{
+        if pageTitle == "結果" || pageTitle == "動画" || pageTitle == "ニュース"{
             println("js execute")
             var contentController = WKUserContentController();
             if let path = NSBundle.mainBundle().pathForResource("script", ofType: "js") {
