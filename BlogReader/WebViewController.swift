@@ -20,11 +20,11 @@ class WebViewController: UIViewController,WKUIDelegate {
     
     let footerHeight:CGFloat = 50.0
     let progressBarHeight: CGFloat = 2.0
-    let menuViewHeight: CGFloat = 80.0
     
     var menuView = UIView()
     var goBackBtn = UIButton()
     var goForwardBtn = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +33,11 @@ class WebViewController: UIViewController,WKUIDelegate {
 //        menuView = NSBundle.mainBundle().loadNibNamed("WebViewMenu", owner: self, options: nil)[0] as UIView
 //        menuView = WebViewBottomMenu.instance()
         
-        println(menuView.frame.size.height)
-        screenHeight = self.view.bounds.height - menuViewHeight
+//        println(menuView.frame.size.height)
+//        println(menuView.layer.position)
+        screenHeight = setScreenHeight()
+        
+        println(screenHeight)
         screenWidth = self.view.bounds.width
         initBackButton()
         initProgressBar()
@@ -42,28 +45,38 @@ class WebViewController: UIViewController,WKUIDelegate {
         initMenuView()
     }
     
+    func setScreenHeight() -> CGFloat{
+        var statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
+        var navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
+        
+//        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
+        println(statusBarHeight + navigationBarHeight!)
+//        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
+        return self.view.bounds.height - 64.0
+    }
+    
     func initMenuView(){
         let btnSize : CGFloat = 50
         let btnFontSize : CGFloat = 50.0
-        let menuLeftMargin : CGFloat = 50.0
-        let btnLeftMargin : CGFloat = 50.0
+        let menuLeftMargin : CGFloat = 10.0
+        let menuViewWidth : CGFloat = 150
+        let menuViewHeight: CGFloat = 60.0
+        let btnLeftMargin : CGFloat = 40.0
         let goForwardBtnPosX = menuLeftMargin + btnFontSize + btnLeftMargin
         
-        menuView = UIView(frame: CGRectMake(0, progressBarHeight + screenHeight! - menuViewHeight / 2, screenWidth!, menuViewHeight))
-        menuView.backgroundColor = UIColor.grayColor()
+        menuView = UIView(frame: CGRectMake(screenWidth! / 2 - menuViewWidth / 2, progressBarHeight + screenHeight! - menuViewHeight, menuViewWidth, menuViewHeight))
+        menuView.backgroundColor = UIColor.hexStr("000000", alpha: 0.6)
         
-        goBackBtn.frame = CGRectMake(0, 0, btnSize, btnSize)
+        goBackBtn = UIButton(frame: CGRectMake(menuLeftMargin, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goBackBtn.setTitle("<", forState: UIControlState.Normal)
         goBackBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        goBackBtn.layer.position = CGPoint(x: menuLeftMargin, y: menuViewHeight / 2 - btnFontSize / 4)
         goBackBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goBackBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         
         
-        goForwardBtn.frame = CGRectMake(0, 0, btnSize, btnSize)
+        goForwardBtn = UIButton(frame: CGRectMake(goForwardBtnPosX, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goForwardBtn.setTitle(">", forState: UIControlState.Normal)
         goForwardBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        goForwardBtn.layer.position = CGPoint(x: goForwardBtnPosX, y: menuViewHeight / 2 - btnFontSize / 4)
         goForwardBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goForwardBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         
