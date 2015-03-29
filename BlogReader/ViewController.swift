@@ -21,7 +21,6 @@ class ViewController: UIViewController{
         let URL_SPONAVI = "http://m.sports.yahoo.co.jp/keiba/schedule/list/"
         let URL_MOVIE = "https://www.google.co.jp/search?hl=ja&q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&gws_rd=ssl#q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&tbs=lr:lang_1ja,qdr:d,srcf:H4sIAAAAAAAAANOuzC8tKU1K1UvOz1XLy0zOL8tMSc3XyypQy03MBPIzMkHsosTs0pLUPKAiEM8kPTE3tUgvL7VELSUxM6cSKgwAr8rCCEsAAAA&tbm=vid"
         
-        var titleImageView: UIImageView? = UIImageView( image: UIImage(named: "cat"))
         self.navigationItem.title = "Umart News"
         
         self.navigationController?.navigationBarHidden = false
@@ -64,17 +63,21 @@ class ViewController: UIViewController{
         controllerArray.append(predictVC)
  
         var parameters: [String: AnyObject] = [
-            "scrollMenuBackgroundColor": UIColor(red:253/255.0, green:253/255.0, blue:253/255.0, alpha: 1.0),
-            "viewBackgroundColor": UIColor(red:253/255.0, green:253/255.0, blue:253/255.0, alpha: 1.0),
-            "selectionIndicatorColor": UIColor(red:223/255.0, green:124/255.0, blue:170/255.0, alpha: 1.0),
-            "bottomMenuHairlineColor": UIColor.hexStr("29B6F6", alpha: 1.0),
-            "selectedMenuItemLabelColor": UIColor(red:223/255.0, green:124/255.0, blue:170/255.0, alpha: 1.0),
+            "scrollMenuBackgroundColor": UIColor.hexStr("d4f0fd", alpha: 1.0),
+            "viewBackgroundColor": UIColor.hexStr("186d93", alpha: 1.0),
+            "selectionIndicatorColor": UIColor.hexStr("F06292", alpha: 1.0),
+            "bottomMenuHairlineColor": UIColor.hexStr("F06292", alpha: 1.0),
+            "selectedMenuItemLabelColor": UIColor.hexStr("145b7b", alpha: 1.0),
+            "unselectedMenuItemLabelColor": UIColor.hexStr("3ebdf6", alpha: 1.0),
             "selectionIndicatorHeight": 2.0,
-            "menuItemFont": UIFont(name: "HiraKakuProN-W3", size: 13.0)!,
-            "menuHeight": 30.0,
+            "menuItemFont": UIFont(name: "HiraKakuProN-W6", size: 15.0)!,
+            "menuHeight": 34.0,
             "menuItemWidth": 80.0,
             "menuMargin": 0.0,
+//            "useMenuLikeSegmentedControl": true,
             "menuItemSeparatorRoundEdges": true,
+//            "enableHorizontalBounce": true,
+//            "scrollAnimationDurationOnMenuItemTap": 300,
             "centerMenuItems": true]
         
         self.pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), options: parameters)
