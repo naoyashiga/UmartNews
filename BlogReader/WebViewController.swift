@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController,WKUIDelegate {
+    var parentNavigationController : UINavigationController?
     var wkWebView: WKWebView?
     var progressBar: UIProgressView?
     var screenHeight: CGFloat?
@@ -47,12 +48,20 @@ class WebViewController: UIViewController,WKUIDelegate {
     
     func setScreenHeight() -> CGFloat{
         var statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
-        var navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
+        var navigationBarHeight : CGFloat?
+        
+        if self.navigationController == nil {
+            println("いきなりwebView")
+            navigationBarHeight = parentNavigationController?.navigationBar.frame.size.height
+        }else{
+            println("table view からのwebView")
+            navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
+        }
         
 //        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
         println(statusBarHeight + navigationBarHeight!)
-//        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
-        return self.view.bounds.height - 64.0
+        return self.view.bounds.height - statusBarHeight - navigationBarHeight!
+//        return self.view.bounds.height - 64.0
     }
     
     func initMenuView(){
@@ -97,11 +106,14 @@ class WebViewController: UIViewController,WKUIDelegate {
     }
     
     func initWebView(){
-        wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
+        wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight + 64.0, screenWidth!, screenHeight!))
 //        wkWebView?.allowsBackForwardNavigationGestures = true
         wkWebView?.UIDelegate = self
         
+        println(pageUrl)
+        
         if let pageUrlNotOptional = pageUrl {
+            println("not optional")
             var detailUrl = NSURL(string: pageUrlNotOptional)
             var detailUrlReq = NSURLRequest(URL: detailUrl!)
             wkWebView?.loadRequest(detailUrlReq)

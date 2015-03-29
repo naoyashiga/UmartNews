@@ -40,14 +40,14 @@ class ViewController: UIViewController{
         predictController.title = "予想"
         controllerArray.append(predictController)
         
-        var sponaviVC: WebViewController = WebViewController()
-        sponaviVC.pageTitle = "結果"
+        var sponaviVC: WebViewController = WebViewController(nibName: "WebViewController", bundle: nil)
+        sponaviVC.parentNavigationController = self.navigationController
         sponaviVC.pageUrl = "http://m.sports.yahoo.co.jp/keiba/schedule/list/"
         sponaviVC.title = "レース結果"
         controllerArray.append(sponaviVC)
         
-        var movieVC: WebViewController = WebViewController()
-        movieVC.pageTitle = "動画"
+        var movieVC: WebViewController = WebViewController(nibName: "WebViewController", bundle: nil)
+        movieVC.parentNavigationController = self.navigationController
         movieVC.pageUrl = "https://www.google.co.jp/search?hl=ja&q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&gws_rd=ssl#q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&tbs=lr:lang_1ja,qdr:d,srcf:H4sIAAAAAAAAANOuzC8tKU1K1UvOz1XLy0zOL8tMSc3XyypQy03MBPIzMkHsosTs0pLUPKAiEM8kPTE3tUgvL7VELSUxM6cSKgwAr8rCCEsAAAA&tbm=vid"
         movieVC.title = "動画"
         controllerArray.append(movieVC)
