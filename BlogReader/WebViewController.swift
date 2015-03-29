@@ -33,21 +33,14 @@ class WebViewController: UIViewController,WKUIDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        screenHeight = self.view.bounds.height - tabBar.frame.size.height
-//        menuView = UINib(nibName: "WebViewMenu", bundle: nil).instantiateWithOwner(self, options: nil)[0] as UIView
-//        menuView = NSBundle.mainBundle().loadNibNamed("WebViewMenu", owner: self, options: nil)[0] as UIView
-//        menuView = WebViewBottomMenu.instance()
-        
-//        println(menuView.frame.size.height)
-//        println(menuView.layer.position)
         screenHeight = setScreenHeight()
         
         println(screenHeight)
         screenWidth = self.view.bounds.width
         initBackButton()
-        initProgressBar()
         initWebView()
         initMenuView()
+        initProgressBar()
     }
     
     func setScreenHeight() -> CGFloat{
@@ -80,9 +73,9 @@ class WebViewController: UIViewController,WKUIDelegate{
         var menuViewPosY : CGFloat?
         
         if isViaTableView {
-            menuViewPosY = progressBarHeight + screenHeight! - menuViewHeight
+            menuViewPosY = screenHeight! - menuViewHeight
         }else{
-            menuViewPosY = progressBarHeight + screenHeight! - menuViewHeight * 1.5
+            menuViewPosY = screenHeight! - menuViewHeight * 1.5
         }
         
         menuView = UIView(frame: CGRectMake(menuViewPosX, menuViewPosY!, menuViewWidth, menuViewHeight))
@@ -110,7 +103,7 @@ class WebViewController: UIViewController,WKUIDelegate{
     
     func initProgressBar(){
         progressBar = UIProgressView(frame: CGRectMake(0, 0, screenWidth!, progressBarHeight))
-        progressBar!.progressTintColor = UIColor.blueColor()
+        progressBar!.progressTintColor = UIColor.hexStr("A8F1FF", alpha: 1.0)
         progressBar!.trackTintColor = UIColor.whiteColor()
         progressBar!.setProgress(1.0, animated: true)
         progressBar!.transform = CGAffineTransformMakeScale(1.0, 2.0)
@@ -135,12 +128,18 @@ class WebViewController: UIViewController,WKUIDelegate{
 
             var config = WKWebViewConfiguration()
             config.userContentController = contentController
-            wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!), configuration: config)
+            wkWebView = WKWebView(frame: CGRectMake(0, 0, screenWidth!, screenHeight!), configuration: config)
             
         }else {
-            wkWebView = WKWebView(frame: CGRectMake(0, progressBarHeight, screenWidth!, screenHeight!))
+            wkWebView = WKWebView(frame: CGRectMake(0, 0, screenWidth!, screenHeight!))
         }
+        
 //        wkWebView?.allowsBackForwardNavigationGestures = true
+        
+        //監視対象の登録
+        wkWebView?.addObserver(self, forKeyPath:"estimatedProgress", options:.New, context:nil)
+        wkWebView?.addObserver(self, forKeyPath:"title", options:.New, context:nil)
+        
         wkWebView?.UIDelegate = self
         
         println(pageUrl!)
@@ -151,6 +150,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             var detailUrlReq = NSURLRequest(URL: detailUrl!)
             wkWebView?.loadRequest(detailUrlReq)
         }
+        
         
         self.view.addSubview(wkWebView!)
     }
@@ -191,6 +191,39 @@ class WebViewController: UIViewController,WKUIDelegate{
     }
     
     func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
+    }
+    
+    deinit {
+        wkWebView?.removeObserver(self, forKeyPath: "estimatedProgress")
+        wkWebView?.removeObserver(self, forKeyPath: "title")
+    }
+    
+    override func observeValueForKeyPath(keyPath:String, ofObject object:AnyObject, change:[NSObject:AnyObject], context:UnsafeMutablePointer<Void>) {
+        switch keyPath {
+        case "estimatedProgress":
+            if let progress = change[NSKeyValueChangeNewKey] as? Float {
+                println("Progress:\(progress)")
+                
+                if progress == 1 {
+                    var fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+                    fadeAnimation.duration = 0.3
+                    fadeAnimation.fromValue = 1
+                    fadeAnimation.toValue = 0
+                    fadeAnimation.removedOnCompletion = false
+                    fadeAnimation.fillMode = kCAFillModeForwards
+                    progressBar?.layer.addAnimation(fadeAnimation, forKey: nil)
+                }
+            }
+        case "title":
+            if let title = change[NSKeyValueChangeNewKey] as? NSString {
+                if isViaTableView {
+                    //tableView経由のときはタイトルを表示
+                    self.navigationItem.title = title
+                }
+            }
+        default:
+            break
+        }
     }
     
 //    func userContentController(userContentController: WKUserContentController!,didReceiveScriptMessage message: WKScriptMessage!) {
