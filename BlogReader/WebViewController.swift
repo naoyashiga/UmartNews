@@ -41,7 +41,6 @@ class WebViewController: UIViewController,WKUIDelegate{
         initWebView()
         initProgressBar()
         
-        
         initMenuViewAndButton()
     }
     
@@ -81,18 +80,19 @@ class WebViewController: UIViewController,WKUIDelegate{
         }
         
         menuView = UIView(frame: CGRectMake(menuViewPosX, menuViewPosY!, menuViewWidth, menuViewHeight))
-        menuView.backgroundColor = UIColor.hexStr("000000", alpha: 0.6)
+        menuView.backgroundColor = UIColor.webViewMenuBackgroundColor()
         menuView.tag = 10
         
         goBackBtn = UIButton(frame: CGRectMake(menuLeftMargin, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goBackBtn.setTitle("<", forState: UIControlState.Normal)
-        goBackBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        goBackBtn.setTitleColor(UIColor.webViewMenuBtnEnabledColor(), forState: UIControlState.Normal)
         goBackBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goBackBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         goBackBtn.tag = 1
         
         goForwardBtn = UIButton(frame: CGRectMake(goForwardBtnPosX, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goForwardBtn.setTitle(">", forState: UIControlState.Normal)
+        goForwardBtn.setTitleColor(UIColor.webViewMenuBtnDisabledColor(), forState: UIControlState.Normal)
         goForwardBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goForwardBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         goForwardBtn.tag = 2
@@ -104,7 +104,7 @@ class WebViewController: UIViewController,WKUIDelegate{
     
     func initProgressBar(){
         progressBar = UIProgressView(frame: CGRectMake(0, 0, screenWidth!, progressBarHeight))
-        progressBar!.progressTintColor = UIColor.hexStr("A8F1FF", alpha: 1.0)
+        progressBar!.progressTintColor = UIColor.progressTintColor()
         progressBar!.trackTintColor = UIColor.whiteColor()
         progressBar!.setProgress(1.0, animated: true)
         progressBar!.transform = CGAffineTransformMakeScale(1.0, 2.0)
@@ -138,11 +138,13 @@ class WebViewController: UIViewController,WKUIDelegate{
         
         //監視対象の登録
         wkWebView?.addObserver(self, forKeyPath:"estimatedProgress", options:.New, context:nil)
-        wkWebView?.addObserver(self, forKeyPath:"title", options:.New, context:nil)
         
         wkWebView?.addObserver(self, forKeyPath:"canGoBack", options: .New, context: nil)
         wkWebView?.addObserver(self, forKeyPath:"canGoForward", options: .New, context: nil)
         
+        if isViaTableView {
+            wkWebView?.addObserver(self, forKeyPath:"title", options:.New, context:nil)
+        }
         wkWebView?.UIDelegate = self
         
         
@@ -180,23 +182,30 @@ class WebViewController: UIViewController,WKUIDelegate{
         }
     }
     
-    func addButtonToMenu(){
-        menuView.addSubview(goBackBtn)
-        menuView.addSubview(goForwardBtn)
-    }
-    
     func changeBtnStatus(btn:UIButton){
         if btn.enabled {
-            btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            btn.setTitleColor(UIColor.webViewMenuBtnEnabledColor(), forState: UIControlState.Normal)
         }else{
-            btn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+            btn.setTitleColor(UIColor.webViewMenuBtnDisabledColor(), forState: UIControlState.Normal)
         }
     }
+    
+    func fadeAnimation(duration:CFTimeInterval,fromValue:CGFloat,toValue:CGFloat,view:UIView?){
+        var fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+        fadeAnimation.duration = duration
+        fadeAnimation.fromValue = fromValue
+        fadeAnimation.toValue = toValue
+        fadeAnimation.removedOnCompletion = false
+        fadeAnimation.fillMode = kCAFillModeForwards
+        view?.layer.addAnimation(fadeAnimation, forKey: nil)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func webView(webView: WKWebView!, createWebViewWithConfiguration configuration: WKWebViewConfiguration!, forNavigationAction navigationAction: WKNavigationAction!, windowFeatures: WKWindowFeatures!) -> WKWebView! {
         //別タブを開くリンク対策 再度ページの読み込みをする
@@ -211,9 +220,12 @@ class WebViewController: UIViewController,WKUIDelegate{
     
     deinit {
         wkWebView?.removeObserver(self, forKeyPath: "estimatedProgress")
-        wkWebView?.removeObserver(self, forKeyPath: "title")
         wkWebView?.removeObserver(self, forKeyPath: "canGoForward")
         wkWebView?.removeObserver(self, forKeyPath: "canGoBack")
+        
+        if isViaTableView{
+            wkWebView?.removeObserver(self, forKeyPath: "title")
+        }
     }
     
     override func observeValueForKeyPath(keyPath:String, ofObject object:AnyObject, change:[NSObject:AnyObject], context:UnsafeMutablePointer<Void>) {
@@ -221,15 +233,8 @@ class WebViewController: UIViewController,WKUIDelegate{
         case "estimatedProgress":
             if let progress = change[NSKeyValueChangeNewKey] as? Float {
 //                println("Progress:\(progress)")
-                
                 if progress == 1 {
-                    var fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
-                    fadeAnimation.duration = 0.3
-                    fadeAnimation.fromValue = 1
-                    fadeAnimation.toValue = 0
-                    fadeAnimation.removedOnCompletion = false
-                    fadeAnimation.fillMode = kCAFillModeForwards
-                    progressBar?.layer.addAnimation(fadeAnimation, forKey: nil)
+                    fadeAnimation(0.3, fromValue: 1, toValue: 0, view: progressBar)
                 }
             }
         case "title":
@@ -252,12 +257,19 @@ class WebViewController: UIViewController,WKUIDelegate{
             println("canGoBack")
             println(wkWebView?.canGoBack)
             if wkWebView!.canGoBack as Bool {
-                var _forwardBtn = menuView.viewWithTag(2) as UIButton
-                _forwardBtn.enabled = false
-                changeBtnStatus(_forwardBtn)
-                self.view.addSubview(menuView)
+                if let _menuView = self.view.viewWithTag(10) {
+                    //menuViewを追加済み
+                    fadeAnimation(0.4, fromValue: 0, toValue: 1, view: self.view.viewWithTag(10))
+                    
+                }else{
+                    var _forwardBtn = UIButton()
+                    _forwardBtn = menuView.viewWithTag(2) as UIButton
+                    _forwardBtn.enabled = false
+                    changeBtnStatus(_forwardBtn)
+                    self.view.addSubview(menuView)
+                }
             }else{
-                self.view.viewWithTag(10)?.removeFromSuperview()
+                fadeAnimation(0.4, fromValue: 1.0, toValue: 0, view: self.view.viewWithTag(10))
             }
         default:
             break
@@ -269,15 +281,4 @@ class WebViewController: UIViewController,WKUIDelegate{
 //            println("JavaScript is sending a message \(message.body)")
 //        }
 //    }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

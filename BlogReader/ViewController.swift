@@ -27,7 +27,7 @@ class ViewController: UIViewController{
         
         self.navigationController?.navigationBarHidden = false
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        self.navigationController?.navigationBar.barTintColor = UIColor.hexStr("29B6F6", alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor.navigationBarTintColor()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = false
@@ -79,12 +79,12 @@ class ViewController: UIViewController{
         controllerArray.append(realtimeVC)
  
         var parameters: [String: AnyObject] = [
-            "scrollMenuBackgroundColor": UIColor.hexStr("d4f0fd", alpha: 1.0),
-            "viewBackgroundColor": UIColor.hexStr("186d93", alpha: 1.0),
-            "selectionIndicatorColor": UIColor.hexStr("F06292", alpha: 1.0),
-            "bottomMenuHairlineColor": UIColor.hexStr("F06292", alpha: 1.0),
-            "selectedMenuItemLabelColor": UIColor.hexStr("145b7b", alpha: 1.0),
-            "unselectedMenuItemLabelColor": UIColor.hexStr("3ebdf6", alpha: 1.0),
+            "scrollMenuBackgroundColor": UIColor.scrollMenuBackgroundColor(),
+            "viewBackgroundColor": UIColor.viewBackgroundColor(),
+            "selectionIndicatorColor": UIColor.selectionIndicatorColor(),
+            "bottomMenuHairlineColor": UIColor.bottomMenuHairlineColor(),
+            "selectedMenuItemLabelColor": UIColor.selectedMenuItemLabelColor(),
+            "unselectedMenuItemLabelColor": UIColor.unselectedMenuItemLabelColor(),
             "selectionIndicatorHeight": 2.0,
             "menuItemFont": UIFont(name: "HiraKakuProN-W6", size: 15.0)!,
             "menuHeight": 34.0,
