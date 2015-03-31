@@ -39,8 +39,11 @@ class WebViewController: UIViewController,WKUIDelegate{
         screenWidth = self.view.bounds.width
         initBackButton()
         initWebView()
-        initMenuView()
         initProgressBar()
+        
+        
+//        initMenuView()
+//        menuView.layer.opacity = 0
     }
     
     func setScreenHeight() -> CGFloat{
@@ -63,7 +66,7 @@ class WebViewController: UIViewController,WKUIDelegate{
     func initMenuView(){
         let btnSize : CGFloat = 50
         let btnFontSize : CGFloat = 50.0
-        let menuLeftMargin : CGFloat = 10.0
+        let menuLeftMargin : CGFloat = 5.0
         let menuViewWidth : CGFloat = 150
         let menuViewHeight: CGFloat = 60.0
         let btnLeftMargin : CGFloat = 40.0
@@ -95,6 +98,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         goForwardBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         
         
+        menuView.tag = 10
         menuView.addSubview(goBackBtn)
         menuView.addSubview(goForwardBtn)
         
@@ -139,7 +143,11 @@ class WebViewController: UIViewController,WKUIDelegate{
         wkWebView?.addObserver(self, forKeyPath:"estimatedProgress", options:.New, context:nil)
         wkWebView?.addObserver(self, forKeyPath:"title", options:.New, context:nil)
         
+        wkWebView?.addObserver(self, forKeyPath:"canGoBack", options: .New, context: nil)
+        wkWebView?.addObserver(self, forKeyPath:"canGoForward", options: .New, context: nil)
+        
         wkWebView?.UIDelegate = self
+        
         
         println(pageUrl!)
         
@@ -195,6 +203,8 @@ class WebViewController: UIViewController,WKUIDelegate{
     deinit {
         wkWebView?.removeObserver(self, forKeyPath: "estimatedProgress")
         wkWebView?.removeObserver(self, forKeyPath: "title")
+        wkWebView?.removeObserver(self, forKeyPath: "canGoForward")
+        wkWebView?.removeObserver(self, forKeyPath: "canGoBack")
     }
     
     override func observeValueForKeyPath(keyPath:String, ofObject object:AnyObject, change:[NSObject:AnyObject], context:UnsafeMutablePointer<Void>) {
@@ -219,6 +229,17 @@ class WebViewController: UIViewController,WKUIDelegate{
                     //tableView経由のときはタイトルを表示
                     self.navigationItem.title = title
                 }
+            }
+        case "canGoForward":
+            println("canGoForward")
+            println(wkWebView?.canGoForward)
+        case "canGoBack":
+            println("canGoBack")
+            println(wkWebView?.canGoBack)
+            if wkWebView!.canGoBack as Bool {
+                initMenuView()
+            }else{
+                self.view.viewWithTag(10)?.removeFromSuperview()
             }
         default:
             break
