@@ -42,8 +42,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         initProgressBar()
         
         
-//        initMenuView()
-//        menuView.layer.opacity = 0
+        initMenuViewAndButton()
     }
     
     func setScreenHeight() -> CGFloat{
@@ -63,7 +62,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         return self.view.bounds.height - statusBarHeight - navigationBarHeight!
     }
     
-    func initMenuView(){
+    func initMenuViewAndButton(){
         let btnSize : CGFloat = 50
         let btnFontSize : CGFloat = 50.0
         let menuLeftMargin : CGFloat = 5.0
@@ -83,27 +82,25 @@ class WebViewController: UIViewController,WKUIDelegate{
         
         menuView = UIView(frame: CGRectMake(menuViewPosX, menuViewPosY!, menuViewWidth, menuViewHeight))
         menuView.backgroundColor = UIColor.hexStr("000000", alpha: 0.6)
+        menuView.tag = 10
         
         goBackBtn = UIButton(frame: CGRectMake(menuLeftMargin, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goBackBtn.setTitle("<", forState: UIControlState.Normal)
         goBackBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         goBackBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goBackBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
-        
+        goBackBtn.tag = 1
         
         goForwardBtn = UIButton(frame: CGRectMake(goForwardBtnPosX, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
         goForwardBtn.setTitle(">", forState: UIControlState.Normal)
-        goForwardBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         goForwardBtn.titleLabel!.font = UIFont(name: "Helvetica-Bold",size: btnFontSize)
         goForwardBtn.addTarget(self, action: "menuBtnTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        goForwardBtn.tag = 2
         
-        
-        menuView.tag = 10
         menuView.addSubview(goBackBtn)
         menuView.addSubview(goForwardBtn)
-        
-        self.view.addSubview(menuView)
     }
+    
     
     func initProgressBar(){
         progressBar = UIProgressView(frame: CGRectMake(0, 0, screenWidth!, progressBarHeight))
@@ -183,6 +180,18 @@ class WebViewController: UIViewController,WKUIDelegate{
         }
     }
     
+    func addButtonToMenu(){
+        menuView.addSubview(goBackBtn)
+        menuView.addSubview(goForwardBtn)
+    }
+    
+    func changeBtnStatus(btn:UIButton){
+        if btn.enabled {
+            btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        }else{
+            btn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -211,7 +220,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         switch keyPath {
         case "estimatedProgress":
             if let progress = change[NSKeyValueChangeNewKey] as? Float {
-                println("Progress:\(progress)")
+//                println("Progress:\(progress)")
                 
                 if progress == 1 {
                     var fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
@@ -233,11 +242,20 @@ class WebViewController: UIViewController,WKUIDelegate{
         case "canGoForward":
             println("canGoForward")
             println(wkWebView?.canGoForward)
+            
+            var _menuView = self.view.viewWithTag(10)
+            var _forwardBtn = _menuView?.viewWithTag(2) as UIButton
+            _forwardBtn.enabled = wkWebView!.canGoForward as Bool
+            changeBtnStatus(_forwardBtn)
+            
         case "canGoBack":
             println("canGoBack")
             println(wkWebView?.canGoBack)
             if wkWebView!.canGoBack as Bool {
-                initMenuView()
+                var _forwardBtn = menuView.viewWithTag(2) as UIButton
+                _forwardBtn.enabled = false
+                changeBtnStatus(_forwardBtn)
+                self.view.addSubview(menuView)
             }else{
                 self.view.viewWithTag(10)?.removeFromSuperview()
             }
