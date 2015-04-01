@@ -14,15 +14,6 @@ class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let API_PATH = "https://keiba-news-api.herokuapp.com/"
-        let API_PATH_MATOME = "https://keiba-news-api.herokuapp.com/matome"
-        let API_PATH_PREDICT = "https://keiba-news-api.herokuapp.com/predict"
-        
-        let URL_SPONAVI = "http://m.sports.yahoo.co.jp/keiba/schedule/list/"
-        let URL_MOVIE = "https://www.google.co.jp/search?hl=ja&q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&gws_rd=ssl#q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&tbs=lr:lang_1ja,qdr:d,srcf:H4sIAAAAAAAAANOuzC8tKU1K1UvOz1XLy0zOL8tMSc3XyypQy03MBPIzMkHsosTs0pLUPKAiEM8kPTE3tUgvL7VELSUxM6cSKgwAr8rCCEsAAAA&tbm=vid"
-        let URL_REALTIME = "http://realtime.search.yahoo.co.jp/search?fr=sfp_as&p=%E7%AB%B6%E9%A6%AC&ei=UTF-8&rkf=1"
-        let URL_NEWS = "https://www.google.co.jp/search?q=%E7%AB%B6%E9%A6%AC&lr=lang_ja&hl=ja&gl=jp&authuser=0&tbas=0&tbs=lr:lang_1ja,qdr:d&tbm=nws&source=lnt&sa=X&ei=LvAXVZ-NHYWomgXDroHYCw&ved=0CBMQpwU&biw=320&bih=568&dpr=2"
-        
         self.navigationItem.title = "Umart News"
         
         self.navigationController?.navigationBarHidden = false
@@ -37,37 +28,37 @@ class ViewController: UIViewController{
   
         var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         matomeVC.parentNavigationController = self.navigationController
-        matomeVC.feedURL = API_PATH_MATOME
+        matomeVC.feedURL = URL.MATOME.rawValue
         matomeVC.title = "まとめ"
         matomeVC.setTableView()
         
         var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         predictVC.parentNavigationController = self.navigationController
-        predictVC.feedURL = API_PATH_PREDICT
+        predictVC.feedURL = URL.PREDICT.rawValue
         predictVC.title = "予想"
         predictVC.setTableView()
         
         var sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
-        sponaviVC.pageUrl = URL_SPONAVI
+        sponaviVC.pageUrl = URL.SPONAVI.rawValue
         sponaviVC.pageTitle = "結果"
         sponaviVC.title = "結果"
         
         var movieVC: WebViewController = WebViewController()
         movieVC.parentNavigationController = self.navigationController
-        movieVC.pageUrl = URL_MOVIE
+        movieVC.pageUrl = URL.MOVIE.rawValue
         movieVC.pageTitle = "動画"
         movieVC.title = "動画"
         
         var realtimeVC: WebViewController = WebViewController()
         realtimeVC.parentNavigationController = self.navigationController
-        realtimeVC.pageUrl = URL_REALTIME
+        realtimeVC.pageUrl = URL.REALTIME.rawValue
         realtimeVC.pageTitle = "ツイート"
         realtimeVC.title = "ツイート"
         
         var newsVC: WebViewController = WebViewController()
         newsVC.parentNavigationController = self.navigationController
-        newsVC.pageUrl = URL_NEWS
+        newsVC.pageUrl = URL.NEWS.rawValue
         newsVC.pageTitle = "ニュース"
         newsVC.title = "ニュース"
         
