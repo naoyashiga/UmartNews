@@ -26,7 +26,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         myNavigationController = UINavigationController(rootViewController: viewController)
         self.window!.rootViewController = myNavigationController
         self.window!.makeKeyAndVisible()
+        
+        
+        Parse.setApplicationId("HMtylaPpY3kbnyc69w4xpToOVEYdyVIzS4tN7Bst", clientKey: "qlbsTVGpuCWdfSY8X6oTkD0MGBoj86ChJGUTRlTa")
+        
+        let userNotificationTypes = (UIUserNotificationType.Alert |
+            UIUserNotificationType.Badge |
+            UIUserNotificationType.Sound);
+        
+        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+        
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        let installation = PFInstallation.currentInstallation()
+        installation.setDeviceTokenFromData(deviceToken)
+//        installation.saveInBackground()
+        installation.save()
+        println("got device id! \(deviceToken)")
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        PFPush.handlePush(userInfo)
     }
 
     func applicationWillResignActive(application: UIApplication) {
