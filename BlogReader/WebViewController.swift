@@ -65,22 +65,24 @@ class WebViewController: UIViewController,WKUIDelegate{
         let btnSize : CGFloat = 50
         let btnFontSize : CGFloat = 50.0
         let menuLeftMargin : CGFloat = 5.0
-        let menuViewWidth : CGFloat = 150
-        let menuViewHeight: CGFloat = 60.0
         let btnLeftMargin : CGFloat = 40.0
         let goForwardBtnPosX = menuLeftMargin + btnFontSize + btnLeftMargin
         
+        let menuViewWidth : CGFloat = 150
+        let menuViewHeight: CGFloat = 60.0
+        let menuBottomMargin: CGFloat = 10.0
         var menuViewPosX : CGFloat = (screenWidth! - menuViewWidth) / 2
         var menuViewPosY : CGFloat?
         
         if isViaTableView {
-            menuViewPosY = screenHeight! - menuViewHeight
+            menuViewPosY = screenHeight! - menuViewHeight - menuBottomMargin
         }else{
-            menuViewPosY = screenHeight! - menuViewHeight * 1.5
+            menuViewPosY = screenHeight! - menuViewHeight * 1.5 - menuBottomMargin
         }
         
         menuView = UIView(frame: CGRectMake(menuViewPosX, menuViewPosY!, menuViewWidth, menuViewHeight))
         menuView.backgroundColor = UIColor.webViewMenuBackgroundColor()
+        menuView.layer.cornerRadius = 10.0
         menuView.tag = 10
         
         goBackBtn = UIButton(frame: CGRectMake(menuLeftMargin, menuViewHeight / 2 - btnFontSize / 2, btnSize, btnSize))
