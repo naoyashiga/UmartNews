@@ -8,52 +8,57 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="Cell" customModule="BlogReader" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <rect key="frame" x="0.0" y="0.0" width="363" height="123"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-0l-Dye">
-                        <rect key="frame" x="8" y="11" width="290" height="22"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="あぁ俺って競馬に侵されてるなって感じる時" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-0l-Dye">
+                        <rect key="frame" x="15" y="11" width="340" height="22"/>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                        <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="site" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-ta-cN8">
-                        <rect key="frame" x="153" y="99" width="159" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="159" id="PQA-2O-DuQ"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015-04-04 10:14:11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xve-pz-2ZB">
+                        <rect key="frame" x="15" y="101" width="120" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.36078431372549019" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xve-pz-2ZB">
-                        <rect key="frame" x="8" y="98" width="120" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="☆うまなみ・競馬にゅーす速報 ｜ 競馬2chまとめ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-ta-cN8">
+                        <rect key="frame" x="195" y="101" width="160" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="PQA-2O-DuQ"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xve-pz-2ZB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8oK-ML-TGW"/>
+                    <constraint firstItem="xve-pz-2ZB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="8oK-ML-TGW"/>
                     <constraint firstItem="wQm-0l-Dye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="9PZ-nf-7H9"/>
                     <constraint firstAttribute="bottomMargin" secondItem="k3G-ta-cN8" secondAttribute="bottom" constant="-5" id="E9Q-Yg-9ex"/>
-                    <constraint firstItem="k3G-ta-cN8" firstAttribute="top" secondItem="wQm-0l-Dye" secondAttribute="bottom" constant="66" id="OTn-6O-Nf9"/>
-                    <constraint firstAttribute="centerX" secondItem="k3G-ta-cN8" secondAttribute="centerX" constant="-72" id="bFa-wH-mgo"/>
+                    <constraint firstItem="k3G-ta-cN8" firstAttribute="top" secondItem="wQm-0l-Dye" secondAttribute="bottom" constant="65" id="OTn-6O-Nf9"/>
+                    <constraint firstAttribute="centerX" secondItem="k3G-ta-cN8" secondAttribute="centerX" constant="-94" id="bFa-wH-mgo"/>
                     <constraint firstAttribute="trailingMargin" secondItem="wQm-0l-Dye" secondAttribute="trailing" constant="14" id="fzz-Ly-aFn"/>
-                    <constraint firstItem="wQm-0l-Dye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rtL-aV-vWx"/>
+                    <constraint firstItem="wQm-0l-Dye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="rtL-aV-vWx"/>
                     <constraint firstItem="wQm-0l-Dye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="v5k-6W-12r"/>
                     <constraint firstAttribute="bottomMargin" secondItem="xve-pz-2ZB" secondAttribute="bottom" constant="-5" id="z7A-8t-Csm"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="rtL-aV-vWx"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="dateLabel" destination="xve-pz-2ZB" id="1Pb-xF-Ujv"/>
                 <outlet property="siteLabel" destination="k3G-ta-cN8" id="5wH-cY-zup"/>
                 <outlet property="titleLabel" destination="wQm-0l-Dye" id="7Co-jf-wzL"/>
             </connections>
-            <point key="canvasLocation" x="189" y="199.5"/>
+            <point key="canvasLocation" x="236.5" y="199.5"/>
         </tableViewCell>
     </objects>
 </document>

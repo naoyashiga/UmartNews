@@ -112,7 +112,14 @@ class ArticleViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as Cell
         let entry : Entry = myEntries[indexPath.row] as Entry
-        cell.titleLabel.text = entry.title
+        
+        //行間を調整
+        let attributedText = NSMutableAttributedString(string: entry.title)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineHeightMultiple = 1.3
+        attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        
+        cell.titleLabel.attributedText = attributedText
         cell.titleLabel.sizeToFit()
         
         cell.dateLabel.text = entry.date
