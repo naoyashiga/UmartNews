@@ -136,7 +136,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             wkWebView = WKWebView(frame: CGRectMake(0, 0, screenWidth!, screenHeight!))
         }
         
-//        wkWebView?.allowsBackForwardNavigationGestures = true
+        wkWebView?.allowsBackForwardNavigationGestures = true
         
         //監視対象の登録
         wkWebView?.addObserver(self, forKeyPath:"estimatedProgress", options:.New, context:nil)

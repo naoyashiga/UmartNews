@@ -119,6 +119,7 @@ class ArticleViewController: UITableViewController {
         paragraphStyle.lineHeightMultiple = 1.3
         attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         
+//        cell.titleLabel.text = entry.title
         cell.titleLabel.attributedText = attributedText
         cell.titleLabel.sizeToFit()
         
