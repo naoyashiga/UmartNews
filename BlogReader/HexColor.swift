@@ -24,6 +24,14 @@ extension UIColor {
         }
     }
     
+    class func launchBackgroundColor() -> UIColor {
+        return UIColor.hexStr("29B6F6", alpha: 1.0)
+    }
+    
+    class func launchTextColor() -> UIColor {
+        return UIColor.hexStr("ffffff", alpha: 1.0)
+    }
+    
     class func webViewMenuBackgroundColor() -> UIColor {
         return UIColor.hexStr("000000", alpha: 0.6)
     }
