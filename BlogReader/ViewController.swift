@@ -65,12 +65,17 @@ class ViewController: UIViewController{
         newsVC.pageTitle = "ニュース"
         newsVC.title = "ニュース"
         
+        var settingVC: SettingViewController = SettingViewController(nibName: "SettingViewController", bundle: nil)
+        settingVC.parentNavigationController = self.navigationController
+        settingVC.title = "設定"
+        
         controllerArray.append(sponaviVC)
         controllerArray.append(newsVC)
         controllerArray.append(movieVC)
         controllerArray.append(matomeVC)
         controllerArray.append(predictVC)
         controllerArray.append(realtimeVC)
+        controllerArray.append(settingVC)
  
         var parameters: [String: AnyObject] = [
             "scrollMenuBackgroundColor": UIColor.scrollMenuBackgroundColor(),

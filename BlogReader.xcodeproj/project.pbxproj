@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D2591AC1911600E5DCC1 /* json.swift */; };
 		9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */; };
+		9A4209201ADD44A8007BD6CD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */; };
+		9A4209231ADD4566007BD6CD /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4209211ADD4566007BD6CD /* SettingCell.swift */; };
+		9A4209241ADD4566007BD6CD /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4209221ADD4566007BD6CD /* SettingCell.xib */; };
+		9A4209261ADD4CBB007BD6CD /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */; };
 		9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B90F51AC64DA300916614 /* ArticleViewController.swift */; };
 		9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B90F61AC64DA300916614 /* ArticleViewController.xib */; };
 		9A5B90FC1AC6A51200916614 /* WebViewBottomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B90FB1AC6A51200916614 /* WebViewBottomMenu.xib */; };
@@ -54,6 +58,10 @@
 		21A0CB1ECF9CB652CC79E093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A36D2591AC1911600E5DCC1 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserManager.swift; sourceTree = "<group>"; };
+		9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9A4209211ADD4566007BD6CD /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		9A4209221ADD4566007BD6CD /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		9A5B90F51AC64DA300916614 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		9A5B90F61AC64DA300916614 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		9A5B90FB1AC6A51200916614 /* WebViewBottomMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewBottomMenu.xib; sourceTree = "<group>"; };
@@ -141,6 +149,8 @@
 			children = (
 				9A5B90F51AC64DA300916614 /* ArticleViewController.swift */,
 				9A5B90F61AC64DA300916614 /* ArticleViewController.xib */,
+				9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */,
+				9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */,
 				9A947C3D1A50D2D100E33966 /* WebViewController.swift */,
 				9A947C3E1A50D2D100E33966 /* WebViewController.xib */,
 				9A5B90FD1AC6A52B00916614 /* WebViewBottomMenu.swift */,
@@ -171,6 +181,8 @@
 			children = (
 				9A9DF0EA1A4FDF99008749D5 /* Cell.swift */,
 				9A9DF0EB1A4FDF99008749D5 /* Cell.xib */,
+				9A4209211ADD4566007BD6CD /* SettingCell.swift */,
+				9A4209221ADD4566007BD6CD /* SettingCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -351,9 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A5B90FC1AC6A51200916614 /* WebViewBottomMenu.xib in Resources */,
+				9A4209261ADD4CBB007BD6CD /* SettingViewController.xib in Resources */,
 				9A5B91041AC7CD0300916614 /* script.js in Resources */,
 				9A9DF0CD1A4FA315008749D5 /* Main.storyboard in Resources */,
 				9A9DF0ED1A4FDF99008749D5 /* Cell.xib in Resources */,
+				9A4209241ADD4566007BD6CD /* SettingCell.xib in Resources */,
 				9A9DF0D21A4FA315008749D5 /* LaunchScreen.xib in Resources */,
 				9A947C401A50D2D100E33966 /* WebViewController.xib in Resources */,
 				9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */,
@@ -426,6 +440,8 @@
 				9A9DF0E91A4FC527008749D5 /* Entry.swift in Sources */,
 				9A9DF0EC1A4FDF99008749D5 /* Cell.swift in Sources */,
 				9A5B91011AC7A22A00916614 /* HexColor.swift in Sources */,
+				9A4209201ADD44A8007BD6CD /* SettingViewController.swift in Sources */,
+				9A4209231ADD4566007BD6CD /* SettingCell.swift in Sources */,
 				9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */,
 				9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */,
 				9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */,
@@ -493,8 +509,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -514,7 +530,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "45fc931b-c0f6-4f08-8f6a-4638eb287647";
+				PROVISIONING_PROFILE = "50b81e4f-2b0c-4274-9dbb-008481107ff4";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -537,8 +553,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -551,7 +567,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "45fc931b-c0f6-4f08-8f6a-4638eb287647";
+				PROVISIONING_PROFILE = "50b81e4f-2b0c-4274-9dbb-008481107ff4";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -567,7 +583,7 @@
 				INFOPLIST_FILE = BlogReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "45fc931b-c0f6-4f08-8f6a-4638eb287647";
+				PROVISIONING_PROFILE = "241cce84-688b-4b85-bc9c-657a72d6aeb1";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlogReader/BlogReader-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -583,7 +599,7 @@
 				INFOPLIST_FILE = BlogReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "45fc931b-c0f6-4f08-8f6a-4638eb287647";
+				PROVISIONING_PROFILE = "241cce84-688b-4b85-bc9c-657a72d6aeb1";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlogReader/BlogReader-Bridging-Header.h";
 			};
 			name = Release;
@@ -592,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -603,6 +620,7 @@
 				INFOPLIST_FILE = BlogReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "241cce84-688b-4b85-bc9c-657a72d6aeb1";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlogReader.app/BlogReader";
 			};
 			name = Debug;
@@ -611,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -618,6 +637,7 @@
 				INFOPLIST_FILE = BlogReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "241cce84-688b-4b85-bc9c-657a72d6aeb1";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlogReader.app/BlogReader";
 			};
 			name = Release;
