@@ -41,6 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Badge reset
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         
+        //配信設定
+        let ud = NSUserDefaults.standardUserDefaults()
+        if(ud.objectForKey("神競馬2nd") == nil){
+            for siteNameStr in myMatomes {
+                ud.setObject(true, forKey: siteNameStr)
+            }
+            
+            for siteNameStr in myPredicts {
+                ud.setObject(true, forKey: siteNameStr)
+            }
+        }
+
+        
         return true
     }
     

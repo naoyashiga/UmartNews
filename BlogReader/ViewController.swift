@@ -31,13 +31,13 @@ class ViewController: UIViewController{
   
         var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         matomeVC.parentNavigationController = self.navigationController
-        matomeVC.feedURL = URL.MATOME.rawValue
+        matomeVC.feedURL = URL.MATOME.rawValue + matomeVC.checkFeedSite(myMatomes)
         matomeVC.title = "まとめ"
         matomeVC.setTableView()
         
         var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         predictVC.parentNavigationController = self.navigationController
-        predictVC.feedURL = URL.PREDICT.rawValue
+        predictVC.feedURL = URL.PREDICT.rawValue + predictVC.checkFeedSite(myPredicts)
         predictVC.title = "予想"
         predictVC.setTableView()
         
@@ -68,6 +68,9 @@ class ViewController: UIViewController{
         var settingVC: SettingViewController = SettingViewController(nibName: "SettingViewController", bundle: nil)
         settingVC.parentNavigationController = self.navigationController
         settingVC.title = "設定"
+        
+        println(matomeVC.feedURL)
+        println(predictVC.feedURL)
         
         controllerArray.append(sponaviVC)
         controllerArray.append(newsVC)

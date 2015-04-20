@@ -19,6 +19,7 @@ class ArticleViewController: UITableViewController {
     }
     
     func setTableView(){
+        
         myEntries = NSMutableArray()
         
         tableView.registerNib(UINib(nibName: "Cell", bundle: nil), forCellReuseIdentifier: "Cell")
@@ -33,6 +34,30 @@ class ArticleViewController: UITableViewController {
         self.refreshControl = refreshControl
         
         reload()
+    }
+    
+    func checkFeedSite(siteNameArray:NSArray) -> String{
+        var param = "?"
+        var cnt = 1
+        //配信設定
+        let ud = NSUserDefaults.standardUserDefaults()
+        
+        for siteNameStr in siteNameArray {
+            param = param + "key" + String(cnt) + "="
+            if ud.boolForKey(siteNameStr as String) {
+                param = param + "1"
+            }else{
+                //配信停止
+                param = param + "0"
+            }
+            
+            if cnt < siteNameArray.count {
+                param = param + "&"
+            }
+            cnt++
+        }
+        
+        return param
     }
     
     func reload() {

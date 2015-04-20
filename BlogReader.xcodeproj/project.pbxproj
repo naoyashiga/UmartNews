@@ -41,6 +41,7 @@
 		9A9DF0EC1A4FDF99008749D5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9DF0EA1A4FDF99008749D5 /* Cell.swift */; };
 		9A9DF0ED1A4FDF99008749D5 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9DF0EB1A4FDF99008749D5 /* Cell.xib */; };
 		9AD11F6A1AC2E8E500481308 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */; };
+		9AF29B3A1AE52D0B00E5BB0B /* siteName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF29B391AE52D0B00E5BB0B /* siteName.swift */; };
 		DE8822338284FB541C8A425E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80671B2A890EC158C19E9DB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		9A9DF0EA1A4FDF99008749D5 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		9A9DF0EB1A4FDF99008749D5 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		9AF29B391AE52D0B00E5BB0B /* siteName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = siteName.swift; sourceTree = "<group>"; };
 		A8F3251B7566C6A323550142 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C80671B2A890EC158C19E9DB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -192,6 +194,7 @@
 			children = (
 				9A5B91001AC7A22A00916614 /* HexColor.swift */,
 				9A9B59AB1ACBFA8A0023F8C9 /* URL.swift */,
+				9AF29B391AE52D0B00E5BB0B /* siteName.swift */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				9A9DF0E91A4FC527008749D5 /* Entry.swift in Sources */,
 				9A9DF0EC1A4FDF99008749D5 /* Cell.swift in Sources */,
 				9A5B91011AC7A22A00916614 /* HexColor.swift in Sources */,
+				9AF29B3A1AE52D0B00E5BB0B /* siteName.swift in Sources */,
 				9A4209201ADD44A8007BD6CD /* SettingViewController.swift in Sources */,
 				9A4209231ADD4566007BD6CD /* SettingCell.swift in Sources */,
 				9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */,
