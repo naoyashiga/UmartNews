@@ -95,29 +95,38 @@ class ArticleViewController: UITableViewController {
         })
     }
     
-    func loadRss(){
-        let url:NSURL = NSURL(string: feedURL)!
-        var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
-        myParser.startParse(url){
-            () in
-            var q_main : dispatch_queue_t = dispatch_get_main_queue()
-            
-            dispatch_async(q_main, {() in
-                self.myEntries = myParser.entries
-//                self.tableView.reloadData()
-            })
-        }
-        
+//    func loadRss(){
+//        let url:NSURL = NSURL(string: feedURL)!
+//        var myParser:JsonParserManager = JsonParserManager.alloc().initWithURL() as JsonParserManager
 //        myParser.startParse(url){
 //            () in
-//            self.myEntries = myParser.entries
-//            self.tableView.reloadData()
+//            var q_main : dispatch_queue_t = dispatch_get_main_queue()
+//            
+//            dispatch_async(q_main, {() in
+//                self.myEntries = myParser.entries
+////                self.tableView.reloadData()
+//            })
 //        }
-    }
+//        
+////        myParser.startParse(url){
+////            () in
+////            self.myEntries = myParser.entries
+////            self.tableView.reloadData()
+////        }
+//    }
     
     func refreshInvoked() {
         println("start refresh")
-        loadRss()
+        
+        //配信設定を考慮して再読み込み
+        if(self.title == "まとめ"){
+            feedURL = URL.MATOME.rawValue + checkFeedSite(myMatomes)
+        }else if(self.title == "予想"){
+            feedURL = URL.PREDICT.rawValue + checkFeedSite(myPredicts)
+        }
+        println(feedURL)
+        
+        reload()
         self.refreshControl?.endRefreshing()
         println("end refresh")
     }

@@ -44,6 +44,7 @@ class SettingViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("SettingCell", forIndexPath: indexPath) as SettingCell
         var siteName:String?
+        let ud = NSUserDefaults.standardUserDefaults()
         
         if indexPath.section == 0{
             siteName = myMatomes[indexPath.row]
@@ -59,6 +60,7 @@ class SettingViewController: UITableViewController {
         
         cell.siteNameLabel.attributedText = attributedText
         cell.siteNameLabel.sizeToFit()
+        cell.feedSwitch.on = ud.boolForKey(cell.siteNameLabel.text!)
         
         return cell
     }

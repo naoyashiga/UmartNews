@@ -10,10 +10,10 @@ import UIKit
 
 class SettingCell: UITableViewCell {
     @IBOutlet weak var siteNameLabel: UILabel!
+    @IBOutlet weak var feedSwitch: UISwitch!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

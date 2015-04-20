@@ -33,6 +33,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="feedSwitch" destination="mtw-sN-5Gb" id="n2c-ZQ-qNC"/>
                 <outlet property="siteNameLabel" destination="ehU-wt-mBp" id="bg6-HN-9ER"/>
             </connections>
         </tableViewCell>
