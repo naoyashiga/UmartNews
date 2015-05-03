@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Social
 
 class WebViewController: UIViewController,WKUIDelegate{
     var parentNavigationController : UINavigationController?
@@ -38,6 +39,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         println(screenHeight)
         screenWidth = self.view.bounds.width
         initBackButton()
+        setShareButton()
         initWebView()
         initProgressBar()
         
@@ -169,16 +171,105 @@ class WebViewController: UIViewController,WKUIDelegate{
         backButton.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = backButton
         self.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 12)!], forState: UIControlState.Normal)
-        
-        let shareButton = UIBarButtonItem(title: "⚠️", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
+    }
+    
+    func setShareButton(){
+        let shareButton = UIBarButtonItem(title: "share", style: UIBarButtonItemStyle.Plain, target: self, action: "shareAlert")
         shareButton.width = screenWidth! - 100
         shareButton.tintColor = UIColor.whiteColor()
         self.navigationItem.rightBarButtonItem = shareButton
     }
     
-    
     func back() {
         navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func shareAlert(){
+        let actionSheet:UIAlertController = UIAlertController(
+            title:"この記事をシェア",
+            message: self.navigationItem.title,
+            preferredStyle: UIAlertControllerStyle.ActionSheet)
+        
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel) { (action) -> Void in
+        }
+        
+        let twitter = UIAlertAction(title: "Twitter", style: .Default) { (action) -> Void in
+            self.tweetBtnAction()
+        }
+        
+        let fb = UIAlertAction(title: "Facebook", style: .Default) { (action) -> Void in
+            self.fbBtnAction()
+        }
+        
+        let line = UIAlertAction(title: "LINE", style: .Default) { (action) -> Void in
+            self.lineBtnAction()
+        }
+        
+        let report = UIAlertAction(title: "記事の問題を報告", style: .Default) { (action) -> Void in
+            self.reportAlert()
+        }
+        
+        actionSheet.addAction(cancelAction)
+        actionSheet.addAction(twitter)
+        actionSheet.addAction(fb)
+        actionSheet.addAction(line)
+        actionSheet.addAction(report)
+        
+        presentViewController(actionSheet, animated: true, completion: nil)
+    }
+    
+    func fbBtnAction(){
+        var vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        //テキストを設定
+        vc.setInitialText(shareText)
+        self.presentViewController(vc,animated:true,completion:nil)
+    }
+    
+    func tweetBtnAction(){
+        var vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        //テキストを設定
+        vc.setInitialText(shareText)
+        self.presentViewController(vc,animated:true,completion:nil)
+    }
+    
+    func lineBtnAction(){
+        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        var encodeMessage: String! = shareText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        var messageURL: NSURL! = NSURL( string: "line://msg/text/" + encodeMessage )
+        
+        if (UIApplication.sharedApplication().canOpenURL(messageURL)) {
+            UIApplication.sharedApplication().openURL( messageURL )
+        }
+    }
+    
+    func reportAlert(){
+        var ac = UIAlertController(title: self.navigationItem.title, message: "この記事を報告しますか", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel) { (action) -> Void in
+            println("Cancel button tapped.")
+        }
+        
+        let okAction = UIAlertAction(title: "はい", style: .Default) { (action) -> Void in
+            self.reportResultAlert()
+        }
+        
+        ac.addAction(cancelAction)
+        ac.addAction(okAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    func reportResultAlert(){
+        var ac = UIAlertController(title: "報告をしました", message: "", preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "閉じる", style: .Default) { (action) -> Void in
+        }
+        
+        ac.addAction(okAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
     }
     
     // ボタンを押したときの処理
