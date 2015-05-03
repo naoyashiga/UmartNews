@@ -21,18 +21,21 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bolts/Tasks (1.1.5)
+  - Google-Mobile-Ads-SDK (7.2.1)
   - PageMenu (1.2.3)
   - Parse (1.7.2.1):
     - Bolts/Tasks (>= 1.1.5)
 
 DEPENDENCIES:
   - AFNetworking
+  - Google-Mobile-Ads-SDK
   - PageMenu
   - Parse
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  Google-Mobile-Ads-SDK: bff6964e7702feb6289014451114e7044a4c26ba
   PageMenu: a7358b1c38cc2167a2b072a78f4683764c4d03ba
   Parse: 8213b05b52768b34b87e1e41fd9efc88a9933f3f
 

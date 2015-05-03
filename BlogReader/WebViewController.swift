@@ -9,8 +9,9 @@
 import UIKit
 import WebKit
 import Social
+import GoogleMobileAds
 
-class WebViewController: UIViewController,WKUIDelegate{
+class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
     var parentNavigationController : UINavigationController?
     var wkWebView: WKWebView?
     var progressBar: UIProgressView?
@@ -44,6 +45,35 @@ class WebViewController: UIViewController,WKUIDelegate{
         initProgressBar()
         
         initMenuViewAndButton()
+        
+        //広告表示
+        settingAd()
+    }
+    
+    func settingAd(){
+//        let GAD_SIMULATOR_ID = "0b0df889514cace63baf0d3f248e5295"
+        let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/7543765112"
+        var origin:CGPoint?
+        if self.navigationController == nil {
+            origin = CGPointMake(
+                0.0,
+                screenHeight! - CGSizeFromGADAdSize(kGADAdSizeBanner).height - 35); // place at bottom of view
+        }else{
+            origin = CGPointMake(
+                0.0,
+                screenHeight! - CGSizeFromGADAdSize(kGADAdSizeBanner).height); // place at bottom of view
+        }
+        
+        var size = GADAdSizeFullWidthPortraitWithHeight(50) // set size to 50
+        var adB = GADBannerView(adSize: size, origin: origin!) // create the banner
+        adB.adUnitID = MY_BANNER_UNIT_ID  //"ca-app-pub-XXXXXXXX/XXXXXXX"
+        adB.delegate = self // ??
+        adB.rootViewController = self // ??
+        self.view.addSubview(adB) // ??
+        var request = GADRequest() // create request
+        //        request.testDevices = [GAD_SIMULATOR_ID]; // set it to "test" request
+//        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+        adB.loadRequest(request) // actually load it (?)
     }
     
     func setScreenHeight() -> CGFloat{
@@ -52,6 +82,7 @@ class WebViewController: UIViewController,WKUIDelegate{
         if self.navigationController == nil {
             println("いきなりwebView")
             navigationBarHeight = parentNavigationController?.navigationBar.frame.size.height
+        
             isViaTableView = false
         }else{
             println("table view からのwebView")
@@ -59,6 +90,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             isViaTableView = true
         }
         
+//        self.settingAd(offsetY: statusBarHeight + navigationBarHeight!)
         println(statusBarHeight + navigationBarHeight!)
         return self.view.bounds.height - statusBarHeight - navigationBarHeight!
     }

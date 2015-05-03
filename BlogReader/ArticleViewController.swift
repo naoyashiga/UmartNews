@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ArticleViewController: UITableViewController {
+class ArticleViewController: UITableViewController,GADBannerViewDelegate {
     var parentNavigationController : UINavigationController?
     var myEntries:NSMutableArray!
 //    var myEntries = [String]()
@@ -17,6 +18,8 @@ class ArticleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
     
     func setTableView(){
         

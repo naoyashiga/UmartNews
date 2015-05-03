@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ViewController: UIViewController{
+class ViewController: UIViewController,GADBannerViewDelegate {
     var pageMenu : CAPSPageMenu?
     var launchView: UIView?
     var launchLabel: UILabel?
@@ -72,12 +73,12 @@ class ViewController: UIViewController{
         println(matomeVC.feedURL)
         println(predictVC.feedURL)
         
-//        controllerArray.append(sponaviVC)
-//        controllerArray.append(newsVC)
-//        controllerArray.append(movieVC)
+        controllerArray.append(sponaviVC)
+        controllerArray.append(newsVC)
+        controllerArray.append(movieVC)
         controllerArray.append(matomeVC)
-//        controllerArray.append(predictVC)
-//        controllerArray.append(realtimeVC)
+        controllerArray.append(predictVC)
+        controllerArray.append(realtimeVC)
         controllerArray.append(settingVC)
  
         var parameters: [String: AnyObject] = [
@@ -156,6 +157,8 @@ class ViewController: UIViewController{
         
         presentViewController(ac, animated: true, completion: nil)
     }
+    
+    
     
     override func viewDidAppear(animated: Bool) {
         //少し縮小するアニメーション

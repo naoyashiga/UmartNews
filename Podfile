@@ -2,4 +2,5 @@
 pod 'AFNetworking'
 pod 'Parse'
 pod 'PageMenu'
+pod 'Google-Mobile-Ads-SDK'
 use_frameworks!
