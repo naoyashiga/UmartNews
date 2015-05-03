@@ -11,6 +11,6 @@ import UIKit
 class WebViewBottomMenu : UIView {
     
     class func instance() -> WebViewBottomMenu {
-        return UINib(nibName: "WebViewBottomMenu", bundle: nil).instantiateWithOwner(self, options: nil)[0] as WebViewBottomMenu
+        return UINib(nibName: "WebViewBottomMenu", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! WebViewBottomMenu
     }
 }

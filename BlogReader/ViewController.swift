@@ -72,12 +72,12 @@ class ViewController: UIViewController{
         println(matomeVC.feedURL)
         println(predictVC.feedURL)
         
-        controllerArray.append(sponaviVC)
-        controllerArray.append(newsVC)
-        controllerArray.append(movieVC)
+//        controllerArray.append(sponaviVC)
+//        controllerArray.append(newsVC)
+//        controllerArray.append(movieVC)
         controllerArray.append(matomeVC)
-        controllerArray.append(predictVC)
-        controllerArray.append(realtimeVC)
+//        controllerArray.append(predictVC)
+//        controllerArray.append(realtimeVC)
         controllerArray.append(settingVC)
  
         var parameters: [String: AnyObject] = [
@@ -99,8 +99,14 @@ class ViewController: UIViewController{
             "centerMenuItems": true]
         
         self.pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), options: parameters)
-        self.view.addSubview(self.pageMenu!.view)
+//        self.view.addSubview(self.pageMenu!.view)
         
+        let ud = NSUserDefaults.standardUserDefaults()
+        if(ud.objectForKey("eula") == nil){
+            eula()
+        }else{
+            self.view.addSubview(self.pageMenu!.view)
+        }
 //        launchView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height))
 //        launchView?.center = self.view.center
 //        launchView?.backgroundColor = UIColor.launchBackgroundColor()
@@ -115,6 +121,40 @@ class ViewController: UIViewController{
 //        
 //        launchView?.addSubview(launchLabel!)
 //        self.view.addSubview(launchView!)
+    }
+    
+    func eula(){
+        var eulaText = "ニュース、2chまとめサイト記事に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
+        var ac = UIAlertController(title: "使用許諾契約", message: eulaText, preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "同意しない", style: .Cancel) { (action) -> Void in
+            println("Cancel button tapped.")
+            self.alert()
+        }
+        
+        let okAction = UIAlertAction(title: "同意する", style: .Default) { (action) -> Void in
+            let ud = NSUserDefaults.standardUserDefaults()
+            ud.setObject(true, forKey: "eula")
+            println("OK button tapped.")
+            self.view.addSubview(self.pageMenu!.view)
+        }
+        
+        ac.addAction(cancelAction)
+        ac.addAction(okAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    func alert(){
+        let text = "使用許諾契約に同意しないと閲覧できません"
+        var ac = UIAlertController(title: "Alert", message: text, preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
+        }
+        
+        ac.addAction(okAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -44,7 +44,7 @@ class ArticleViewController: UITableViewController {
         
         for siteNameStr in siteNameArray {
             param = param + "key" + String(cnt) + "="
-            if ud.boolForKey(siteNameStr as String) {
+            if ud.boolForKey(siteNameStr as! String) {
                 param = param + "1"
             }else{
                 //配信停止
@@ -71,7 +71,7 @@ class ArticleViewController: UITableViewController {
     }
     
     func fetchResponse(res: NSURLResponse!, data: NSData!, error: NSError!) {
-        let json: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
+        let json: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil)as! NSArray
         
 //        myEntries = [String]()
         myEntries = NSMutableArray()
@@ -79,10 +79,10 @@ class ArticleViewController: UITableViewController {
         
         
         for j in json {
-            tmpEntry.title = j["title"] as String
-            tmpEntry.source = j["source"] as String
-            tmpEntry.link = j["link"] as String
-            tmpEntry.date = j["pubDate"] as String
+            tmpEntry.title = j["title"] as! String
+            tmpEntry.source = j["source"] as! String
+            tmpEntry.link = j["link"] as! String
+            tmpEntry.date = j["pubDate"] as! String
             
             
             myEntries.addObject(tmpEntry)
@@ -144,8 +144,8 @@ class ArticleViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as Cell
-        let entry : Entry = myEntries[indexPath.row] as Entry
+        var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! Cell
+        let entry : Entry = myEntries[indexPath.row] as! Entry
         
         //行間を調整
         let attributedText = NSMutableAttributedString(string: entry.title)
@@ -172,7 +172,7 @@ class ArticleViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var webVC = WebViewController()
         
-        var entry:Entry = myEntries[indexPath.row] as Entry
+        var entry:Entry = myEntries[indexPath.row] as! Entry
         webVC.pageUrl = entry.link
         webVC.pageTitle = entry.title
         

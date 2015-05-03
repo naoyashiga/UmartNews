@@ -119,7 +119,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             var contentController = WKUserContentController();
             if let path = NSBundle.mainBundle().pathForResource("script", ofType: "js") {
                 if let source = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) {
-                    var userScript = WKUserScript(source: source, injectionTime: WKUserScriptInjectionTime.AtDocumentEnd, forMainFrameOnly: true)
+                    var userScript = WKUserScript(source: source as String, injectionTime: WKUserScriptInjectionTime.AtDocumentEnd, forMainFrameOnly: true)
                     contentController.addUserScript(userScript)
 //                    contentController.addScriptMessageHandler(
 //                        self,
@@ -169,7 +169,13 @@ class WebViewController: UIViewController,WKUIDelegate{
         backButton.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = backButton
         self.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 12)!], forState: UIControlState.Normal)
+        
+        let shareButton = UIBarButtonItem(title: "⚠️", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
+        shareButton.width = screenWidth! - 100
+        shareButton.tintColor = UIColor.whiteColor()
+        self.navigationItem.rightBarButtonItem = shareButton
     }
+    
     
     func back() {
         navigationController?.popViewControllerAnimated(true)
@@ -209,7 +215,7 @@ class WebViewController: UIViewController,WKUIDelegate{
     }
     
     
-    func webView(webView: WKWebView!, createWebViewWithConfiguration configuration: WKWebViewConfiguration!, forNavigationAction navigationAction: WKNavigationAction!, windowFeatures: WKWindowFeatures!) -> WKWebView! {
+    func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         //別タブを開くリンク対策 再度ページの読み込みをする
         if(navigationAction.targetFrame == nil){
             webView.loadRequest(navigationAction.request)
@@ -243,7 +249,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             if let title = change[NSKeyValueChangeNewKey] as? NSString {
                 if isViaTableView {
                     //tableView経由のときはタイトルを表示
-                    self.navigationItem.title = title
+                    self.navigationItem.title = title as String
                 }
             }
         case "canGoForward":
@@ -251,7 +257,7 @@ class WebViewController: UIViewController,WKUIDelegate{
             println(wkWebView?.canGoForward)
             
             var _menuView = self.view.viewWithTag(10)
-            var _forwardBtn = _menuView?.viewWithTag(2) as UIButton
+            var _forwardBtn = _menuView?.viewWithTag(2) as! UIButton
             _forwardBtn.enabled = wkWebView!.canGoForward as Bool
             changeBtnStatus(_forwardBtn)
             
@@ -265,7 +271,7 @@ class WebViewController: UIViewController,WKUIDelegate{
                     
                 }else{
                     var _forwardBtn = UIButton()
-                    _forwardBtn = menuView.viewWithTag(2) as UIButton
+                    _forwardBtn = menuView.viewWithTag(2) as! UIButton
                     _forwardBtn.enabled = false
                     changeBtnStatus(_forwardBtn)
                     self.view.addSubview(menuView)

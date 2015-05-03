@@ -51,9 +51,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'Bolts.framework'
   install_framework 'PageMenu.framework'
+  install_framework 'Parse.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'Bolts.framework'
   install_framework 'PageMenu.framework'
+  install_framework 'Parse.framework'
 fi
