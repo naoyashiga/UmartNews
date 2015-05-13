@@ -73,12 +73,12 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         println(matomeVC.feedURL)
         println(predictVC.feedURL)
         
-        controllerArray.append(sponaviVC)
-        controllerArray.append(newsVC)
-        controllerArray.append(movieVC)
+//        controllerArray.append(sponaviVC)
+//        controllerArray.append(newsVC)
+//        controllerArray.append(movieVC)
         controllerArray.append(matomeVC)
-        controllerArray.append(predictVC)
-        controllerArray.append(realtimeVC)
+//        controllerArray.append(predictVC)
+//        controllerArray.append(realtimeVC)
         controllerArray.append(settingVC)
  
         var parameters: [String: AnyObject] = [

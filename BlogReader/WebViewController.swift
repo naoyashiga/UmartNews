@@ -10,8 +10,9 @@ import UIKit
 import WebKit
 import Social
 import GoogleMobileAds
+import MessageUI
 
-class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
+class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFMailComposeViewControllerDelegate{
     var parentNavigationController : UINavigationController?
     var wkWebView: WKWebView?
     var progressBar: UIProgressView?
@@ -48,6 +49,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
         
         //広告表示
         settingAd()
+        
     }
     
     func settingAd(){
@@ -72,7 +74,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
         self.view.addSubview(adB) // ??
         var request = GADRequest() // create request
         //        request.testDevices = [GAD_SIMULATOR_ID]; // set it to "test" request
-//        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+        request.testDevices = [kGADSimulatorID]; // set it to "test" request
         adB.loadRequest(request) // actually load it (?)
     }
     
@@ -291,17 +293,26 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
         ac.addAction(okAction)
         
         presentViewController(ac, animated: true, completion: nil)
+        
     }
     
     func reportResultAlert(){
-        var ac = UIAlertController(title: "報告をしました", message: "", preferredStyle: .Alert)
+//        var ac = UIAlertController(title: "報告をしました", message: "", preferredStyle: .Alert)
+//        
+//        let okAction = UIAlertAction(title: "閉じる", style: .Default) { (action) -> Void in
+//        }
+//        
+//        ac.addAction(okAction)
+//        
+//        presentViewController(ac, animated: true, completion: nil)
+        var body = "不快なコンテンツを含む記事を通報します。\n\n" + self.pageTitle! + "\n\n" + self.pageUrl!
         
-        let okAction = UIAlertAction(title: "閉じる", style: .Default) { (action) -> Void in
-        }
-        
-        ac.addAction(okAction)
-        
-        presentViewController(ac, animated: true, completion: nil)
+        var picker = MFMailComposeViewController()
+        picker.mailComposeDelegate = self
+        picker.setToRecipients(["naoyashiga0@gmail.com"])
+        picker.setSubject("問題のある記事の報告")
+        picker.setMessageBody(body, isHTML: true)
+        presentViewController(picker, animated: true, completion: nil)
     }
     
     // ボタンを押したときの処理
@@ -407,6 +418,9 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate{
         }
     }
     
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 //    func userContentController(userContentController: WKUserContentController!,didReceiveScriptMessage message: WKScriptMessage!) {
 //        if(message.name == "callbackHandler") {
 //            println("JavaScript is sending a message \(message.body)")
