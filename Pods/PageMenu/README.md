@@ -1,10 +1,18 @@
 <img src="https://raw.githubusercontent.com/uacaps/ResourceRepo/master/PageMenu/PageMenuHeader3.png" alt="PageMenuHeader">
 ========
 
+[![Version](https://img.shields.io/cocoapods/v/PageMenu.svg?style=flat)](http://cocoapods.org/pods/PageMenu)
+[![License](https://img.shields.io/cocoapods/l/PageMenu.svg?style=flat)](http://cocoapods.org/pods/PageMenu)
+[![Platform](https://img.shields.io/cocoapods/p/PageMenu.svg?style=flat)](http://cocoapods.org/pods/PageMenu)
+
+**Objective-C version in Beta**
+
 ## Latest Update
 
-**1.2.2 Release (02/09/2015)**
-* Now fully working with CocoaPods thanks to Gurpartap
+**1.2.7 Release (06/05/2015)**
+* CocoaPods now has current version
+* Objective-C version in Beta
+* Demos updated
 
 
 ## Description
@@ -30,7 +38,7 @@ A fully customizable and flexible paging menu controller built from other view c
 
 **Cocoa Pods**
 
-PageMenu is available through [CocoaPods](http://cocoapods.org).
+PageMenu is available through [CocoaPods](http://cocoapods.org). !! Swift only !!
 
 To install add the following line to your Podfile:
 
@@ -40,7 +48,7 @@ To install add the following line to your Podfile:
 
 The class file required for PageMenu is located in the Classes folder in the root of this repository as listed below:
 
-* <code>CAPSPageMenu.swift<code>
+* CAPSPageMenu.swift
 
 ## How to use PageMenu
 
@@ -50,11 +58,21 @@ First you will have to create a view controller that is supposed to serve as the
 
 **2)  Add a property for CAPSPageMenu in your base view controller**
 
+Swift
+
 ```swift
 var pageMenu : CAPSPageMenu?
 ```
 
+Objective-C
+
+```objectivec
+@property (nonatomic) CAPSPageMenu *pagemenu;
+```
+
 **3)  Add the following code in the viewDidLoad function in your view controller**
+
+Swift
 
 ```swift
 // Array to keep track of controllers in page menu
@@ -71,33 +89,86 @@ controllerArray.append(controller)
 
 // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
 // Example:
-var parameters: [String: AnyObject] = ["menuItemSeparatorWidth": 4.3,
-                                  "useMenuLikeSegmentedControl": true,
-                            "menuItemSeparatorPercentageHeight": 0.1]
+var parameters: [CAPSPageMenuOption] = [
+    .MenuItemSeparatorWidth(4.3), 
+    .UseMenuLikeSegmentedControl(true), 
+    .MenuItemSeparatorPercentageHeight(0.1)
+]
 
 // Initialize page menu with controller array, frame, and optional parameters
-pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), options: parameters)
+pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
 
 // Lastly add page menu as subview of base view controller view
 // or use pageMenu controller in you view hierachy as desired
 self.view.addSubview(pageMenu!.view)
 ```
 
+Objective-C
+
+```objectivec
+// Array to keep track of controllers in page menu
+NSMutableArray *controllerArray = [NSMutableArray array];
+
+// Create variables for all view controllers you want to put in the 
+// page menu, initialize them, and add each to the controller array. 
+// (Can be any UIViewController subclass)
+// Make sure the title property of all view controllers is set
+// Example:
+UIViewController *controller = [UIViewController alloc] initWithNibname:@"controllerNibnName" bundle:nil];
+controller.title = @"SAMPLE TITLE";
+[controllerArray addObject:controller];
+
+// Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
+// Example:
+NSDictionary *parameters = @{CAPSPageMenuOptionMenuItemSeparatorWidth: @(4.3),
+                             CAPSPageMenuOptionUseMenuLikeSegmentedControl: @(YES),
+                             CAPSPageMenuOptionMenuItemSeparatorPercentageHeight: @(0.1)
+                             };
+
+// Initialize page menu with controller array, frame, and optional parameters
+_pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height) options:parameters];
+
+// Lastly add page menu as subview of base view controller view
+// or use pageMenu controller in you view hierachy as desired
+[self.view addSubview:_pageMenu.view];
+```
+
 **4)  Optional - Delegate Methods**
 
 In order to use the delegate methods first set the delegate of page menu to the parent view controller when setting it up
+
+Swift
 
 ```swift
 // Optional delegate 
 pageMenu!.delegate = self
 ```
 
+Objective-C
+
+```objectivec
+// Optional delegate 
+_pageMenu.delegate = self;
+```
+
+
 After that you will be able to set up the following delegate methods inside of your parent view controller
+
+Swift
 
 ```swift
 func willMoveToPage(controller: UIViewController, index: Int){}
 
 func didMoveToPage(controller: UIViewController, index: Int){}
+```
+
+Objective-C
+
+```objectivec
+// Optional delegate 
+- (void)willMoveToPage:(UIViewController *)controller index:(NSInteger)index {}
+
+- (void)didMoveToPage:(UIViewController *)controller index:(NSInteger)index {}
 ```
 
 **5)  You should now be ready to use PageMenu!! 🎉**
@@ -231,15 +302,49 @@ Please let me know if your app in the AppStore uses this library so I can add yo
 ## Future Work
 
 - [x] Screen rotation support
-- [ ] Objective-C version
+- [x] Objective-C version
 - [ ] Infinite scroll option
 - [ ] More customization options
 
-## Credits ##
+## Credits
 
-* <a href="https://github.com/fahlout">Niklas Fahl</a> - iOS Developer
+[Niklas Fahl (fahlout)](http://bit.ly/fahlout) - iOS Developer
+
+**Thank you for your contributions:**
+
+[masarusanjp](https://github.com/masarusanjp)
+* Type-safe options
+
+[John C. Daub (hsoi)](https://github.com/hsoi)
+* iOS 7.1 fixes
+* Content size fixes on viewDidLayoutSubviews()
+
+[Gurpartap Singh (Gurpartap)](https://github.com/gurpartap)
+* CocoaPods fixes
+* ScrollToTop fixes
+
+[Chao Ruan (rcgary)](https://github.com/rcgary)
+* Swift 1.2 Support
 
 ## Update Log
+
+**1.2.6 Release (05/26/2015)**
+* Options are now type-safe - Thanks to [masarusanjp](https://github.com/masarusanjp)
+
+**1.2.5 Release (04/14/2015)**
+* Support for Swift 1.2 - Thanks to [Chao Ruan (rcgary)](https://github.com/rcgary)
+* Will be on cocoa pods soon!
+
+**1.2.4 Release (03/24/2015)**
+* Small improvements thanks to hsoi and kitasuke
+
+**1.2.3 Release (02/09/2015)**
+* iOS 7.1 errors resolved - hsoi
+* Scroll to top now working for each page when tapping status bar - Gurpartap
+* Now fully working with CocoaPods - Gurpartap
+
+**1.2.2 Release (02/09/2015)**
+* Now fully working with CocoaPods thanks to Gurpartap
 
 **1.2.1 Release (02/02/2015)**
 * Added delegate methods to know when page menu will move and did move to a certain page index

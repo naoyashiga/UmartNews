@@ -30,17 +30,17 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
   
-        var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
-        matomeVC.parentNavigationController = self.navigationController
-        matomeVC.feedURL = URL.MATOME.rawValue + matomeVC.checkFeedSite(myMatomes)
-        matomeVC.title = "まとめ"
-        matomeVC.setTableView()
+//        var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
+//        matomeVC.parentNavigationController = self.navigationController
+//        matomeVC.feedURL = URL.MATOME.rawValue + matomeVC.checkFeedSite(myMatomes)
+//        matomeVC.title = "まとめ"
+//        matomeVC.setTableView()
         
-        var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
-        predictVC.parentNavigationController = self.navigationController
-        predictVC.feedURL = URL.PREDICT.rawValue + predictVC.checkFeedSite(myPredicts)
-        predictVC.title = "予想"
-        predictVC.setTableView()
+//        var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
+//        predictVC.parentNavigationController = self.navigationController
+//        predictVC.feedURL = URL.PREDICT.rawValue + predictVC.checkFeedSite(myPredicts)
+//        predictVC.title = "予想"
+//        predictVC.setTableView()
         
         var sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
@@ -66,66 +66,53 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         newsVC.pageTitle = "ニュース"
         newsVC.title = "ニュース"
         
-        var settingVC: SettingViewController = SettingViewController(nibName: "SettingViewController", bundle: nil)
-        settingVC.parentNavigationController = self.navigationController
-        settingVC.title = "設定"
+//        var settingVC: SettingViewController = SettingViewController(nibName: "SettingViewController", bundle: nil)
+//        settingVC.parentNavigationController = self.navigationController
+//        settingVC.title = "設定"
         
-        println(matomeVC.feedURL)
-        println(predictVC.feedURL)
+//        println(matomeVC.feedURL)
+//        println(predictVC.feedURL)
         
-//        controllerArray.append(sponaviVC)
-//        controllerArray.append(newsVC)
-//        controllerArray.append(movieVC)
-        controllerArray.append(matomeVC)
+        controllerArray.append(sponaviVC)
+        controllerArray.append(newsVC)
+        controllerArray.append(movieVC)
+//        controllerArray.append(matomeVC)
 //        controllerArray.append(predictVC)
-//        controllerArray.append(realtimeVC)
-        controllerArray.append(settingVC)
- 
-        var parameters: [String: AnyObject] = [
-            "scrollMenuBackgroundColor": UIColor.scrollMenuBackgroundColor(),
-            "viewBackgroundColor": UIColor.viewBackgroundColor(),
-            "selectionIndicatorColor": UIColor.selectionIndicatorColor(),
-            "bottomMenuHairlineColor": UIColor.bottomMenuHairlineColor(),
-            "selectedMenuItemLabelColor": UIColor.selectedMenuItemLabelColor(),
-            "unselectedMenuItemLabelColor": UIColor.unselectedMenuItemLabelColor(),
-            "selectionIndicatorHeight": 2.0,
-            "menuItemFont": UIFont(name: "HiraKakuProN-W6", size: 15.0)!,
-            "menuHeight": 34.0,
-            "menuItemWidth": 80.0,
-            "menuMargin": 0.0,
+        controllerArray.append(realtimeVC)
+//        controllerArray.append(settingVC)
+        
+        var parameters: [CAPSPageMenuOption] = [
+            .ScrollMenuBackgroundColor(UIColor.scrollMenuBackgroundColor()),
+            .ViewBackgroundColor(UIColor.viewBackgroundColor()),
+            .SelectionIndicatorColor(UIColor.selectionIndicatorColor()),
+            .BottomMenuHairlineColor(UIColor.bottomMenuHairlineColor()),
+            .SelectedMenuItemLabelColor(UIColor.selectedMenuItemLabelColor()),
+            .UnselectedMenuItemLabelColor(UIColor.unselectedMenuItemLabelColor()),
+            .SelectionIndicatorHeight(2.0),
+            .MenuItemFont(UIFont(name: "HiraKakuProN-W6", size: 15.0)!),
+            .MenuHeight(34.0),
+            .MenuItemWidth(80.0),
+            .MenuMargin(0.0),
 //            "useMenuLikeSegmentedControl": true,
-            "menuItemSeparatorRoundEdges": true,
+            .MenuItemSeparatorRoundEdges(true),
 //            "enableHorizontalBounce": true,
 //            "scrollAnimationDurationOnMenuItemTap": 300,
-            "centerMenuItems": true]
+            .CenterMenuItems(true)]
         
-        self.pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), options: parameters)
-//        self.view.addSubview(self.pageMenu!.view)
+        self.pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
         
         let ud = NSUserDefaults.standardUserDefaults()
         if(ud.objectForKey("eula") == nil){
             eula()
         }else{
+            println("add")
             self.view.addSubview(self.pageMenu!.view)
         }
-//        launchView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height))
-//        launchView?.center = self.view.center
-//        launchView?.backgroundColor = UIColor.launchBackgroundColor()
-//        launchView?.setTranslatesAutoresizingMaskIntoConstraints(false)
-//        
-//        
-//        launchLabel = UILabel(frame: CGRectMake(0, 0, 212, 46))
-//        launchLabel?.center = self.view.center
-//        launchLabel?.font = UIFont(name:"GillSans-Light",size:40)
-//        launchLabel?.textColor = UIColor.launchTextColor()
-//        launchLabel?.text = "Umart News"
-//        
-//        launchView?.addSubview(launchLabel!)
-//        self.view.addSubview(launchView!)
     }
     
     func eula(){
-        var eulaText = "ニュース、2chまとめサイト記事に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
+//        var eulaText = "ニュース、2chまとめサイト記事に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
+        var eulaText = "ニュース、動画に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
         var ac = UIAlertController(title: "使用許諾契約", message: eulaText, preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "同意しない", style: .Cancel) { (action) -> Void in

@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
 
+#import "BFCancellationToken.h"
+#import "BFCancellationTokenRegistration.h"
+#import "BFCancellationTokenSource.h"
 #import "BFExecutor.h"
 #import "BFTask.h"
 #import "BFTaskCompletionSource.h"
