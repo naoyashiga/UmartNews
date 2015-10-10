@@ -38,7 +38,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         super.viewDidLoad()
         screenHeight = setScreenHeight()
         
-        println(screenHeight)
+        print(screenHeight)
         screenWidth = self.view.bounds.width
         initBackButton()
         setShareButton()
@@ -66,34 +66,34 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
                 screenHeight! - CGSizeFromGADAdSize(kGADAdSizeBanner).height); // place at bottom of view
         }
         
-        var size = GADAdSizeFullWidthPortraitWithHeight(50) // set size to 50
-        var adB = GADBannerView(adSize: size, origin: origin!) // create the banner
+        let size = GADAdSizeFullWidthPortraitWithHeight(50) // set size to 50
+        let adB = GADBannerView(adSize: size, origin: origin!) // create the banner
         adB.adUnitID = MY_BANNER_UNIT_ID  //"ca-app-pub-XXXXXXXX/XXXXXXX"
         adB.delegate = self // ??
         adB.rootViewController = self // ??
         self.view.addSubview(adB) // ??
-        var request = GADRequest() // create request
+        let request = GADRequest() // create request
         //        request.testDevices = [GAD_SIMULATOR_ID]; // set it to "test" request
 //        request.testDevices = [kGADSimulatorID]; // set it to "test" request
         adB.loadRequest(request) // actually load it (?)
     }
     
     func setScreenHeight() -> CGFloat{
-        var statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
         
         if self.navigationController == nil {
-            println("いきなりwebView")
+            print("いきなりwebView")
             navigationBarHeight = parentNavigationController?.navigationBar.frame.size.height
         
             isViaTableView = false
         }else{
-            println("table view からのwebView")
+            print("table view からのwebView")
             navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
             isViaTableView = true
         }
         
 //        self.settingAd(offsetY: statusBarHeight + navigationBarHeight!)
-        println(statusBarHeight + navigationBarHeight!)
+        print(statusBarHeight + navigationBarHeight!)
         return self.view.bounds.height - statusBarHeight - navigationBarHeight!
     }
     
@@ -107,7 +107,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         let menuViewWidth : CGFloat = 150
         let menuViewHeight: CGFloat = 60.0
         let menuBottomMargin: CGFloat = 10.0
-        var menuViewPosX : CGFloat = (screenWidth! - menuViewWidth) / 2
+        let menuViewPosX : CGFloat = (screenWidth! - menuViewWidth) / 2
         var menuViewPosY : CGFloat?
         
         if isViaTableView {
@@ -151,11 +151,11 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
     
     func initWebView(){
         if pageTitle == "結果" || pageTitle == "動画" || pageTitle == "ニュース"{
-            println("js execute")
-            var contentController = WKUserContentController();
+            print("js execute")
+            let contentController = WKUserContentController();
             if let path = NSBundle.mainBundle().pathForResource("script", ofType: "js") {
-                if let source = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) {
-                    var userScript = WKUserScript(source: source as String, injectionTime: WKUserScriptInjectionTime.AtDocumentEnd, forMainFrameOnly: true)
+                if let source = try? NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) {
+                    let userScript = WKUserScript(source: source as String, injectionTime: WKUserScriptInjectionTime.AtDocumentEnd, forMainFrameOnly: true)
                     contentController.addUserScript(userScript)
 //                    contentController.addScriptMessageHandler(
 //                        self,
@@ -164,7 +164,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
                 }
             }
 
-            var config = WKWebViewConfiguration()
+            let config = WKWebViewConfiguration()
             config.userContentController = contentController
             wkWebView = WKWebView(frame: CGRectMake(0, 0, screenWidth!, screenHeight!), configuration: config)
             
@@ -186,12 +186,12 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         wkWebView?.UIDelegate = self
         
         
-        println(pageUrl!)
+        print(pageUrl!)
         
         if let pageUrlNotOptional = pageUrl {
-            println("not optional")
-            var detailUrl = NSURL(string: pageUrlNotOptional)
-            var detailUrlReq = NSURLRequest(URL: detailUrl!)
+            print("not optional")
+            let detailUrl = NSURL(string: pageUrlNotOptional)
+            let detailUrlReq = NSURLRequest(URL: detailUrl!)
             wkWebView?.loadRequest(detailUrlReq)
         }
         
@@ -253,25 +253,25 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
     }
     
     func fbBtnAction(){
-        var vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        let vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        let shareText:String = self.navigationItem.title! + " " + self.pageUrl!
         //テキストを設定
         vc.setInitialText(shareText)
         self.presentViewController(vc,animated:true,completion:nil)
     }
     
     func tweetBtnAction(){
-        var vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        let vc:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        let shareText:String = self.navigationItem.title! + " " + self.pageUrl!
         //テキストを設定
         vc.setInitialText(shareText)
         self.presentViewController(vc,animated:true,completion:nil)
     }
     
     func lineBtnAction(){
-        var shareText:String = self.navigationItem.title! + " " + self.pageUrl!
-        var encodeMessage: String! = shareText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
-        var messageURL: NSURL! = NSURL( string: "line://msg/text/" + encodeMessage )
+        let shareText:String = self.navigationItem.title! + " " + self.pageUrl!
+        let encodeMessage: String! = shareText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        let messageURL: NSURL! = NSURL( string: "line://msg/text/" + encodeMessage )
         
         if (UIApplication.sharedApplication().canOpenURL(messageURL)) {
             UIApplication.sharedApplication().openURL( messageURL )
@@ -279,10 +279,10 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
     }
     
     func reportAlert(){
-        var ac = UIAlertController(title: self.navigationItem.title, message: "この記事を報告しますか", preferredStyle: .Alert)
+        let ac = UIAlertController(title: self.navigationItem.title, message: "この記事を報告しますか", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel) { (action) -> Void in
-            println("Cancel button tapped.")
+            print("Cancel button tapped.")
         }
         
         let okAction = UIAlertAction(title: "はい", style: .Default) { (action) -> Void in
@@ -305,9 +305,9 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
 //        ac.addAction(okAction)
 //        
 //        presentViewController(ac, animated: true, completion: nil)
-        var body = "不快なコンテンツを含む記事を通報します。\n\n" + self.pageTitle! + "\n\n" + self.pageUrl!
+        let body = "不快なコンテンツを含む記事を通報します。\n\n" + self.pageTitle! + "\n\n" + self.pageUrl!
         
-        var picker = MFMailComposeViewController()
+        let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
         picker.setToRecipients(["naoyashiga0@gmail.com"])
         picker.setSubject("問題のある記事の報告")
@@ -333,7 +333,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
     }
     
     func fadeAnimation(duration:CFTimeInterval,fromValue:CGFloat,toValue:CGFloat,view:UIView?){
-        var fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+        let fadeAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
         fadeAnimation.duration = duration
         fadeAnimation.fromValue = fromValue
         fadeAnimation.toValue = toValue
@@ -370,7 +370,14 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         }
     }
     
-    override func observeValueForKeyPath(keyPath:String, ofObject object:AnyObject, change:[NSObject:AnyObject], context:UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath:String?, ofObject object:AnyObject?, change:[String:AnyObject]?, context:UnsafeMutablePointer<Void>) {
+        
+        guard let keyPath = keyPath, change = change else {
+//            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
+//            return super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
+            return
+        }
+        
         switch keyPath {
         case "estimatedProgress":
             if let progress = change[NSKeyValueChangeNewKey] as? Float {
@@ -387,19 +394,19 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
                 }
             }
         case "canGoForward":
-            println("canGoForward")
-            println(wkWebView?.canGoForward)
+            print("canGoForward")
+            print(wkWebView?.canGoForward)
             
-            var _menuView = self.view.viewWithTag(10)
-            var _forwardBtn = _menuView?.viewWithTag(2) as! UIButton
+            let _menuView = self.view.viewWithTag(10)
+            let _forwardBtn = _menuView?.viewWithTag(2) as! UIButton
             _forwardBtn.enabled = wkWebView!.canGoForward as Bool
             changeBtnStatus(_forwardBtn)
             
         case "canGoBack":
-            println("canGoBack")
-            println(wkWebView?.canGoBack)
+            print("canGoBack")
+            print(wkWebView?.canGoBack)
             if wkWebView!.canGoBack as Bool {
-                if let _menuView = self.view.viewWithTag(10) {
+                if let _ = self.view.viewWithTag(10) {
                     //menuViewを追加済み
                     fadeAnimation(0.4, fromValue: 0, toValue: 1, view: self.view.viewWithTag(10))
                     
@@ -418,7 +425,7 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         }
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 //    func userContentController(userContentController: WKUserContentController!,didReceiveScriptMessage message: WKScriptMessage!) {

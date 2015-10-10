@@ -42,25 +42,25 @@ class ViewController: UIViewController,GADBannerViewDelegate {
 //        predictVC.title = "予想"
 //        predictVC.setTableView()
         
-        var sponaviVC: WebViewController = WebViewController()
+        let sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
         sponaviVC.pageUrl = URL.SPONAVI.rawValue
         sponaviVC.pageTitle = "結果"
         sponaviVC.title = "結果"
         
-        var movieVC: WebViewController = WebViewController()
+        let movieVC: WebViewController = WebViewController()
         movieVC.parentNavigationController = self.navigationController
         movieVC.pageUrl = URL.MOVIE.rawValue
         movieVC.pageTitle = "動画"
         movieVC.title = "動画"
         
-        var realtimeVC: WebViewController = WebViewController()
+        let realtimeVC: WebViewController = WebViewController()
         realtimeVC.parentNavigationController = self.navigationController
         realtimeVC.pageUrl = URL.REALTIME.rawValue
         realtimeVC.pageTitle = "ツイート"
         realtimeVC.title = "ツイート"
         
-        var newsVC: WebViewController = WebViewController()
+        let newsVC: WebViewController = WebViewController()
         newsVC.parentNavigationController = self.navigationController
         newsVC.pageUrl = URL.NEWS.rawValue
         newsVC.pageTitle = "ニュース"
@@ -81,7 +81,7 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         controllerArray.append(realtimeVC)
 //        controllerArray.append(settingVC)
         
-        var parameters: [CAPSPageMenuOption] = [
+        let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.scrollMenuBackgroundColor()),
             .ViewBackgroundColor(UIColor.viewBackgroundColor()),
             .SelectionIndicatorColor(UIColor.selectionIndicatorColor()),
@@ -105,25 +105,25 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         if(ud.objectForKey("eula") == nil){
             eula()
         }else{
-            println("add")
+            print("add")
             self.view.addSubview(self.pageMenu!.view)
         }
     }
     
     func eula(){
 //        var eulaText = "ニュース、2chまとめサイト記事に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
-        var eulaText = "ニュース、動画に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
-        var ac = UIAlertController(title: "使用許諾契約", message: eulaText, preferredStyle: .Alert)
+        let eulaText = "ニュース、動画に不適切な投稿内容が一部含まれる可能性があることを承諾します。"
+        let ac = UIAlertController(title: "使用許諾契約", message: eulaText, preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "同意しない", style: .Cancel) { (action) -> Void in
-            println("Cancel button tapped.")
+            print("Cancel button tapped.")
             self.alert()
         }
         
         let okAction = UIAlertAction(title: "同意する", style: .Default) { (action) -> Void in
             let ud = NSUserDefaults.standardUserDefaults()
             ud.setObject(true, forKey: "eula")
-            println("OK button tapped.")
+            print("OK button tapped.")
             self.view.addSubview(self.pageMenu!.view)
         }
         
@@ -135,7 +135,7 @@ class ViewController: UIViewController,GADBannerViewDelegate {
     
     func alert(){
         let text = "使用許諾契約に同意しないと閲覧できません"
-        var ac = UIAlertController(title: "Alert", message: text, preferredStyle: .Alert)
+        let ac = UIAlertController(title: "Alert", message: text, preferredStyle: .Alert)
         
         let okAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
         }

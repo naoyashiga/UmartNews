@@ -1,0 +1,203 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Entry"
+provides-nominal:
+- "C10BlogReader5Entry"
+provides-member:
+- ["C10BlogReader5Entry", ""]
+provides-dynamic-lookup:
+- "title"
+- "source"
+- "link"
+- "id"
+- "date"
+depends-top-level:
+- "String"
+- "NSObject"
+- "Entry"
+depends-member:
+- !private ["PSs9AnyObject", "String"]
+- ["PSs9AnyObject", "date"]
+- ["PSs9AnyObject", "id"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "link"]
+- ["PSs9AnyObject", "source"]
+- ["PSs9AnyObject", "title"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "String"]
+- ["PSs11CVarArgType", "date"]
+- ["PSs11CVarArgType", "id"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "link"]
+- ["PSs11CVarArgType", "source"]
+- ["PSs11CVarArgType", "title"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "String"]
+- ["PSs23CustomStringConvertible", "date"]
+- ["PSs23CustomStringConvertible", "id"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "link"]
+- ["PSs23CustomStringConvertible", "source"]
+- ["PSs23CustomStringConvertible", "title"]
+- ["PSs23CustomStringConvertible", ""]
+- ["C10BlogReader5Entry", "String"]
+- ["C10BlogReader5Entry", "date"]
+- ["C10BlogReader5Entry", "deinit"]
+- ["C10BlogReader5Entry", "id"]
+- ["C10BlogReader5Entry", "init"]
+- ["C10BlogReader5Entry", "link"]
+- ["C10BlogReader5Entry", "source"]
+- ["C10BlogReader5Entry", "title"]
+- !private ["PSs9Equatable", "String"]
+- ["PSs9Equatable", "date"]
+- ["PSs9Equatable", "id"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "link"]
+- ["PSs9Equatable", "source"]
+- ["PSs9Equatable", "title"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs8Hashable", "String"]
+- ["PSs8Hashable", "date"]
+- ["PSs8Hashable", "id"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "link"]
+- ["PSs8Hashable", "source"]
+- ["PSs8Hashable", "title"]
+- ["PSs8Hashable", ""]
+- !private ["PSs14MirrorPathType", "init"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "date"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "link"]
+- ["CSo8NSObject", "source"]
+- ["CSo8NSObject", "title"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "String"]
+- ["PSo16NSObjectProtocol", "date"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "link"]
+- ["PSo16NSObjectProtocol", "source"]
+- ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "C10BlogReader5Entry"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "PSs8Hashable"
+- !private "PSs14MirrorPathType"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs16OutputStreamType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/BlogReader-Bridging-Header.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PF_Twitter.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFTwitterUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPush.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFProduct.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFInstallation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSession.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRole.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRelation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFQuery.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFFile.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConfig.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFCloud.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFUser.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNullability.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFACL.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/../GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/../GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/../GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/WebKit.swiftmodule"
+interface-hash: "a6d077033799f265aad089b8feb3d4d4"

@@ -31,9 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("HMtylaPpY3kbnyc69w4xpToOVEYdyVIzS4tN7Bst", clientKey: "qlbsTVGpuCWdfSY8X6oTkD0MGBoj86ChJGUTRlTa")
         
-        let userNotificationTypes = (UIUserNotificationType.Alert |
-            UIUserNotificationType.Badge |
-            UIUserNotificationType.Sound);
+        let userNotificationTypes: UIUserNotificationType = ([UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]);
         
         let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
         application.registerUserNotificationSettings(settings)
@@ -63,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.setDeviceTokenFromData(deviceToken)
 //        installation.saveInBackground()
         installation.save()
-        println("got device id! \(deviceToken)")
+        print("got device id! \(deviceToken)")
     }
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {

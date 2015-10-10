@@ -1,0 +1,19 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "e4a47542f8ed0d27f3a74c6c797e45b3"
+build_time: [497774815, 51456000]
+inputs: 
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/URL.swift": [481200306, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/WebViewBottomMenu.swift": [483886284, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/JsonParserManager.swift": [497774785, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/Cell.swift": [473220197, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/json.swift": [497774785, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/Entry.swift": [480516545, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/SettingCell.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/siteName.swift": [482849322, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/ViewController.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/SettingViewController.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/HexColor.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/ArticleViewController.swift": [497774814, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/CAPSPageMenu.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/AppDelegate.swift": [497773198, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/WebViewController.swift": [497774725, 0]

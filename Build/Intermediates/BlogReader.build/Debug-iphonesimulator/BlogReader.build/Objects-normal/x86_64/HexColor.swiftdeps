@@ -1,0 +1,402 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo7UIColor", ""]
+- ["CSo7UIColor", "hexStr"]
+- ["CSo7UIColor", "launchBackgroundColor"]
+- ["CSo7UIColor", "launchTextColor"]
+- ["CSo7UIColor", "webViewMenuBackgroundColor"]
+- ["CSo7UIColor", "webViewMenuBtnEnabledColor"]
+- ["CSo7UIColor", "webViewMenuBtnDisabledColor"]
+- ["CSo7UIColor", "navigationBarTintColor"]
+- ["CSo7UIColor", "progressTintColor"]
+- ["CSo7UIColor", "scrollMenuBackgroundColor"]
+- ["CSo7UIColor", "viewBackgroundColor"]
+- ["CSo7UIColor", "selectionIndicatorColor"]
+- ["CSo7UIColor", "bottomMenuHairlineColor"]
+- ["CSo7UIColor", "selectedMenuItemLabelColor"]
+- ["CSo7UIColor", "unselectedMenuItemLabelColor"]
+provides-dynamic-lookup:
+- "hexStr"
+- "scrollMenuBackgroundColor"
+- "viewBackgroundColor"
+- "navigationBarTintColor"
+- "launchBackgroundColor"
+- "webViewMenuBtnDisabledColor"
+- "launchTextColor"
+- "progressTintColor"
+- "unselectedMenuItemLabelColor"
+- "webViewMenuBackgroundColor"
+- "webViewMenuBtnEnabledColor"
+- "selectionIndicatorColor"
+- "bottomMenuHairlineColor"
+- "selectedMenuItemLabelColor"
+depends-top-level:
+- "NSString"
+- !private "print"
+- "CGFloat"
+- !private ">>"
+- !private "UInt32"
+- !private "&"
+- !private "NSScanner"
+- !private "StringLiteralType"
+- "UIColor"
+- !private "String"
+- !private "UnicodeScalarType"
+- !private "/"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "init"]
+- !private ["PSs9AnyObject", "CGFloat"]
+- !private ["PSs9AnyObject", "NSScanner"]
+- !private ["PSs9AnyObject", "UIColor"]
+- ["PSs9AnyObject", "bottomMenuHairlineColor"]
+- ["PSs9AnyObject", "hexStr"]
+- !private ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "launchBackgroundColor"]
+- ["PSs9AnyObject", "launchTextColor"]
+- ["PSs9AnyObject", "navigationBarTintColor"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "progressTintColor"]
+- !private ["PSs9AnyObject", "scanHexInt"]
+- ["PSs9AnyObject", "scrollMenuBackgroundColor"]
+- ["PSs9AnyObject", "selectedMenuItemLabelColor"]
+- ["PSs9AnyObject", "selectionIndicatorColor"]
+- !private ["PSs9AnyObject", "stringByReplacingOccurrencesOfString"]
+- ["PSs9AnyObject", "unselectedMenuItemLabelColor"]
+- ["PSs9AnyObject", "viewBackgroundColor"]
+- ["PSs9AnyObject", "webViewMenuBackgroundColor"]
+- ["PSs9AnyObject", "webViewMenuBtnDisabledColor"]
+- ["PSs9AnyObject", "webViewMenuBtnEnabledColor"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["PSs11CVarArgType", "CGFloat"]
+- !private ["PSs11CVarArgType", "NSScanner"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- ["PSs11CVarArgType", "bottomMenuHairlineColor"]
+- ["PSs11CVarArgType", "hexStr"]
+- !private ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "launchBackgroundColor"]
+- ["PSs11CVarArgType", "launchTextColor"]
+- ["PSs11CVarArgType", "navigationBarTintColor"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "progressTintColor"]
+- !private ["PSs11CVarArgType", "scanHexInt"]
+- ["PSs11CVarArgType", "scrollMenuBackgroundColor"]
+- ["PSs11CVarArgType", "selectedMenuItemLabelColor"]
+- ["PSs11CVarArgType", "selectionIndicatorColor"]
+- !private ["PSs11CVarArgType", "stringByReplacingOccurrencesOfString"]
+- ["PSs11CVarArgType", "unselectedMenuItemLabelColor"]
+- ["PSs11CVarArgType", "viewBackgroundColor"]
+- ["PSs11CVarArgType", "webViewMenuBackgroundColor"]
+- ["PSs11CVarArgType", "webViewMenuBtnDisabledColor"]
+- ["PSs11CVarArgType", "webViewMenuBtnEnabledColor"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs23CustomStringConvertible", "CGFloat"]
+- !private ["PSs23CustomStringConvertible", "NSScanner"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "bottomMenuHairlineColor"]
+- ["PSs23CustomStringConvertible", "hexStr"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "launchBackgroundColor"]
+- ["PSs23CustomStringConvertible", "launchTextColor"]
+- ["PSs23CustomStringConvertible", "navigationBarTintColor"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "progressTintColor"]
+- !private ["PSs23CustomStringConvertible", "scanHexInt"]
+- ["PSs23CustomStringConvertible", "scrollMenuBackgroundColor"]
+- ["PSs23CustomStringConvertible", "selectedMenuItemLabelColor"]
+- ["PSs23CustomStringConvertible", "selectionIndicatorColor"]
+- !private ["PSs23CustomStringConvertible", "stringByReplacingOccurrencesOfString"]
+- ["PSs23CustomStringConvertible", "unselectedMenuItemLabelColor"]
+- ["PSs23CustomStringConvertible", "viewBackgroundColor"]
+- ["PSs23CustomStringConvertible", "webViewMenuBackgroundColor"]
+- ["PSs23CustomStringConvertible", "webViewMenuBtnDisabledColor"]
+- ["PSs23CustomStringConvertible", "webViewMenuBtnEnabledColor"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- !private ["PSs9Equatable", "CGFloat"]
+- !private ["PSs9Equatable", "NSScanner"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "bottomMenuHairlineColor"]
+- ["PSs9Equatable", "hexStr"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "launchBackgroundColor"]
+- ["PSs9Equatable", "launchTextColor"]
+- ["PSs9Equatable", "navigationBarTintColor"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "progressTintColor"]
+- !private ["PSs9Equatable", "scanHexInt"]
+- ["PSs9Equatable", "scrollMenuBackgroundColor"]
+- ["PSs9Equatable", "selectedMenuItemLabelColor"]
+- ["PSs9Equatable", "selectionIndicatorColor"]
+- !private ["PSs9Equatable", "stringByReplacingOccurrencesOfString"]
+- ["PSs9Equatable", "unselectedMenuItemLabelColor"]
+- ["PSs9Equatable", "viewBackgroundColor"]
+- ["PSs9Equatable", "webViewMenuBackgroundColor"]
+- ["PSs9Equatable", "webViewMenuBtnDisabledColor"]
+- ["PSs9Equatable", "webViewMenuBtnEnabledColor"]
+- !private ["PSs9Equatable", "whiteColor"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs17FloatingPointType", "init"]
+- !private ["PSs8Hashable", "CGFloat"]
+- !private ["PSs8Hashable", "NSScanner"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "bottomMenuHairlineColor"]
+- ["PSs8Hashable", "hexStr"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "launchBackgroundColor"]
+- ["PSs8Hashable", "launchTextColor"]
+- ["PSs8Hashable", "navigationBarTintColor"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "progressTintColor"]
+- !private ["PSs8Hashable", "scanHexInt"]
+- ["PSs8Hashable", "scrollMenuBackgroundColor"]
+- ["PSs8Hashable", "selectedMenuItemLabelColor"]
+- ["PSs8Hashable", "selectionIndicatorColor"]
+- !private ["PSs8Hashable", "stringByReplacingOccurrencesOfString"]
+- ["PSs8Hashable", "unselectedMenuItemLabelColor"]
+- ["PSs8Hashable", "viewBackgroundColor"]
+- ["PSs8Hashable", "webViewMenuBackgroundColor"]
+- ["PSs8Hashable", "webViewMenuBtnDisabledColor"]
+- ["PSs8Hashable", "webViewMenuBtnEnabledColor"]
+- !private ["PSs8Hashable", "whiteColor"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "NSScanner"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "hexStr"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "CGFloat"]
+- !private ["PSo9NSCopying", "NSScanner"]
+- !private ["PSo9NSCopying", "UIColor"]
+- !private ["PSo9NSCopying", "hexStr"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "print"]
+- !private ["PSo9NSCopying", "scanHexInt"]
+- !private ["PSo9NSCopying", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo16NSMutableCopying", "stringByReplacingOccurrencesOfString"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "NSScanner"]
+- ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UInt32"]
+- ["CSo8NSObject", "bottomMenuHairlineColor"]
+- ["CSo8NSObject", "hexStr"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "launchBackgroundColor"]
+- ["CSo8NSObject", "launchTextColor"]
+- ["CSo8NSObject", "navigationBarTintColor"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "progressTintColor"]
+- !private ["CSo8NSObject", "scanHexInt"]
+- ["CSo8NSObject", "scrollMenuBackgroundColor"]
+- ["CSo8NSObject", "selectedMenuItemLabelColor"]
+- ["CSo8NSObject", "selectionIndicatorColor"]
+- !private ["CSo8NSObject", "stringByReplacingOccurrencesOfString"]
+- ["CSo8NSObject", "unselectedMenuItemLabelColor"]
+- ["CSo8NSObject", "viewBackgroundColor"]
+- ["CSo8NSObject", "webViewMenuBackgroundColor"]
+- ["CSo8NSObject", "webViewMenuBtnDisabledColor"]
+- ["CSo8NSObject", "webViewMenuBtnEnabledColor"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "NSScanner"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- ["PSo16NSObjectProtocol", "bottomMenuHairlineColor"]
+- ["PSo16NSObjectProtocol", "hexStr"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "launchBackgroundColor"]
+- ["PSo16NSObjectProtocol", "launchTextColor"]
+- ["PSo16NSObjectProtocol", "navigationBarTintColor"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "progressTintColor"]
+- !private ["PSo16NSObjectProtocol", "scanHexInt"]
+- ["PSo16NSObjectProtocol", "scrollMenuBackgroundColor"]
+- ["PSo16NSObjectProtocol", "selectedMenuItemLabelColor"]
+- ["PSo16NSObjectProtocol", "selectionIndicatorColor"]
+- !private ["PSo16NSObjectProtocol", "stringByReplacingOccurrencesOfString"]
+- ["PSo16NSObjectProtocol", "unselectedMenuItemLabelColor"]
+- ["PSo16NSObjectProtocol", "viewBackgroundColor"]
+- ["PSo16NSObjectProtocol", "webViewMenuBackgroundColor"]
+- ["PSo16NSObjectProtocol", "webViewMenuBtnDisabledColor"]
+- ["PSo16NSObjectProtocol", "webViewMenuBtnEnabledColor"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["CSo9NSScanner", "init"]
+- !private ["CSo9NSScanner", "scanHexInt"]
+- !private ["PSo14NSSecureCoding", "CGFloat"]
+- !private ["PSo14NSSecureCoding", "NSScanner"]
+- !private ["PSo14NSSecureCoding", "UIColor"]
+- !private ["PSo14NSSecureCoding", "hexStr"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "print"]
+- !private ["PSo14NSSecureCoding", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs16SignedNumberType", "init"]
+- !private ["PSs10Strideable", "init"]
+- !private ["PSs24StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- ["CSo7UIColor", "CGFloat"]
+- !private ["CSo7UIColor", "NSScanner"]
+- ["CSo7UIColor", "NSString"]
+- !private ["CSo7UIColor", "String"]
+- ["CSo7UIColor", "UIColor"]
+- !private ["CSo7UIColor", "UInt32"]
+- ["CSo7UIColor", "bottomMenuHairlineColor"]
+- ["CSo7UIColor", "hexStr"]
+- !private ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "launchBackgroundColor"]
+- ["CSo7UIColor", "launchTextColor"]
+- ["CSo7UIColor", "navigationBarTintColor"]
+- !private ["CSo7UIColor", "print"]
+- ["CSo7UIColor", "progressTintColor"]
+- ["CSo7UIColor", "scrollMenuBackgroundColor"]
+- ["CSo7UIColor", "selectedMenuItemLabelColor"]
+- ["CSo7UIColor", "selectionIndicatorColor"]
+- ["CSo7UIColor", "unselectedMenuItemLabelColor"]
+- ["CSo7UIColor", "viewBackgroundColor"]
+- ["CSo7UIColor", "webViewMenuBackgroundColor"]
+- ["CSo7UIColor", "webViewMenuBtnDisabledColor"]
+- ["CSo7UIColor", "webViewMenuBtnEnabledColor"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs22_CVarArgPassedAsDouble", "init"]
+- !private ["PSs16_CocoaStringType", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs11_Strideable", "init"]
+depends-nominal:
+- !private "PSs16AbsoluteValuable"
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- "PSs8Hashable"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo9NSScanner"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSs24StringLiteralConvertible"
+- "CSo7UIColor"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/BlogReader-Bridging-Header.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PF_Twitter.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFTwitterUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPush.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFProduct.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFInstallation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSession.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRole.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRelation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFQuery.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFFile.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConfig.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFCloud.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFUser.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNullability.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFACL.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/../GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/../GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/../GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/WebKit.swiftmodule"
+interface-hash: "bdf07587a236a18b2e38ddce00094458"

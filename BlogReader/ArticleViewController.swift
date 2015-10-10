@@ -19,8 +19,6 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
         super.viewDidLoad()
     }
     
-    
-    
     func setTableView(){
         
         myEntries = NSMutableArray()
@@ -32,7 +30,7 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
         
         tableView.autoresizingMask = UIViewAutoresizing()
         
-        var refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector("refreshInvoked"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
@@ -68,13 +66,13 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
         let Req = NSURLRequest(URL: URL!)
         let connection: NSURLConnection = NSURLConnection(request: Req, delegate: self, startImmediately: false)!
         
-        NSURLConnection.sendAsynchronousRequest(Req,
-            queue: NSOperationQueue.mainQueue(),
-            completionHandler: self.fetchResponse)
+//        NSURLConnection.sendAsynchronousRequest(Req,
+//            queue: NSOperationQueue.mainQueue(),
+//            completionHandler: self.fetchResponse)
     }
     
     func fetchResponse(res: NSURLResponse!, data: NSData!, error: NSError!) {
-        let json: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil)as! NSArray
+        let json: NSArray = (try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments))as! NSArray
         
 //        myEntries = [String]()
         myEntries = NSMutableArray()
@@ -119,7 +117,7 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
 //    }
     
     func refreshInvoked() {
-        println("start refresh")
+        print("start refresh")
         
         //配信設定を考慮して再読み込み
         if(self.title == "まとめ"){
@@ -127,11 +125,11 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
         }else if(self.title == "予想"){
             feedURL = URL.PREDICT.rawValue + checkFeedSite(myPredicts)
         }
-        println(feedURL)
+        print(feedURL)
         
         reload()
         self.refreshControl?.endRefreshing()
-        println("end refresh")
+        print("end refresh")
     }
     
     override func didReceiveMemoryWarning() {
@@ -147,7 +145,7 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! Cell
+        let cell: Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! Cell
         let entry : Entry = myEntries[indexPath.row] as! Entry
         
         //行間を調整
@@ -173,9 +171,9 @@ class ArticleViewController: UITableViewController,GADBannerViewDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var webVC = WebViewController()
+        let webVC = WebViewController()
         
-        var entry:Entry = myEntries[indexPath.row] as! Entry
+        let entry:Entry = myEntries[indexPath.row] as! Entry
         webVC.pageUrl = entry.link
         webVC.pageTitle = entry.title
         

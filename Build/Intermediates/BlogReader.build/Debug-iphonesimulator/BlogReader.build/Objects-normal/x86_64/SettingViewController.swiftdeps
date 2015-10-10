@@ -1,0 +1,943 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SettingViewController"
+provides-nominal:
+- "C10BlogReader21SettingViewController"
+provides-member:
+- ["C10BlogReader21SettingViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "parentNavigationController"
+depends-top-level:
+- "String"
+- !private "NSMutableAttributedString"
+- !private "mySections"
+- !private "myMatomes"
+- "UITableViewCell"
+- !private "SettingCell"
+- "SettingViewController"
+- !private "StringLiteralType"
+- !private "=="
+- "UINavigationController"
+- !private "NSMutableParagraphStyle"
+- "UITableView"
+- !private "myPredicts"
+- "Int"
+- !private "NSUserDefaults"
+- !private "NSMakeRange"
+- "NSIndexPath"
+- !private "NSParagraphStyleAttributeName"
+- "UITableViewController"
+- !private "UINib"
+depends-member:
+- !private ["PSs9AnyObject", "NSMakeRange"]
+- !private ["PSs9AnyObject", "NSMutableAttributedString"]
+- !private ["PSs9AnyObject", "NSMutableParagraphStyle"]
+- !private ["PSs9AnyObject", "NSParagraphStyleAttributeName"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "UINib"]
+- !private ["PSs9AnyObject", "addAttribute"]
+- !private ["PSs9AnyObject", "attributedText"]
+- !private ["PSs9AnyObject", "boolForKey"]
+- !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "feedSwitch"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "length"]
+- !private ["PSs9AnyObject", "lineHeightMultiple"]
+- !private ["PSs9AnyObject", "myMatomes"]
+- !private ["PSs9AnyObject", "myPredicts"]
+- !private ["PSs9AnyObject", "mySections"]
+- ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "on"]
+- ["PSs9AnyObject", "parentNavigationController"]
+- !private ["PSs9AnyObject", "registerNib"]
+- !private ["PSs9AnyObject", "row"]
+- !private ["PSs9AnyObject", "section"]
+- !private ["PSs9AnyObject", "siteNameLabel"]
+- !private ["PSs9AnyObject", "sizeToFit"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- ["PSs9AnyObject", "tableView"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSMakeRange"]
+- !private ["PSs11CVarArgType", "NSMutableAttributedString"]
+- !private ["PSs11CVarArgType", "NSMutableParagraphStyle"]
+- !private ["PSs11CVarArgType", "NSParagraphStyleAttributeName"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "UINib"]
+- !private ["PSs11CVarArgType", "addAttribute"]
+- !private ["PSs11CVarArgType", "attributedText"]
+- !private ["PSs11CVarArgType", "boolForKey"]
+- !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "feedSwitch"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "length"]
+- !private ["PSs11CVarArgType", "lineHeightMultiple"]
+- !private ["PSs11CVarArgType", "myMatomes"]
+- !private ["PSs11CVarArgType", "myPredicts"]
+- !private ["PSs11CVarArgType", "mySections"]
+- ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "on"]
+- ["PSs11CVarArgType", "parentNavigationController"]
+- !private ["PSs11CVarArgType", "registerNib"]
+- !private ["PSs11CVarArgType", "row"]
+- !private ["PSs11CVarArgType", "section"]
+- !private ["PSs11CVarArgType", "siteNameLabel"]
+- !private ["PSs11CVarArgType", "sizeToFit"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- ["PSs11CVarArgType", "tableView"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSMakeRange"]
+- !private ["PSs23CustomStringConvertible", "NSMutableAttributedString"]
+- !private ["PSs23CustomStringConvertible", "NSMutableParagraphStyle"]
+- !private ["PSs23CustomStringConvertible", "NSParagraphStyleAttributeName"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UINib"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAttribute"]
+- !private ["PSs23CustomStringConvertible", "attributedText"]
+- !private ["PSs23CustomStringConvertible", "boolForKey"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "feedSwitch"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "length"]
+- !private ["PSs23CustomStringConvertible", "lineHeightMultiple"]
+- !private ["PSs23CustomStringConvertible", "myMatomes"]
+- !private ["PSs23CustomStringConvertible", "myPredicts"]
+- !private ["PSs23CustomStringConvertible", "mySections"]
+- ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "on"]
+- ["PSs23CustomStringConvertible", "parentNavigationController"]
+- !private ["PSs23CustomStringConvertible", "registerNib"]
+- !private ["PSs23CustomStringConvertible", "row"]
+- !private ["PSs23CustomStringConvertible", "section"]
+- !private ["PSs23CustomStringConvertible", "siteNameLabel"]
+- !private ["PSs23CustomStringConvertible", "sizeToFit"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "tableView"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSMakeRange"]
+- !private ["PSs9Equatable", "NSMutableAttributedString"]
+- !private ["PSs9Equatable", "NSMutableParagraphStyle"]
+- !private ["PSs9Equatable", "NSParagraphStyleAttributeName"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "UINib"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAttribute"]
+- !private ["PSs9Equatable", "attributedText"]
+- !private ["PSs9Equatable", "boolForKey"]
+- !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "feedSwitch"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "length"]
+- !private ["PSs9Equatable", "lineHeightMultiple"]
+- !private ["PSs9Equatable", "myMatomes"]
+- !private ["PSs9Equatable", "myPredicts"]
+- !private ["PSs9Equatable", "mySections"]
+- ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "on"]
+- ["PSs9Equatable", "parentNavigationController"]
+- !private ["PSs9Equatable", "registerNib"]
+- !private ["PSs9Equatable", "row"]
+- !private ["PSs9Equatable", "section"]
+- !private ["PSs9Equatable", "siteNameLabel"]
+- !private ["PSs9Equatable", "sizeToFit"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- ["PSs9Equatable", "tableView"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSMakeRange"]
+- !private ["PSs8Hashable", "NSMutableAttributedString"]
+- !private ["PSs8Hashable", "NSMutableParagraphStyle"]
+- !private ["PSs8Hashable", "NSParagraphStyleAttributeName"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "UINib"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAttribute"]
+- !private ["PSs8Hashable", "attributedText"]
+- !private ["PSs8Hashable", "boolForKey"]
+- !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "feedSwitch"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "length"]
+- !private ["PSs8Hashable", "lineHeightMultiple"]
+- !private ["PSs8Hashable", "myMatomes"]
+- !private ["PSs8Hashable", "myPredicts"]
+- !private ["PSs8Hashable", "mySections"]
+- ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "on"]
+- ["PSs8Hashable", "parentNavigationController"]
+- !private ["PSs8Hashable", "registerNib"]
+- !private ["PSs8Hashable", "row"]
+- !private ["PSs8Hashable", "section"]
+- !private ["PSs8Hashable", "siteNameLabel"]
+- !private ["PSs8Hashable", "sizeToFit"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- ["PSs8Hashable", "tableView"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["CSo18NSAttributedString", "addAttribute"]
+- !private ["CSo18NSAttributedString", "init"]
+- !private ["CSo18NSAttributedString", "length"]
+- !private ["PSo8NSCoding", "NSMakeRange"]
+- !private ["PSo8NSCoding", "NSMutableAttributedString"]
+- !private ["PSo8NSCoding", "NSMutableParagraphStyle"]
+- !private ["PSo8NSCoding", "NSParagraphStyleAttributeName"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "UINib"]
+- !private ["PSo8NSCoding", "addAttribute"]
+- !private ["PSo8NSCoding", "attributedText"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "feedSwitch"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "lineHeightMultiple"]
+- !private ["PSo8NSCoding", "myMatomes"]
+- !private ["PSo8NSCoding", "myPredicts"]
+- !private ["PSo8NSCoding", "mySections"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "on"]
+- ["PSo8NSCoding", "parentNavigationController"]
+- !private ["PSo8NSCoding", "registerNib"]
+- !private ["PSo8NSCoding", "row"]
+- !private ["PSo8NSCoding", "section"]
+- !private ["PSo8NSCoding", "siteNameLabel"]
+- !private ["PSo8NSCoding", "sizeToFit"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "addAttribute"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "lineHeightMultiple"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["PSo9NSCopying", "section"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMakeRange"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableAttributedString"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableParagraphStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "NSParagraphStyleAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "UINib"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "myMatomes"]
+- !private ["PSo26NSExtensionRequestHandling", "myPredicts"]
+- !private ["PSo26NSExtensionRequestHandling", "mySections"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "parentNavigationController"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo11NSIndexPath", "section"]
+- !private ["CSo25NSMutableAttributedString", "addAttribute"]
+- !private ["CSo25NSMutableAttributedString", "init"]
+- !private ["CSo25NSMutableAttributedString", "length"]
+- !private ["PSo16NSMutableCopying", "addAttribute"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["PSo16NSMutableCopying", "lineHeightMultiple"]
+- !private ["CSo23NSMutableParagraphStyle", "init"]
+- !private ["CSo23NSMutableParagraphStyle", "lineHeightMultiple"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSMakeRange"]
+- !private ["CSo8NSObject", "NSMutableAttributedString"]
+- !private ["CSo8NSObject", "NSMutableParagraphStyle"]
+- !private ["CSo8NSObject", "NSParagraphStyleAttributeName"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "SettingCell"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UINavigationController"]
+- !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "addAttribute"]
+- !private ["CSo8NSObject", "attributedText"]
+- !private ["CSo8NSObject", "boolForKey"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "feedSwitch"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "lineHeightMultiple"]
+- !private ["CSo8NSObject", "myMatomes"]
+- !private ["CSo8NSObject", "myPredicts"]
+- !private ["CSo8NSObject", "mySections"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "on"]
+- ["CSo8NSObject", "parentNavigationController"]
+- !private ["CSo8NSObject", "registerNib"]
+- !private ["CSo8NSObject", "row"]
+- !private ["CSo8NSObject", "section"]
+- !private ["CSo8NSObject", "siteNameLabel"]
+- !private ["CSo8NSObject", "sizeToFit"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSMakeRange"]
+- !private ["PSo16NSObjectProtocol", "NSMutableAttributedString"]
+- !private ["PSo16NSObjectProtocol", "NSMutableParagraphStyle"]
+- !private ["PSo16NSObjectProtocol", "NSParagraphStyleAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
+- !private ["PSo16NSObjectProtocol", "addAttribute"]
+- !private ["PSo16NSObjectProtocol", "attributedText"]
+- !private ["PSo16NSObjectProtocol", "boolForKey"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "feedSwitch"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "lineHeightMultiple"]
+- !private ["PSo16NSObjectProtocol", "myMatomes"]
+- !private ["PSo16NSObjectProtocol", "myPredicts"]
+- !private ["PSo16NSObjectProtocol", "mySections"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "on"]
+- ["PSo16NSObjectProtocol", "parentNavigationController"]
+- !private ["PSo16NSObjectProtocol", "registerNib"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- !private ["PSo16NSObjectProtocol", "section"]
+- !private ["PSo16NSObjectProtocol", "siteNameLabel"]
+- !private ["PSo16NSObjectProtocol", "sizeToFit"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo16NSParagraphStyle", "init"]
+- !private ["CSo16NSParagraphStyle", "lineHeightMultiple"]
+- !private ["PSo14NSSecureCoding", "addAttribute"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "lineHeightMultiple"]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "section"]
+- !private ["CSo14NSUserDefaults", "boolForKey"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["C10BlogReader11SettingCell", "feedSwitch"]
+- !private ["C10BlogReader11SettingCell", "siteNameLabel"]
+- ["C10BlogReader21SettingViewController", "Int"]
+- ["C10BlogReader21SettingViewController", "NSIndexPath"]
+- !private ["C10BlogReader21SettingViewController", "NSMakeRange"]
+- !private ["C10BlogReader21SettingViewController", "NSMutableAttributedString"]
+- !private ["C10BlogReader21SettingViewController", "NSMutableParagraphStyle"]
+- !private ["C10BlogReader21SettingViewController", "NSParagraphStyleAttributeName"]
+- !private ["C10BlogReader21SettingViewController", "NSUserDefaults"]
+- !private ["C10BlogReader21SettingViewController", "SettingCell"]
+- ["C10BlogReader21SettingViewController", "String"]
+- ["C10BlogReader21SettingViewController", "UINavigationController"]
+- !private ["C10BlogReader21SettingViewController", "UINib"]
+- ["C10BlogReader21SettingViewController", "UITableView"]
+- ["C10BlogReader21SettingViewController", "UITableViewCell"]
+- ["C10BlogReader21SettingViewController", "deinit"]
+- ["C10BlogReader21SettingViewController", "didReceiveMemoryWarning"]
+- ["C10BlogReader21SettingViewController", "init"]
+- !private ["C10BlogReader21SettingViewController", "myMatomes"]
+- !private ["C10BlogReader21SettingViewController", "myPredicts"]
+- !private ["C10BlogReader21SettingViewController", "mySections"]
+- ["C10BlogReader21SettingViewController", "numberOfSectionsInTableView"]
+- ["C10BlogReader21SettingViewController", "parentNavigationController"]
+- ["C10BlogReader21SettingViewController", "tableView"]
+- ["C10BlogReader21SettingViewController", "viewDidLoad"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "attributedText"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "feedSwitch"]
+- !private ["PSo29UIAccessibilityIdentification", "on"]
+- !private ["PSo29UIAccessibilityIdentification", "registerNib"]
+- !private ["PSo29UIAccessibilityIdentification", "siteNameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "attributedText"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "feedSwitch"]
+- !private ["PSo12UIAppearance", "on"]
+- !private ["PSo12UIAppearance", "registerNib"]
+- !private ["PSo12UIAppearance", "siteNameLabel"]
+- !private ["PSo12UIAppearance", "sizeToFit"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "NSMakeRange"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableAttributedString"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableParagraphStyle"]
+- !private ["PSo21UIAppearanceContainer", "NSParagraphStyleAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
+- !private ["PSo21UIAppearanceContainer", "attributedText"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "feedSwitch"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "myMatomes"]
+- !private ["PSo21UIAppearanceContainer", "myPredicts"]
+- !private ["PSo21UIAppearanceContainer", "mySections"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "on"]
+- ["PSo21UIAppearanceContainer", "parentNavigationController"]
+- !private ["PSo21UIAppearanceContainer", "registerNib"]
+- !private ["PSo21UIAppearanceContainer", "siteNameLabel"]
+- !private ["PSo21UIAppearanceContainer", "sizeToFit"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NSMakeRange"]
+- !private ["PSo18UIContentContainer", "NSMutableAttributedString"]
+- !private ["PSo18UIContentContainer", "NSMutableParagraphStyle"]
+- !private ["PSo18UIContentContainer", "NSParagraphStyleAttributeName"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "UINib"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "myMatomes"]
+- !private ["PSo18UIContentContainer", "myPredicts"]
+- !private ["PSo18UIContentContainer", "mySections"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "parentNavigationController"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "on"]
+- !private ["PSo17UICoordinateSpace", "attributedText"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "feedSwitch"]
+- !private ["PSo17UICoordinateSpace", "on"]
+- !private ["PSo17UICoordinateSpace", "registerNib"]
+- !private ["PSo17UICoordinateSpace", "siteNameLabel"]
+- !private ["PSo17UICoordinateSpace", "sizeToFit"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "attributedText"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "feedSwitch"]
+- !private ["PSo13UIDynamicItem", "on"]
+- !private ["PSo13UIDynamicItem", "registerNib"]
+- !private ["PSo13UIDynamicItem", "siteNameLabel"]
+- !private ["PSo13UIDynamicItem", "sizeToFit"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo27UIGestureRecognizerDelegate", "feedSwitch"]
+- !private ["PSo27UIGestureRecognizerDelegate", "siteNameLabel"]
+- !private ["CSo7UILabel", "attributedText"]
+- !private ["CSo7UILabel", "sizeToFit"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo5UINib", "init"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSMakeRange"]
+- !private ["CSo11UIResponder", "NSMutableAttributedString"]
+- !private ["CSo11UIResponder", "NSMutableParagraphStyle"]
+- !private ["CSo11UIResponder", "NSParagraphStyleAttributeName"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "SettingCell"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UINavigationController"]
+- !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "attributedText"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "feedSwitch"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "myMatomes"]
+- !private ["CSo11UIResponder", "myPredicts"]
+- !private ["CSo11UIResponder", "mySections"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "on"]
+- ["CSo11UIResponder", "parentNavigationController"]
+- !private ["CSo11UIResponder", "registerNib"]
+- !private ["CSo11UIResponder", "siteNameLabel"]
+- !private ["CSo11UIResponder", "sizeToFit"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo12UIScrollView", "registerNib"]
+- !private ["PSo20UIScrollViewDelegate", "NSMakeRange"]
+- !private ["PSo20UIScrollViewDelegate", "NSMutableAttributedString"]
+- !private ["PSo20UIScrollViewDelegate", "NSMutableParagraphStyle"]
+- !private ["PSo20UIScrollViewDelegate", "NSParagraphStyleAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
+- !private ["PSo20UIScrollViewDelegate", "UINib"]
+- ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "myMatomes"]
+- !private ["PSo20UIScrollViewDelegate", "myPredicts"]
+- !private ["PSo20UIScrollViewDelegate", "mySections"]
+- ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- ["PSo20UIScrollViewDelegate", "parentNavigationController"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "NSMakeRange"]
+- !private ["PSo16UIStateRestoring", "NSMutableAttributedString"]
+- !private ["PSo16UIStateRestoring", "NSMutableParagraphStyle"]
+- !private ["PSo16UIStateRestoring", "NSParagraphStyleAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "UINib"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "myMatomes"]
+- !private ["PSo16UIStateRestoring", "myPredicts"]
+- !private ["PSo16UIStateRestoring", "mySections"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "parentNavigationController"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo8UISwitch", "on"]
+- !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UITableView", "registerNib"]
+- !private ["CSo15UITableViewCell", "deinit"]
+- !private ["CSo15UITableViewCell", "feedSwitch"]
+- !private ["CSo15UITableViewCell", "siteNameLabel"]
+- ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "NSIndexPath"]
+- !private ["CSo21UITableViewController", "NSMakeRange"]
+- !private ["CSo21UITableViewController", "NSMutableAttributedString"]
+- !private ["CSo21UITableViewController", "NSMutableParagraphStyle"]
+- !private ["CSo21UITableViewController", "NSParagraphStyleAttributeName"]
+- !private ["CSo21UITableViewController", "NSUserDefaults"]
+- !private ["CSo21UITableViewController", "SettingCell"]
+- ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "UINavigationController"]
+- !private ["CSo21UITableViewController", "UINib"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "myMatomes"]
+- !private ["CSo21UITableViewController", "myPredicts"]
+- !private ["CSo21UITableViewController", "mySections"]
+- ["CSo21UITableViewController", "numberOfSectionsInTableView"]
+- ["CSo21UITableViewController", "parentNavigationController"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "NSMakeRange"]
+- !private ["PSo21UITableViewDataSource", "NSMutableAttributedString"]
+- !private ["PSo21UITableViewDataSource", "NSMutableParagraphStyle"]
+- !private ["PSo21UITableViewDataSource", "NSParagraphStyleAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
+- !private ["PSo21UITableViewDataSource", "UINib"]
+- ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "myMatomes"]
+- !private ["PSo21UITableViewDataSource", "myPredicts"]
+- !private ["PSo21UITableViewDataSource", "mySections"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- ["PSo21UITableViewDataSource", "parentNavigationController"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "NSMakeRange"]
+- !private ["PSo19UITableViewDelegate", "NSMutableAttributedString"]
+- !private ["PSo19UITableViewDelegate", "NSMutableParagraphStyle"]
+- !private ["PSo19UITableViewDelegate", "NSParagraphStyleAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
+- !private ["PSo19UITableViewDelegate", "UINib"]
+- ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "myMatomes"]
+- !private ["PSo19UITableViewDelegate", "myPredicts"]
+- !private ["PSo19UITableViewDelegate", "mySections"]
+- ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- ["PSo19UITableViewDelegate", "parentNavigationController"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "NSMakeRange"]
+- !private ["PSo18UITraitEnvironment", "NSMutableAttributedString"]
+- !private ["PSo18UITraitEnvironment", "NSMutableParagraphStyle"]
+- !private ["PSo18UITraitEnvironment", "NSParagraphStyleAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
+- !private ["PSo18UITraitEnvironment", "attributedText"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "feedSwitch"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "myMatomes"]
+- !private ["PSo18UITraitEnvironment", "myPredicts"]
+- !private ["PSo18UITraitEnvironment", "mySections"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "on"]
+- ["PSo18UITraitEnvironment", "parentNavigationController"]
+- !private ["PSo18UITraitEnvironment", "registerNib"]
+- !private ["PSo18UITraitEnvironment", "siteNameLabel"]
+- !private ["PSo18UITraitEnvironment", "sizeToFit"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "attributedText"]
+- !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "feedSwitch"]
+- !private ["CSo6UIView", "on"]
+- !private ["CSo6UIView", "registerNib"]
+- !private ["CSo6UIView", "siteNameLabel"]
+- !private ["CSo6UIView", "sizeToFit"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSMakeRange"]
+- !private ["CSo16UIViewController", "NSMutableAttributedString"]
+- !private ["CSo16UIViewController", "NSMutableParagraphStyle"]
+- !private ["CSo16UIViewController", "NSParagraphStyleAttributeName"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "SettingCell"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UINavigationController"]
+- !private ["CSo16UIViewController", "UINib"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "myMatomes"]
+- !private ["CSo16UIViewController", "myPredicts"]
+- !private ["CSo16UIViewController", "mySections"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "parentNavigationController"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "attributedText"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs12_Reflectable", "feedSwitch"]
+- !private ["PSs12_Reflectable", "on"]
+- !private ["PSs12_Reflectable", "registerNib"]
+- !private ["PSs12_Reflectable", "siteNameLabel"]
+- !private ["PSs12_Reflectable", "sizeToFit"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "CSo18NSAttributedString"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSIndexPath"
+- !private "CSo25NSMutableAttributedString"
+- !private "PSo16NSMutableCopying"
+- !private "CSo23NSMutableParagraphStyle"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo16NSParagraphStyle"
+- !private "PSo14NSSecureCoding"
+- !private "CSo14NSUserDefaults"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "C10BlogReader11SettingCell"
+- "C10BlogReader21SettingViewController"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- !private "CSo5UINib"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo8UISwitch"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/BlogReader-Bridging-Header.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PF_Twitter.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFTwitterUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPush.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFProduct.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFInstallation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSession.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRole.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRelation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFQuery.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFFile.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConfig.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFCloud.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFUser.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNullability.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFACL.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/../GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/../GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/../GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/WebKit.swiftmodule"
+interface-hash: "8fd5ca861773422ef89109be6bb13165"

@@ -24,7 +24,7 @@ class SettingCell: UITableViewCell {
     @IBAction func feedSwitchChanged(sender: UISwitch) {
         let ud = NSUserDefaults.standardUserDefaults()
         ud.setObject(sender.on, forKey: siteNameLabel.text!)
-        println(sender.on)
+        print(sender.on)
     }
     
 }

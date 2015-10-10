@@ -1,0 +1,1 @@
+ const unsigned char AFNetworkingVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AFNetworking  PROJECT:Pods-2.5.4" "\n"; const double AFNetworkingVersionNumber __attribute__ ((used)) = (double)2.5;

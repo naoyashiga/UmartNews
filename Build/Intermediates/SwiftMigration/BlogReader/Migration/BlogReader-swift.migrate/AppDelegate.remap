@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/AppDelegate.swift",
+  "offset": 1164,
+  "remove": 1207,
+  "text": ": UIUserNotificationType = ([UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]);\n        \n        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)\n        application.registerUserNotificationSettings(settings)\n        application.registerForRemoteNotifications()\n        \n        //Badge reset\n        UIApplication.sharedApplication().applicationIconBadgeNumber = 0\n        \n        //配信設定\n        let ud = NSUserDefaults.standardUserDefaults()\n        if(ud.objectForKey(\"神競馬2nd\") == nil){\n            for siteNameStr in myMatomes {\n                ud.setObject(true, forKey: siteNameStr)\n            }\n            \n            for siteNameStr in myPredicts {\n                ud.setObject(true, forKey: siteNameStr)\n            }\n        }\n\n        \n        return true\n    }\n    \n    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {\n        let installation = PFInstallation.currentInstallation()\n        installation.setDeviceTokenFromData(deviceToken)\n//        installation.saveInBackground()\n        installation.save()\n        print",
+ }
+]
