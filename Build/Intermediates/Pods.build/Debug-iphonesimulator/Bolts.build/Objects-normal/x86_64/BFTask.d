@@ -4,6 +4,7 @@ dependencies: \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Bolts/Bolts/Common/BFTask.h \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Headers/Private/Bolts/BFCancellationToken.h \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Headers/Private/Bolts/BFCancellationTokenRegistration.h \
+  /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Headers/Private/Bolts/BFDefines.h \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Bolts/Bolts/Common/Bolts.h \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Headers/Private/Bolts/BoltsVersion.h \
   /Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Headers/Private/Bolts/BFCancellationTokenSource.h \

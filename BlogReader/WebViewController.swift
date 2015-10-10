@@ -73,8 +73,8 @@ class WebViewController: UIViewController,WKUIDelegate,GADBannerViewDelegate,MFM
         adB.rootViewController = self // ??
         self.view.addSubview(adB) // ??
         let request = GADRequest() // create request
-        //        request.testDevices = [GAD_SIMULATOR_ID]; // set it to "test" request
-//        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+//                request.testDevices = [GAD_SIMULATOR_ID]; // set it to "test" request
+        request.testDevices = [kGADSimulatorID]; // set it to "test" request
         adB.loadRequest(request) // actually load it (?)
     }
     

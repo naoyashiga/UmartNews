@@ -17,124 +17,130 @@ provides-member:
 - ["C10BlogReader12CAPSPageMenu", ""]
 - ["OC10BlogReader12CAPSPageMenu27CAPSPageMenuScrollDirection", ""]
 provides-dynamic-lookup:
-- "lastPageIndex"
-- "pageIndexForOrientationChange"
-- "titleLabel"
-- "totalMenuItemWidthIfDifferentWidths"
-- "didTapMenuItemToScroll"
-- "delegate"
-- "menuItemSeparatorColor"
-- "bottomMenuHairlineColor"
-- "menuItemFont"
-- "useMenuLikeSegmentedControl"
-- "setTitleText"
-- "moveToPage"
-- "menuItemWidths"
-- "unselectedMenuItemLabelColor"
-- "didLayoutSubviewsAfterRotation"
-- "removePageAtIndex"
-- "centerMenuItems"
-- "currentPageIndex"
-- "selectionIndicatorHeight"
-- "viewBackgroundColor"
-- "pagesAddedDictionary"
-- "menuItems"
-- "selectionIndicatorView"
-- "didScrollAlready"
-- "handleMenuItemTap"
-- "viewDidLayoutSubviews"
-- "selectedMenuItemLabelColor"
-- "menuMargin"
-- "controllerArray"
-- "controllerScrollView"
-- "enableHorizontalBounce"
-- "configureUserInterface"
-- "selectionIndicatorColor"
-- "menuItemSeparator"
-- "menuItemSeparatorWidth"
-- "lastControllerScrollViewContentOffset"
-- "menuItemSeparatorRoundEdges"
-- "tapTimer"
-- "scrollViewDidEndDecelerating"
-- "scrollViewDidEndTapScrollingAnimation"
-- "startingMenuMargin"
-- "setUpMenuItemView"
-- "didMoveToPage"
-- "setUpUserInterface"
-- "scrollViewDidScroll"
-- "hideTopMenuBar"
-- "addBottomMenuHairline"
-- "addPageAtIndex"
-- "willMoveToPage"
-- "scrollMenuBackgroundColor"
 - "menuItemSeparatorPercentageHeight"
-- "currentOrientationIsPortrait"
-- "menuItemWidth"
-- "moveSelectionIndicator"
-- "startingPageForScroll"
-- "menuScrollView"
+- "pagesAddedDictionary"
+- "useMenuLikeSegmentedControl"
+- "menuItemSeparatorColor"
+- "shouldAutomaticallyForwardAppearanceMethods"
 - "menuHeight"
-- "menuItemWidthBasedOnTitleTextWidth"
+- "setUpUserInterface"
+- "viewBackgroundColor"
+- "didScrollAlready"
 - "scrollAnimationDurationOnMenuItemTap"
+- "menuScrollView"
+- "setUpMenuItemView"
+- "startingMenuMargin"
+- "willMoveToPage"
+- "didMoveToPage"
+- "pageIndexForOrientationChange"
+- "removePageAtIndex"
+- "selectionIndicatorColor"
+- "menuItemSeparatorWidth"
+- "selectedMenuItemLabelColor"
+- "titleLabel"
+- "centerMenuItems"
+- "controllerScrollView"
+- "didTapMenuItemToScroll"
+- "menuItemWidth"
+- "addPageAtIndex"
+- "menuMargin"
+- "didLayoutSubviewsAfterRotation"
+- "configureUserInterface"
+- "moveToPage"
+- "scrollViewDidEndTapScrollingAnimation"
+- "menuItemSeparator"
+- "scrollViewDidScroll"
+- "currentOrientationIsPortrait"
+- "scrollMenuBackgroundColor"
+- "menuItemSeparatorRoundEdges"
+- "delegate"
+- "scrollViewDidEndDecelerating"
+- "selectionIndicatorView"
+- "handleMenuItemTap"
+- "shouldAutomaticallyForwardRotationMethods"
+- "setTitleText"
+- "startingPageForScroll"
+- "bottomMenuHairlineColor"
+- "moveSelectionIndicator"
+- "menuItemWidthBasedOnTitleTextWidth"
+- "enableHorizontalBounce"
+- "lastPageIndex"
+- "menuItemFont"
+- "lastControllerScrollViewContentOffset"
+- "menuItems"
+- "controllerArray"
+- "selectionIndicatorHeight"
+- "unselectedMenuItemLabelColor"
+- "currentPageIndex"
+- "menuItemWidths"
+- "totalMenuItemWidthIfDifferentWidths"
+- "tapTimer"
+- "addBottomMenuHairline"
+- "hideTopMenuBar"
+- "viewDidLayoutSubviews"
 depends-top-level:
-- "UIColor"
-- !private "+="
-- "Bool"
-- "CAPSPageMenuDelegate"
-- "UIScrollView"
-- !private "<"
-- !private "NSStringDrawingOptions"
-- !private "||"
-- !private "Selector"
-- "NSTimer"
-- !private "UIApplication"
+- !private "CGRectGetHeight"
 - "Dictionary"
-- !private "<="
-- !private "/"
-- !private "NSTimeInterval"
-- "BooleanLiteralType"
-- "MenuItemView"
-- "CAPSPageMenu"
-- !private "&&"
-- "CGRect"
-- !private "NSFontAttributeName"
-- !private "-"
-- "NSCoder"
-- !private "!="
-- !private "NSLayoutFormatOptions"
-- !private "floor"
-- !private "NSTextAlignment"
-- "StringLiteralType"
-- !private "*"
-- !private ">"
-- !private "UIDevice"
-- "Int"
-- !private "+"
-- !private "Double"
-- !private "Array"
-- !private "++"
-- !private "CGPoint"
-- "UITapGestureRecognizer"
-- "UIViewController"
-- "NSString"
 - "UIScrollViewDelegate"
-- !private "CGRectMake"
-- "=="
-- !private "~="
-- "UIGestureRecognizerDelegate"
-- "String"
-- !private "Void"
-- "CAPSPageMenuOption"
-- !private "NSLayoutConstraint"
-- !private ">="
-- !private "!"
-- !private "..."
-- "AnyObject"
-- "UIFont"
-- !private "CGSizeMake"
-- "CGFloat"
+- !private "+"
 - "UIView"
+- !private "NSStringDrawingOptions"
 - "UILabel"
+- !private "UIDevice"
+- "UIFont"
+- "UIGestureRecognizerDelegate"
+- "NSString"
+- "BooleanLiteralType"
+- "CGRect"
+- !private "*"
+- "NSTimer"
+- "String"
+- "CGFloat"
+- !private "NSLayoutConstraint"
+- !private "..."
+- !private "floor"
+- !private "~="
+- "NSCoder"
+- "=="
+- !private "NSTextAlignment"
+- !private "NSTimeInterval"
+- !private "!"
+- !private "CGRectGetWidth"
+- "CAPSPageMenuDelegate"
+- !private "++"
+- !private ">"
+- !private "+="
+- !private "Double"
+- "Bool"
+- !private "NSLayoutFormatOptions"
+- "CAPSPageMenuOption"
+- !private "/"
+- !private "CGPoint"
+- !private "CGSizeMake"
+- !private "UIApplication"
+- !private "<"
+- !private "CGRectGetMinX"
+- "UIViewController"
+- !private "&&"
+- "UIScrollView"
+- !private "!="
+- "MenuItemView"
+- "AnyObject"
+- "UIColor"
+- !private "Selector"
+- !private ">="
+- "Int"
+- !private "NSFontAttributeName"
+- !private "CGRectMake"
+- "UITapGestureRecognizer"
+- !private "StringLiteralType"
+- !private "-"
+- !private "Array"
+- !private "<="
+- !private "CGRectGetMaxX"
+- !private "||"
+- !private "Void"
+- "CAPSPageMenu"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -142,6 +148,10 @@ depends-member:
 - !private ["PSs9AnyObject", "CGFloat"]
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "CGRect"]
+- !private ["PSs9AnyObject", "CGRectGetHeight"]
+- !private ["PSs9AnyObject", "CGRectGetMaxX"]
+- !private ["PSs9AnyObject", "CGRectGetMinX"]
+- !private ["PSs9AnyObject", "CGRectGetWidth"]
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "CGSizeMake"]
 - !private ["PSs9AnyObject", "Double"]
@@ -175,7 +185,9 @@ depends-member:
 - ["PSs9AnyObject", "bottomMenuHairlineColor"]
 - !private ["PSs9AnyObject", "bounces"]
 - !private ["PSs9AnyObject", "boundingRectWithSize"]
+- !private ["PSs9AnyObject", "bounds"]
 - ["PSs9AnyObject", "centerMenuItems"]
+- ["PSs9AnyObject", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs9AnyObject", "configureUserInterface"]
 - !private ["PSs9AnyObject", "constraintsWithVisualFormat"]
 - !private ["PSs9AnyObject", "contentOffset"]
@@ -197,6 +209,7 @@ depends-member:
 - !private ["PSs9AnyObject", "frame"]
 - ["PSs9AnyObject", "gestureRecognizer"]
 - ["PSs9AnyObject", "gestureRecognizerShouldBegin"]
+- ["PSs9AnyObject", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs9AnyObject", "handleMenuItemTap"]
 - !private ["PSs9AnyObject", "hidden"]
 - ["PSs9AnyObject", "hideTopMenuBar"]
@@ -262,6 +275,8 @@ depends-member:
 - ["PSs9AnyObject", "setUpMenuItemView"]
 - ["PSs9AnyObject", "setUpUserInterface"]
 - !private ["PSs9AnyObject", "sharedApplication"]
+- ["PSs9AnyObject", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSs9AnyObject", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSs9AnyObject", "showsHorizontalScrollIndicator"]
 - !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
 - !private ["PSs9AnyObject", "sizeToFit"]
@@ -269,6 +284,7 @@ depends-member:
 - ["PSs9AnyObject", "startingPageForScroll"]
 - !private ["PSs9AnyObject", "statusBarOrientation"]
 - !private ["PSs9AnyObject", "subviews"]
+- ["PSs9AnyObject", "systemFontOfSize"]
 - ["PSs9AnyObject", "tapTimer"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textAlignment"]
@@ -281,10 +297,8 @@ depends-member:
 - ["PSs9AnyObject", "useMenuLikeSegmentedControl"]
 - !private ["PSs9AnyObject", "view"]
 - ["PSs9AnyObject", "viewBackgroundColor"]
-- !private ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLayoutSubviews"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
-- !private ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "whiteColor"]
 - !private ["PSs9AnyObject", "willMoveToParentViewController"]
 - ["PSs9AnyObject", ""]
@@ -295,6 +309,7 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "enumerate"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
@@ -303,10 +318,13 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "enumerate"]
+- !private ["PSs23ArrayLiteralConvertible", "frame"]
 - !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
+- !private ["VSs10ArraySlice", "frame"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["PSs22BidirectionalIndexType", "Stride"]
@@ -336,6 +354,10 @@ depends-member:
 - ["C10BlogReader12CAPSPageMenu", "CGFloat"]
 - !private ["C10BlogReader12CAPSPageMenu", "CGPoint"]
 - ["C10BlogReader12CAPSPageMenu", "CGRect"]
+- !private ["C10BlogReader12CAPSPageMenu", "CGRectGetHeight"]
+- !private ["C10BlogReader12CAPSPageMenu", "CGRectGetMaxX"]
+- !private ["C10BlogReader12CAPSPageMenu", "CGRectGetMinX"]
+- !private ["C10BlogReader12CAPSPageMenu", "CGRectGetWidth"]
 - !private ["C10BlogReader12CAPSPageMenu", "CGRectMake"]
 - !private ["C10BlogReader12CAPSPageMenu", "CGSizeMake"]
 - !private ["C10BlogReader12CAPSPageMenu", "Double"]
@@ -366,6 +388,7 @@ depends-member:
 - ["C10BlogReader12CAPSPageMenu", "addPageAtIndex"]
 - ["C10BlogReader12CAPSPageMenu", "bottomMenuHairlineColor"]
 - ["C10BlogReader12CAPSPageMenu", "centerMenuItems"]
+- !private ["C10BlogReader12CAPSPageMenu", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["C10BlogReader12CAPSPageMenu", "configureUserInterface"]
 - ["C10BlogReader12CAPSPageMenu", "controllerArray"]
 - ["C10BlogReader12CAPSPageMenu", "controllerScrollView"]
@@ -379,6 +402,7 @@ depends-member:
 - ["C10BlogReader12CAPSPageMenu", "enableHorizontalBounce"]
 - ["C10BlogReader12CAPSPageMenu", "gestureRecognizer"]
 - ["C10BlogReader12CAPSPageMenu", "gestureRecognizerShouldBegin"]
+- !private ["C10BlogReader12CAPSPageMenu", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["C10BlogReader12CAPSPageMenu", "handleMenuItemTap"]
 - ["C10BlogReader12CAPSPageMenu", "hideTopMenuBar"]
 - ["C10BlogReader12CAPSPageMenu", "init"]
@@ -422,6 +446,8 @@ depends-member:
 - ["C10BlogReader12CAPSPageMenu", "selectionIndicatorHeight"]
 - ["C10BlogReader12CAPSPageMenu", "selectionIndicatorView"]
 - ["C10BlogReader12CAPSPageMenu", "setUpUserInterface"]
+- ["C10BlogReader12CAPSPageMenu", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["C10BlogReader12CAPSPageMenu", "shouldAutomaticallyForwardRotationMethods"]
 - ["C10BlogReader12CAPSPageMenu", "startingMenuMargin"]
 - ["C10BlogReader12CAPSPageMenu", "startingPageForScroll"]
 - ["C10BlogReader12CAPSPageMenu", "tapTimer"]
@@ -486,6 +512,10 @@ depends-member:
 - !private ["PSs11CVarArgType", "CGFloat"]
 - !private ["PSs11CVarArgType", "CGPoint"]
 - !private ["PSs11CVarArgType", "CGRect"]
+- !private ["PSs11CVarArgType", "CGRectGetHeight"]
+- !private ["PSs11CVarArgType", "CGRectGetMaxX"]
+- !private ["PSs11CVarArgType", "CGRectGetMinX"]
+- !private ["PSs11CVarArgType", "CGRectGetWidth"]
 - !private ["PSs11CVarArgType", "CGRectMake"]
 - !private ["PSs11CVarArgType", "CGSizeMake"]
 - !private ["PSs11CVarArgType", "Distance"]
@@ -524,7 +554,9 @@ depends-member:
 - ["PSs11CVarArgType", "bottomMenuHairlineColor"]
 - !private ["PSs11CVarArgType", "bounces"]
 - !private ["PSs11CVarArgType", "boundingRectWithSize"]
+- !private ["PSs11CVarArgType", "bounds"]
 - ["PSs11CVarArgType", "centerMenuItems"]
+- ["PSs11CVarArgType", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs11CVarArgType", "configureUserInterface"]
 - !private ["PSs11CVarArgType", "constraintsWithVisualFormat"]
 - !private ["PSs11CVarArgType", "contentOffset"]
@@ -546,6 +578,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "frame"]
 - ["PSs11CVarArgType", "gestureRecognizer"]
 - ["PSs11CVarArgType", "gestureRecognizerShouldBegin"]
+- ["PSs11CVarArgType", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs11CVarArgType", "handleMenuItemTap"]
 - !private ["PSs11CVarArgType", "hashValue"]
 - !private ["PSs11CVarArgType", "hidden"]
@@ -612,6 +645,8 @@ depends-member:
 - ["PSs11CVarArgType", "setUpMenuItemView"]
 - ["PSs11CVarArgType", "setUpUserInterface"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
+- ["PSs11CVarArgType", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSs11CVarArgType", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSs11CVarArgType", "showsHorizontalScrollIndicator"]
 - !private ["PSs11CVarArgType", "showsVerticalScrollIndicator"]
 - !private ["PSs11CVarArgType", "sizeToFit"]
@@ -619,6 +654,7 @@ depends-member:
 - ["PSs11CVarArgType", "startingPageForScroll"]
 - !private ["PSs11CVarArgType", "statusBarOrientation"]
 - !private ["PSs11CVarArgType", "subviews"]
+- ["PSs11CVarArgType", "systemFontOfSize"]
 - ["PSs11CVarArgType", "tapTimer"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textAlignment"]
@@ -631,10 +667,8 @@ depends-member:
 - ["PSs11CVarArgType", "useMenuLikeSegmentedControl"]
 - !private ["PSs11CVarArgType", "view"]
 - ["PSs11CVarArgType", "viewBackgroundColor"]
-- !private ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLayoutSubviews"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
-- !private ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", "whiteColor"]
 - !private ["PSs11CVarArgType", "willMoveToParentViewController"]
 - ["PSs11CVarArgType", ""]
@@ -649,6 +683,8 @@ depends-member:
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
 - !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "enumerate"]
+- !private ["PSs14CollectionType", "frame"]
 - !private ["PSs14CollectionType", "keys"]
 - !private ["PSs14CollectionType", "removeAll"]
 - !private ["PSs14CollectionType", "removeValueForKey"]
@@ -658,6 +694,7 @@ depends-member:
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
 - !private ["PSs10Comparable", "_DisallowMixedSignArithmetic"]
+- !private ["PSs10Comparable", "boundingRectWithSize"]
 - !private ["PSs10Comparable", "hashValue"]
 - !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
@@ -669,7 +706,10 @@ depends-member:
 - ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "boundingRectWithSize"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "enumerate"]
+- !private ["PSs28CustomDebugStringConvertible", "frame"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "keys"]
 - !private ["PSs28CustomDebugStringConvertible", "removeAll"]
@@ -678,6 +718,10 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "CGFloat"]
 - !private ["PSs23CustomStringConvertible", "CGPoint"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
+- !private ["PSs23CustomStringConvertible", "CGRectGetHeight"]
+- !private ["PSs23CustomStringConvertible", "CGRectGetMaxX"]
+- !private ["PSs23CustomStringConvertible", "CGRectGetMinX"]
+- !private ["PSs23CustomStringConvertible", "CGRectGetWidth"]
 - !private ["PSs23CustomStringConvertible", "CGRectMake"]
 - !private ["PSs23CustomStringConvertible", "CGSizeMake"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
@@ -724,7 +768,9 @@ depends-member:
 - ["PSs23CustomStringConvertible", "bottomMenuHairlineColor"]
 - !private ["PSs23CustomStringConvertible", "bounces"]
 - !private ["PSs23CustomStringConvertible", "boundingRectWithSize"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
 - ["PSs23CustomStringConvertible", "centerMenuItems"]
+- ["PSs23CustomStringConvertible", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs23CustomStringConvertible", "configureUserInterface"]
 - !private ["PSs23CustomStringConvertible", "constraintsWithVisualFormat"]
 - !private ["PSs23CustomStringConvertible", "contentOffset"]
@@ -742,11 +788,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "didScrollAlready"]
 - ["PSs23CustomStringConvertible", "didTapMenuItemToScroll"]
 - ["PSs23CustomStringConvertible", "enableHorizontalBounce"]
+- !private ["PSs23CustomStringConvertible", "enumerate"]
 - !private ["PSs23CustomStringConvertible", "floor"]
 - !private ["PSs23CustomStringConvertible", "font"]
 - !private ["PSs23CustomStringConvertible", "frame"]
 - ["PSs23CustomStringConvertible", "gestureRecognizer"]
 - ["PSs23CustomStringConvertible", "gestureRecognizerShouldBegin"]
+- ["PSs23CustomStringConvertible", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs23CustomStringConvertible", "handleMenuItemTap"]
 - !private ["PSs23CustomStringConvertible", "hashValue"]
 - !private ["PSs23CustomStringConvertible", "hidden"]
@@ -816,6 +864,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "setUpMenuItemView"]
 - ["PSs23CustomStringConvertible", "setUpUserInterface"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- ["PSs23CustomStringConvertible", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSs23CustomStringConvertible", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSs23CustomStringConvertible", "showsHorizontalScrollIndicator"]
 - !private ["PSs23CustomStringConvertible", "showsVerticalScrollIndicator"]
 - !private ["PSs23CustomStringConvertible", "sizeToFit"]
@@ -824,6 +874,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "statusBarOrientation"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "subviews"]
+- ["PSs23CustomStringConvertible", "systemFontOfSize"]
 - ["PSs23CustomStringConvertible", "tapTimer"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textAlignment"]
@@ -836,10 +887,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "useMenuLikeSegmentedControl"]
 - !private ["PSs23CustomStringConvertible", "view"]
 - ["PSs23CustomStringConvertible", "viewBackgroundColor"]
-- !private ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLayoutSubviews"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
-- !private ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "whiteColor"]
 - !private ["PSs23CustomStringConvertible", "willMoveToParentViewController"]
 - ["PSs23CustomStringConvertible", ""]
@@ -869,9 +918,15 @@ depends-member:
 - !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
+- !private ["VSs18EnumerateGenerator", "Element"]
+- !private ["VSs17EnumerateSequence", "Generator"]
 - !private ["PSs9Equatable", "CGFloat"]
 - !private ["PSs9Equatable", "CGPoint"]
 - !private ["PSs9Equatable", "CGRect"]
+- !private ["PSs9Equatable", "CGRectGetHeight"]
+- !private ["PSs9Equatable", "CGRectGetMaxX"]
+- !private ["PSs9Equatable", "CGRectGetMinX"]
+- !private ["PSs9Equatable", "CGRectGetWidth"]
 - !private ["PSs9Equatable", "CGRectMake"]
 - !private ["PSs9Equatable", "CGSizeMake"]
 - !private ["PSs9Equatable", "Center"]
@@ -918,7 +973,9 @@ depends-member:
 - ["PSs9Equatable", "bottomMenuHairlineColor"]
 - !private ["PSs9Equatable", "bounces"]
 - !private ["PSs9Equatable", "boundingRectWithSize"]
+- !private ["PSs9Equatable", "bounds"]
 - ["PSs9Equatable", "centerMenuItems"]
+- ["PSs9Equatable", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs9Equatable", "configureUserInterface"]
 - !private ["PSs9Equatable", "constraintsWithVisualFormat"]
 - !private ["PSs9Equatable", "contentOffset"]
@@ -940,6 +997,7 @@ depends-member:
 - !private ["PSs9Equatable", "frame"]
 - ["PSs9Equatable", "gestureRecognizer"]
 - ["PSs9Equatable", "gestureRecognizerShouldBegin"]
+- ["PSs9Equatable", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs9Equatable", "handleMenuItemTap"]
 - ["PSs9Equatable", "hashValue"]
 - !private ["PSs9Equatable", "height"]
@@ -1011,6 +1069,8 @@ depends-member:
 - ["PSs9Equatable", "setUpMenuItemView"]
 - ["PSs9Equatable", "setUpUserInterface"]
 - !private ["PSs9Equatable", "sharedApplication"]
+- ["PSs9Equatable", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSs9Equatable", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSs9Equatable", "showsHorizontalScrollIndicator"]
 - !private ["PSs9Equatable", "showsVerticalScrollIndicator"]
 - !private ["PSs9Equatable", "size"]
@@ -1019,6 +1079,7 @@ depends-member:
 - ["PSs9Equatable", "startingPageForScroll"]
 - !private ["PSs9Equatable", "statusBarOrientation"]
 - !private ["PSs9Equatable", "subviews"]
+- ["PSs9Equatable", "systemFontOfSize"]
 - ["PSs9Equatable", "tapTimer"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textAlignment"]
@@ -1031,10 +1092,8 @@ depends-member:
 - ["PSs9Equatable", "useMenuLikeSegmentedControl"]
 - !private ["PSs9Equatable", "view"]
 - ["PSs9Equatable", "viewBackgroundColor"]
-- !private ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLayoutSubviews"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
-- !private ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
 - !private ["PSs9Equatable", "willMoveToParentViewController"]
@@ -1063,6 +1122,10 @@ depends-member:
 - !private ["PSs8Hashable", "CGFloat"]
 - !private ["PSs8Hashable", "CGPoint"]
 - !private ["PSs8Hashable", "CGRect"]
+- !private ["PSs8Hashable", "CGRectGetHeight"]
+- !private ["PSs8Hashable", "CGRectGetMaxX"]
+- !private ["PSs8Hashable", "CGRectGetMinX"]
+- !private ["PSs8Hashable", "CGRectGetWidth"]
 - !private ["PSs8Hashable", "CGRectMake"]
 - !private ["PSs8Hashable", "CGSizeMake"]
 - !private ["PSs8Hashable", "Center"]
@@ -1107,7 +1170,9 @@ depends-member:
 - ["PSs8Hashable", "bottomMenuHairlineColor"]
 - !private ["PSs8Hashable", "bounces"]
 - !private ["PSs8Hashable", "boundingRectWithSize"]
+- !private ["PSs8Hashable", "bounds"]
 - ["PSs8Hashable", "centerMenuItems"]
+- ["PSs8Hashable", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs8Hashable", "configureUserInterface"]
 - !private ["PSs8Hashable", "constraintsWithVisualFormat"]
 - !private ["PSs8Hashable", "contentOffset"]
@@ -1129,6 +1194,7 @@ depends-member:
 - !private ["PSs8Hashable", "frame"]
 - ["PSs8Hashable", "gestureRecognizer"]
 - ["PSs8Hashable", "gestureRecognizerShouldBegin"]
+- ["PSs8Hashable", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSs8Hashable", "handleMenuItemTap"]
 - ["PSs8Hashable", "hashValue"]
 - !private ["PSs8Hashable", "hidden"]
@@ -1198,6 +1264,8 @@ depends-member:
 - ["PSs8Hashable", "setUpMenuItemView"]
 - ["PSs8Hashable", "setUpUserInterface"]
 - !private ["PSs8Hashable", "sharedApplication"]
+- ["PSs8Hashable", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSs8Hashable", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSs8Hashable", "showsHorizontalScrollIndicator"]
 - !private ["PSs8Hashable", "showsVerticalScrollIndicator"]
 - !private ["PSs8Hashable", "sizeToFit"]
@@ -1205,6 +1273,7 @@ depends-member:
 - ["PSs8Hashable", "startingPageForScroll"]
 - !private ["PSs8Hashable", "statusBarOrientation"]
 - !private ["PSs8Hashable", "subviews"]
+- ["PSs8Hashable", "systemFontOfSize"]
 - ["PSs8Hashable", "tapTimer"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textAlignment"]
@@ -1217,10 +1286,8 @@ depends-member:
 - ["PSs8Hashable", "useMenuLikeSegmentedControl"]
 - !private ["PSs8Hashable", "view"]
 - ["PSs8Hashable", "viewBackgroundColor"]
-- !private ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLayoutSubviews"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
-- !private ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "whiteColor"]
 - !private ["PSs8Hashable", "willMoveToParentViewController"]
 - ["PSs8Hashable", ""]
@@ -1232,6 +1299,8 @@ depends-member:
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
 - !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "enumerate"]
+- !private ["PSs9Indexable", "frame"]
 - !private ["PSs9Indexable", "keys"]
 - !private ["PSs9Indexable", "removeAll"]
 - !private ["PSs9Indexable", "removeValueForKey"]
@@ -1287,6 +1356,7 @@ depends-member:
 - ["C10BlogReader12MenuItemView", "UILabel"]
 - ["C10BlogReader12MenuItemView", "UIView"]
 - !private ["C10BlogReader12MenuItemView", "addSubview"]
+- !private ["C10BlogReader12MenuItemView", "bounds"]
 - ["C10BlogReader12MenuItemView", "deinit"]
 - !private ["C10BlogReader12MenuItemView", "floor"]
 - !private ["C10BlogReader12MenuItemView", "frame"]
@@ -1299,6 +1369,7 @@ depends-member:
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "_DisabledRangeIndex"]
+- !private ["PSs14MirrorPathType", "boundingRectWithSize"]
 - !private ["PSs14MirrorPathType", "hashValue"]
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -1307,6 +1378,8 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
 - !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "enumerate"]
+- !private ["PSs21MutableCollectionType", "frame"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
@@ -1314,17 +1387,26 @@ depends-member:
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
 - !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "enumerate"]
+- !private ["PSs16MutableIndexable", "frame"]
 - !private ["PSs16MutableIndexable", "subscript"]
+- !private ["VSs12MutableSlice", "frame"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "enumerate"]
+- !private ["PSs16MutableSliceable", "frame"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "CGRectGetHeight"]
+- !private ["PSo8NSCoding", "CGRectGetMaxX"]
+- !private ["PSo8NSCoding", "CGRectGetMinX"]
+- !private ["PSo8NSCoding", "CGRectGetWidth"]
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "CGSizeMake"]
 - !private ["PSo8NSCoding", "Double"]
@@ -1358,7 +1440,9 @@ depends-member:
 - ["PSo8NSCoding", "bottomMenuHairlineColor"]
 - !private ["PSo8NSCoding", "bounces"]
 - !private ["PSo8NSCoding", "boundingRectWithSize"]
+- !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "centerMenuItems"]
+- ["PSo8NSCoding", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo8NSCoding", "configureUserInterface"]
 - !private ["PSo8NSCoding", "contentOffset"]
 - !private ["PSo8NSCoding", "contentSize"]
@@ -1378,6 +1462,7 @@ depends-member:
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "gestureRecognizer"]
 - ["PSo8NSCoding", "gestureRecognizerShouldBegin"]
+- ["PSo8NSCoding", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo8NSCoding", "handleMenuItemTap"]
 - !private ["PSo8NSCoding", "hidden"]
 - ["PSo8NSCoding", "hideTopMenuBar"]
@@ -1436,6 +1521,8 @@ depends-member:
 - ["PSo8NSCoding", "setTitleText"]
 - ["PSo8NSCoding", "setUpMenuItemView"]
 - ["PSo8NSCoding", "setUpUserInterface"]
+- ["PSo8NSCoding", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo8NSCoding", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSo8NSCoding", "showsHorizontalScrollIndicator"]
 - !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
 - !private ["PSo8NSCoding", "sizeToFit"]
@@ -1454,21 +1541,24 @@ depends-member:
 - ["PSo8NSCoding", "useMenuLikeSegmentedControl"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewBackgroundColor"]
-- !private ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLayoutSubviews"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
-- !private ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo8NSCoding", "willMoveToParentViewController"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "boundingRectWithSize"]
-- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "lightGrayColor"]
+- ["PSo9NSCopying", "systemFontOfSize"]
 - ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectGetHeight"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectGetMaxX"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectGetMinX"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectGetWidth"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
@@ -1493,6 +1583,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "addPageAtIndex"]
 - ["PSo26NSExtensionRequestHandling", "bottomMenuHairlineColor"]
 - ["PSo26NSExtensionRequestHandling", "centerMenuItems"]
+- ["PSo26NSExtensionRequestHandling", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo26NSExtensionRequestHandling", "configureUserInterface"]
 - ["PSo26NSExtensionRequestHandling", "controllerArray"]
 - ["PSo26NSExtensionRequestHandling", "controllerScrollView"]
@@ -1506,6 +1597,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "enableHorizontalBounce"]
 - ["PSo26NSExtensionRequestHandling", "gestureRecognizer"]
 - ["PSo26NSExtensionRequestHandling", "gestureRecognizerShouldBegin"]
+- ["PSo26NSExtensionRequestHandling", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo26NSExtensionRequestHandling", "handleMenuItemTap"]
 - ["PSo26NSExtensionRequestHandling", "hideTopMenuBar"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -1550,6 +1642,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "selectionIndicatorHeight"]
 - ["PSo26NSExtensionRequestHandling", "selectionIndicatorView"]
 - ["PSo26NSExtensionRequestHandling", "setUpUserInterface"]
+- ["PSo26NSExtensionRequestHandling", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo26NSExtensionRequestHandling", "shouldAutomaticallyForwardRotationMethods"]
 - ["PSo26NSExtensionRequestHandling", "startingMenuMargin"]
 - ["PSo26NSExtensionRequestHandling", "startingPageForScroll"]
 - ["PSo26NSExtensionRequestHandling", "tapTimer"]
@@ -1559,10 +1653,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "useMenuLikeSegmentedControl"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewBackgroundColor"]
-- !private ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLayoutSubviews"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
-- !private ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - !private ["PSo26NSExtensionRequestHandling", "willMoveToParentViewController"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo18NSLayoutConstraint", "constraintsWithVisualFormat"]
@@ -1579,6 +1671,10 @@ depends-member:
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGPoint"]
 - ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectGetHeight"]
+- !private ["CSo8NSObject", "CGRectGetMaxX"]
+- !private ["CSo8NSObject", "CGRectGetMinX"]
+- !private ["CSo8NSObject", "CGRectGetWidth"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - !private ["CSo8NSObject", "CGSizeMake"]
 - !private ["CSo8NSObject", "Double"]
@@ -1618,7 +1714,9 @@ depends-member:
 - ["CSo8NSObject", "bottomMenuHairlineColor"]
 - !private ["CSo8NSObject", "bounces"]
 - !private ["CSo8NSObject", "boundingRectWithSize"]
+- !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "centerMenuItems"]
+- ["CSo8NSObject", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo8NSObject", "configureUserInterface"]
 - !private ["CSo8NSObject", "constraintsWithVisualFormat"]
 - !private ["CSo8NSObject", "contentOffset"]
@@ -1641,6 +1739,7 @@ depends-member:
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "gestureRecognizer"]
 - ["CSo8NSObject", "gestureRecognizerShouldBegin"]
+- ["CSo8NSObject", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo8NSObject", "handleMenuItemTap"]
 - !private ["CSo8NSObject", "hidden"]
 - ["CSo8NSObject", "hideTopMenuBar"]
@@ -1706,6 +1805,8 @@ depends-member:
 - ["CSo8NSObject", "setUpMenuItemView"]
 - ["CSo8NSObject", "setUpUserInterface"]
 - !private ["CSo8NSObject", "sharedApplication"]
+- ["CSo8NSObject", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["CSo8NSObject", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["CSo8NSObject", "showsHorizontalScrollIndicator"]
 - !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
 - !private ["CSo8NSObject", "sizeToFit"]
@@ -1713,6 +1814,7 @@ depends-member:
 - ["CSo8NSObject", "startingPageForScroll"]
 - !private ["CSo8NSObject", "statusBarOrientation"]
 - !private ["CSo8NSObject", "subviews"]
+- ["CSo8NSObject", "systemFontOfSize"]
 - ["CSo8NSObject", "tapTimer"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
@@ -1725,15 +1827,17 @@ depends-member:
 - ["CSo8NSObject", "useMenuLikeSegmentedControl"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewBackgroundColor"]
-- !private ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLayoutSubviews"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
-- !private ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "whiteColor"]
 - !private ["CSo8NSObject", "willMoveToParentViewController"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetHeight"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetMaxX"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetMinX"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetWidth"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CGSizeMake"]
 - !private ["PSo16NSObjectProtocol", "Double"]
@@ -1767,7 +1871,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "bottomMenuHairlineColor"]
 - !private ["PSo16NSObjectProtocol", "bounces"]
 - !private ["PSo16NSObjectProtocol", "boundingRectWithSize"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "centerMenuItems"]
+- ["PSo16NSObjectProtocol", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo16NSObjectProtocol", "configureUserInterface"]
 - !private ["PSo16NSObjectProtocol", "constraintsWithVisualFormat"]
 - !private ["PSo16NSObjectProtocol", "contentOffset"]
@@ -1789,6 +1895,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "gestureRecognizer"]
 - ["PSo16NSObjectProtocol", "gestureRecognizerShouldBegin"]
+- ["PSo16NSObjectProtocol", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo16NSObjectProtocol", "handleMenuItemTap"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
 - ["PSo16NSObjectProtocol", "hideTopMenuBar"]
@@ -1854,6 +1961,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setUpMenuItemView"]
 - ["PSo16NSObjectProtocol", "setUpUserInterface"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- ["PSo16NSObjectProtocol", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo16NSObjectProtocol", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSo16NSObjectProtocol", "showsHorizontalScrollIndicator"]
 - !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
@@ -1861,6 +1970,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "startingPageForScroll"]
 - !private ["PSo16NSObjectProtocol", "statusBarOrientation"]
 - !private ["PSo16NSObjectProtocol", "subviews"]
+- ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - ["PSo16NSObjectProtocol", "tapTimer"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
@@ -1873,10 +1983,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "useMenuLikeSegmentedControl"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewBackgroundColor"]
-- !private ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLayoutSubviews"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
-- !private ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "willMoveToParentViewController"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1901,6 +2009,7 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "Stride"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "boundingRectWithSize"]
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1918,6 +2027,8 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "enumerate"]
+- !private ["PSs30RangeReplaceableCollectionType", "frame"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Center"]
 - !private ["PSs16RawRepresentable", "Left"]
@@ -1942,6 +2053,8 @@ depends-member:
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
 - !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "enumerate"]
+- !private ["PSs12SequenceType", "frame"]
 - !private ["PSs12SequenceType", "keys"]
 - !private ["PSs12SequenceType", "removeAll"]
 - !private ["PSs12SequenceType", "removeValueForKey"]
@@ -1965,6 +2078,7 @@ depends-member:
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
 - !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "boundingRectWithSize"]
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
@@ -1973,8 +2087,10 @@ depends-member:
 - !private ["PSs10Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["PSs10Strideable", "hashValue"]
 - !private ["PSs10Strideable", "init"]
+- !private ["SS", "boundingRectWithSize"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "boundingRectWithSize"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "boundingRectWithSize"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -1988,6 +2104,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounces"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "contentOffset"]
 - !private ["PSo29UIAccessibilityIdentification", "contentSize"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
@@ -2028,6 +2145,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounces"]
+- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "contentOffset"]
 - !private ["PSo12UIAppearance", "contentSize"]
 - !private ["PSo12UIAppearance", "delegate"]
@@ -2061,6 +2179,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGPoint"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "CGRectGetHeight"]
+- !private ["PSo21UIAppearanceContainer", "CGRectGetMaxX"]
+- !private ["PSo21UIAppearanceContainer", "CGRectGetMinX"]
+- !private ["PSo21UIAppearanceContainer", "CGRectGetWidth"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
@@ -2092,7 +2214,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "bottomMenuHairlineColor"]
 - !private ["PSo21UIAppearanceContainer", "bounces"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "centerMenuItems"]
+- ["PSo21UIAppearanceContainer", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo21UIAppearanceContainer", "configureUserInterface"]
 - !private ["PSo21UIAppearanceContainer", "contentOffset"]
 - !private ["PSo21UIAppearanceContainer", "contentSize"]
@@ -2111,6 +2235,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "gestureRecognizer"]
 - ["PSo21UIAppearanceContainer", "gestureRecognizerShouldBegin"]
+- ["PSo21UIAppearanceContainer", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo21UIAppearanceContainer", "handleMenuItemTap"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "hideTopMenuBar"]
@@ -2168,6 +2293,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setTitleText"]
 - ["PSo21UIAppearanceContainer", "setUpMenuItemView"]
 - ["PSo21UIAppearanceContainer", "setUpUserInterface"]
+- ["PSo21UIAppearanceContainer", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo21UIAppearanceContainer", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSo21UIAppearanceContainer", "showsHorizontalScrollIndicator"]
 - !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
@@ -2186,10 +2313,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "useMenuLikeSegmentedControl"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewBackgroundColor"]
-- !private ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLayoutSubviews"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
-- !private ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - !private ["PSo21UIAppearanceContainer", "willMoveToParentViewController"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "sharedApplication"]
@@ -2200,6 +2325,10 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGPoint"]
 - !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "CGRectGetHeight"]
+- !private ["PSo18UIContentContainer", "CGRectGetMaxX"]
+- !private ["PSo18UIContentContainer", "CGRectGetMinX"]
+- !private ["PSo18UIContentContainer", "CGRectGetWidth"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "CGSizeMake"]
 - !private ["PSo18UIContentContainer", "Double"]
@@ -2224,6 +2353,7 @@ depends-member:
 - ["PSo18UIContentContainer", "addPageAtIndex"]
 - ["PSo18UIContentContainer", "bottomMenuHairlineColor"]
 - ["PSo18UIContentContainer", "centerMenuItems"]
+- ["PSo18UIContentContainer", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo18UIContentContainer", "configureUserInterface"]
 - ["PSo18UIContentContainer", "controllerArray"]
 - ["PSo18UIContentContainer", "controllerScrollView"]
@@ -2237,6 +2367,7 @@ depends-member:
 - ["PSo18UIContentContainer", "enableHorizontalBounce"]
 - ["PSo18UIContentContainer", "gestureRecognizer"]
 - ["PSo18UIContentContainer", "gestureRecognizerShouldBegin"]
+- ["PSo18UIContentContainer", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo18UIContentContainer", "handleMenuItemTap"]
 - ["PSo18UIContentContainer", "hideTopMenuBar"]
 - ["PSo18UIContentContainer", "init"]
@@ -2281,6 +2412,8 @@ depends-member:
 - ["PSo18UIContentContainer", "selectionIndicatorHeight"]
 - ["PSo18UIContentContainer", "selectionIndicatorView"]
 - ["PSo18UIContentContainer", "setUpUserInterface"]
+- ["PSo18UIContentContainer", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo18UIContentContainer", "shouldAutomaticallyForwardRotationMethods"]
 - ["PSo18UIContentContainer", "startingMenuMargin"]
 - ["PSo18UIContentContainer", "startingPageForScroll"]
 - ["PSo18UIContentContainer", "tapTimer"]
@@ -2290,10 +2423,8 @@ depends-member:
 - ["PSo18UIContentContainer", "useMenuLikeSegmentedControl"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewBackgroundColor"]
-- !private ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLayoutSubviews"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
-- !private ["PSo18UIContentContainer", "viewWillAppear"]
 - !private ["PSo18UIContentContainer", "willMoveToParentViewController"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "CGRectMake"]
@@ -2306,6 +2437,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounces"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "contentOffset"]
 - !private ["PSo17UICoordinateSpace", "contentSize"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
@@ -2350,6 +2482,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounces"]
+- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "contentOffset"]
 - !private ["PSo13UIDynamicItem", "contentSize"]
 - !private ["PSo13UIDynamicItem", "delegate"]
@@ -2380,7 +2513,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo13UIDynamicItem", ""]
-- ["CSo6UIFont", "init"]
+- ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo19UIGestureRecognizer", "delegate"]
 - !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["CSo19UIGestureRecognizer", "locationInView"]
@@ -2389,6 +2522,10 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "CGFloat"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGPoint"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGRect"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectGetHeight"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectGetMaxX"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectGetMinX"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectGetWidth"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGRectMake"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGSizeMake"]
 - !private ["PSo27UIGestureRecognizerDelegate", "Double"]
@@ -2413,6 +2550,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "addPageAtIndex"]
 - !private ["PSo27UIGestureRecognizerDelegate", "bottomMenuHairlineColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "centerMenuItems"]
+- !private ["PSo27UIGestureRecognizerDelegate", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - !private ["PSo27UIGestureRecognizerDelegate", "configureUserInterface"]
 - !private ["PSo27UIGestureRecognizerDelegate", "controllerArray"]
 - !private ["PSo27UIGestureRecognizerDelegate", "controllerScrollView"]
@@ -2425,6 +2563,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "enableHorizontalBounce"]
 - ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
 - ["PSo27UIGestureRecognizerDelegate", "gestureRecognizerShouldBegin"]
+- !private ["PSo27UIGestureRecognizerDelegate", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - !private ["PSo27UIGestureRecognizerDelegate", "hideTopMenuBar"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lastControllerScrollViewContentOffset"]
@@ -2493,6 +2632,10 @@ depends-member:
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGPoint"]
 - ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "CGRectGetHeight"]
+- !private ["CSo11UIResponder", "CGRectGetMaxX"]
+- !private ["CSo11UIResponder", "CGRectGetMinX"]
+- !private ["CSo11UIResponder", "CGRectGetWidth"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - !private ["CSo11UIResponder", "CGSizeMake"]
 - !private ["CSo11UIResponder", "Double"]
@@ -2530,7 +2673,9 @@ depends-member:
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "bottomMenuHairlineColor"]
 - !private ["CSo11UIResponder", "bounces"]
+- !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "centerMenuItems"]
+- ["CSo11UIResponder", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo11UIResponder", "configureUserInterface"]
 - !private ["CSo11UIResponder", "contentOffset"]
 - !private ["CSo11UIResponder", "contentSize"]
@@ -2549,6 +2694,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "gestureRecognizer"]
 - ["CSo11UIResponder", "gestureRecognizerShouldBegin"]
+- ["CSo11UIResponder", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo11UIResponder", "handleMenuItemTap"]
 - !private ["CSo11UIResponder", "hidden"]
 - ["CSo11UIResponder", "hideTopMenuBar"]
@@ -2607,6 +2753,8 @@ depends-member:
 - ["CSo11UIResponder", "setUpMenuItemView"]
 - ["CSo11UIResponder", "setUpUserInterface"]
 - !private ["CSo11UIResponder", "sharedApplication"]
+- ["CSo11UIResponder", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["CSo11UIResponder", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["CSo11UIResponder", "showsHorizontalScrollIndicator"]
 - !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
 - !private ["CSo11UIResponder", "sizeToFit"]
@@ -2626,10 +2774,8 @@ depends-member:
 - ["CSo11UIResponder", "useMenuLikeSegmentedControl"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewBackgroundColor"]
-- !private ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLayoutSubviews"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
-- !private ["CSo11UIResponder", "viewWillAppear"]
 - !private ["CSo11UIResponder", "willMoveToParentViewController"]
 - !private ["CSo12UIScrollView", "addGestureRecognizer"]
 - !private ["CSo12UIScrollView", "addSubview"]
@@ -2653,6 +2799,10 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
 - !private ["PSo20UIScrollViewDelegate", "CGPoint"]
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
+- !private ["PSo20UIScrollViewDelegate", "CGRectGetHeight"]
+- !private ["PSo20UIScrollViewDelegate", "CGRectGetMaxX"]
+- !private ["PSo20UIScrollViewDelegate", "CGRectGetMinX"]
+- !private ["PSo20UIScrollViewDelegate", "CGRectGetWidth"]
 - !private ["PSo20UIScrollViewDelegate", "CGRectMake"]
 - !private ["PSo20UIScrollViewDelegate", "CGSizeMake"]
 - !private ["PSo20UIScrollViewDelegate", "Double"]
@@ -2677,6 +2827,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "addPageAtIndex"]
 - !private ["PSo20UIScrollViewDelegate", "bottomMenuHairlineColor"]
 - !private ["PSo20UIScrollViewDelegate", "centerMenuItems"]
+- !private ["PSo20UIScrollViewDelegate", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - !private ["PSo20UIScrollViewDelegate", "configureUserInterface"]
 - !private ["PSo20UIScrollViewDelegate", "controllerArray"]
 - !private ["PSo20UIScrollViewDelegate", "controllerScrollView"]
@@ -2689,6 +2840,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "enableHorizontalBounce"]
 - ["PSo20UIScrollViewDelegate", "gestureRecognizer"]
 - ["PSo20UIScrollViewDelegate", "gestureRecognizerShouldBegin"]
+- !private ["PSo20UIScrollViewDelegate", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - !private ["PSo20UIScrollViewDelegate", "hideTopMenuBar"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "lastControllerScrollViewContentOffset"]
@@ -2741,6 +2893,10 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGPoint"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "CGRectGetHeight"]
+- !private ["PSo16UIStateRestoring", "CGRectGetMaxX"]
+- !private ["PSo16UIStateRestoring", "CGRectGetMinX"]
+- !private ["PSo16UIStateRestoring", "CGRectGetWidth"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "CGSizeMake"]
 - !private ["PSo16UIStateRestoring", "Double"]
@@ -2765,6 +2921,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "addPageAtIndex"]
 - ["PSo16UIStateRestoring", "bottomMenuHairlineColor"]
 - ["PSo16UIStateRestoring", "centerMenuItems"]
+- ["PSo16UIStateRestoring", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo16UIStateRestoring", "configureUserInterface"]
 - ["PSo16UIStateRestoring", "controllerArray"]
 - ["PSo16UIStateRestoring", "controllerScrollView"]
@@ -2778,6 +2935,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "enableHorizontalBounce"]
 - ["PSo16UIStateRestoring", "gestureRecognizer"]
 - ["PSo16UIStateRestoring", "gestureRecognizerShouldBegin"]
+- ["PSo16UIStateRestoring", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo16UIStateRestoring", "handleMenuItemTap"]
 - ["PSo16UIStateRestoring", "hideTopMenuBar"]
 - ["PSo16UIStateRestoring", "init"]
@@ -2822,6 +2980,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "selectionIndicatorHeight"]
 - ["PSo16UIStateRestoring", "selectionIndicatorView"]
 - ["PSo16UIStateRestoring", "setUpUserInterface"]
+- ["PSo16UIStateRestoring", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo16UIStateRestoring", "shouldAutomaticallyForwardRotationMethods"]
 - ["PSo16UIStateRestoring", "startingMenuMargin"]
 - ["PSo16UIStateRestoring", "startingPageForScroll"]
 - ["PSo16UIStateRestoring", "tapTimer"]
@@ -2831,10 +2991,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "useMenuLikeSegmentedControl"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewBackgroundColor"]
-- !private ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLayoutSubviews"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
-- !private ["PSo16UIStateRestoring", "viewWillAppear"]
 - !private ["PSo16UIStateRestoring", "willMoveToParentViewController"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo22UITapGestureRecognizer", "delegate"]
@@ -2845,6 +3003,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "CGRectGetHeight"]
+- !private ["PSo18UITraitEnvironment", "CGRectGetMaxX"]
+- !private ["PSo18UITraitEnvironment", "CGRectGetMinX"]
+- !private ["PSo18UITraitEnvironment", "CGRectGetWidth"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "CGSizeMake"]
 - !private ["PSo18UITraitEnvironment", "Double"]
@@ -2876,7 +3038,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "bottomMenuHairlineColor"]
 - !private ["PSo18UITraitEnvironment", "bounces"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "centerMenuItems"]
+- ["PSo18UITraitEnvironment", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo18UITraitEnvironment", "configureUserInterface"]
 - !private ["PSo18UITraitEnvironment", "contentOffset"]
 - !private ["PSo18UITraitEnvironment", "contentSize"]
@@ -2895,6 +3059,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "gestureRecognizer"]
 - ["PSo18UITraitEnvironment", "gestureRecognizerShouldBegin"]
+- ["PSo18UITraitEnvironment", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["PSo18UITraitEnvironment", "handleMenuItemTap"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "hideTopMenuBar"]
@@ -2952,6 +3117,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setTitleText"]
 - ["PSo18UITraitEnvironment", "setUpMenuItemView"]
 - ["PSo18UITraitEnvironment", "setUpUserInterface"]
+- ["PSo18UITraitEnvironment", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["PSo18UITraitEnvironment", "shouldAutomaticallyForwardRotationMethods"]
 - !private ["PSo18UITraitEnvironment", "showsHorizontalScrollIndicator"]
 - !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
@@ -2970,10 +3137,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "useMenuLikeSegmentedControl"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewBackgroundColor"]
-- !private ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLayoutSubviews"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
-- !private ["PSo18UITraitEnvironment", "viewWillAppear"]
 - !private ["PSo18UITraitEnvironment", "willMoveToParentViewController"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
@@ -2991,6 +3156,7 @@ depends-member:
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounces"]
+- !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "contentOffset"]
 - !private ["CSo6UIView", "contentSize"]
 - !private ["CSo6UIView", "delegate"]
@@ -3030,6 +3196,10 @@ depends-member:
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGPoint"]
 - ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "CGRectGetHeight"]
+- !private ["CSo16UIViewController", "CGRectGetMaxX"]
+- !private ["CSo16UIViewController", "CGRectGetMinX"]
+- !private ["CSo16UIViewController", "CGRectGetWidth"]
 - !private ["CSo16UIViewController", "CGRectMake"]
 - !private ["CSo16UIViewController", "CGSizeMake"]
 - !private ["CSo16UIViewController", "Double"]
@@ -3060,6 +3230,7 @@ depends-member:
 - ["CSo16UIViewController", "addPageAtIndex"]
 - ["CSo16UIViewController", "bottomMenuHairlineColor"]
 - ["CSo16UIViewController", "centerMenuItems"]
+- ["CSo16UIViewController", "configureMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo16UIViewController", "configureUserInterface"]
 - ["CSo16UIViewController", "controllerArray"]
 - ["CSo16UIViewController", "controllerScrollView"]
@@ -3073,6 +3244,7 @@ depends-member:
 - ["CSo16UIViewController", "enableHorizontalBounce"]
 - ["CSo16UIViewController", "gestureRecognizer"]
 - ["CSo16UIViewController", "gestureRecognizerShouldBegin"]
+- ["CSo16UIViewController", "getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems"]
 - ["CSo16UIViewController", "handleMenuItemTap"]
 - ["CSo16UIViewController", "hideTopMenuBar"]
 - ["CSo16UIViewController", "init"]
@@ -3117,6 +3289,8 @@ depends-member:
 - ["CSo16UIViewController", "selectionIndicatorHeight"]
 - ["CSo16UIViewController", "selectionIndicatorView"]
 - ["CSo16UIViewController", "setUpUserInterface"]
+- ["CSo16UIViewController", "shouldAutomaticallyForwardAppearanceMethods"]
+- ["CSo16UIViewController", "shouldAutomaticallyForwardRotationMethods"]
 - ["CSo16UIViewController", "startingMenuMargin"]
 - ["CSo16UIViewController", "startingPageForScroll"]
 - ["CSo16UIViewController", "tapTimer"]
@@ -3126,10 +3300,8 @@ depends-member:
 - ["CSo16UIViewController", "useMenuLikeSegmentedControl"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewBackgroundColor"]
-- !private ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLayoutSubviews"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
-- !private ["CSo16UIViewController", "viewWillAppear"]
 - !private ["CSo16UIViewController", "willMoveToParentViewController"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "Distance"]
@@ -3170,8 +3342,11 @@ depends-member:
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
 - !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "enumerate"]
+- !private ["PSs10_ArrayType", "frame"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "boundingRectWithSize"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
@@ -3183,8 +3358,11 @@ depends-member:
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "boundingRectWithSize"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "boundingRectWithSize"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "boundingRectWithSize"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs19_CVarArgAlignedType", "Distance"]
 - !private ["PSs19_CVarArgAlignedType", "IntegerLiteralType"]
@@ -3202,6 +3380,8 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "enumerate"]
+- !private ["PSs24_DestructorSafeContainer", "frame"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs28_DisallowMixedSignArithmetic", "Distance"]
 - !private ["PSs28_DisallowMixedSignArithmetic", "IntegerLiteralType"]
@@ -3241,7 +3421,9 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "boundingRectWithSize"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "enumerate"]
 - !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "keys"]
@@ -3281,10 +3463,12 @@ depends-member:
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "bounces"]
 - !private ["PSs12_Reflectable", "boundingRectWithSize"]
+- !private ["PSs12_Reflectable", "bounds"]
 - !private ["PSs12_Reflectable", "contentOffset"]
 - !private ["PSs12_Reflectable", "contentSize"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "enumerate"]
 - !private ["PSs12_Reflectable", "floor"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
@@ -3372,6 +3556,8 @@ depends-nominal:
 - !private "VSs15DictionaryIndex"
 - "PSs28DictionaryLiteralConvertible"
 - !private "Sd"
+- !private "VSs18EnumerateGenerator"
+- !private "VSs17EnumerateSequence"
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
@@ -3399,6 +3585,7 @@ depends-nominal:
 - !private "PSs14MirrorPathType"
 - !private "PSs21MutableCollectionType"
 - !private "PSs16MutableIndexable"
+- !private "VSs12MutableSlice"
 - !private "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
@@ -3494,13 +3681,23 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/BlogReader-Bridging-Header.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PF_Twitter.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFTwitterUtils.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPush.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/Bolts.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFTask.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Bolts.framework/Modules/module.modulemap"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPurchase.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFProduct.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFPush.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFInstallation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFSession.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRole.h"
 - "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers/PFRelation.h"
@@ -3529,44 +3726,59 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchRequest.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/GADSearchBannerView.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitialDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventInterstitial.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventExtras.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventRequest.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBannerDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Mediation/GADCustomEventBanner.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/GADNativeAdImageAdLoaderOptions.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeCustomTemplateAd.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeContentAd.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAppInstallAd.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdImage.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAdDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/GADNativeAd.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Formats/../GADAdLoaderDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/GADAdLoaderAdTypes.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Loading/Options/../GADAdLoader.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADExtras.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADRequest.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/Search/../GADBannerView.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/WebKit.swiftmodule"
-interface-hash: "afc138c54a498a3e3eb6417c60cc835c"
+interface-hash: "8db684fea1a2e37937ee1aaae3f7428d"

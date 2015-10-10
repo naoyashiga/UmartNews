@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PageMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>522AB5BB4C43A35A794A6444EFD9C3DC</key>
+		<key>27D60B225750BE207EB01B3CEBB6A899</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>738CF6779A8DE9F8F9957819AA0E6EB3</key>
+		<key>301D3AD85FB58C42DD83233662E28442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B8265476DBAF06C7FCE0FEB8BE3AF07</key>
+		<key>B4C743F5A0A0358F13F49CBB4148B0D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99E693FDACEB5339AEF8693456623DF1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F0A690B7F3ED9FE9116CC481D8690755</key>
+		<key>CBC5FF6B5EE78C3BBC435E4B9C46E72F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

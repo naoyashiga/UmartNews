@@ -87,9 +87,9 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import GoogleMobileAds;
 @import CoreGraphics;
 @import ObjectiveC;
+@import GoogleMobileAds;
 @import MessageUI;
 @import WebKit;
 @import CoreFoundation;
@@ -118,43 +118,13 @@ SWIFT_CLASS("_TtC10BlogReader11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSMutableArray;
-@class NSArray;
-@class NSURLResponse;
-@class NSError;
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC10BlogReader21ArticleViewController")
-@interface ArticleViewController : UITableViewController <GADBannerViewDelegate>
-@property (nonatomic) UINavigationController * __nullable parentNavigationController;
-@property (nonatomic) NSMutableArray * __null_unspecified myEntries;
-@property (nonatomic, copy) NSString * __null_unspecified feedURL;
-- (void)viewDidLoad;
-- (void)setTableView;
-- (NSString * __nonnull)checkFeedSite:(NSArray * __nonnull)siteNameArray;
-- (void)reload;
-- (void)fetchResponse:(NSURLResponse * __null_unspecified)res data:(NSData * __null_unspecified)data error:(NSError * __null_unspecified)error;
-- (void)refreshInvoked;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIScrollView;
 @class MenuItemView;
 @class UIView;
 @class UIColor;
 @class UIFont;
 @class NSTimer;
+@class NSCoder;
 @class UITapGestureRecognizer;
 @protocol CAPSPageMenuDelegate;
 
@@ -212,6 +182,8 @@ SWIFT_CLASS("_TtC10BlogReader12CAPSPageMenu")
 /// \param options Dictionary holding any customization options user might want to set
 - (nonnull instancetype)initWithViewControllers:(NSArray<UIViewController *> * __nonnull)viewControllers frame:(CGRect)frame options:(NSDictionary<NSString *, id> * __nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods;
+- (BOOL)shouldAutomaticallyForwardRotationMethods;
 - (void)setUpUserInterface;
 - (void)configureUserInterface;
 - (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
@@ -286,6 +258,9 @@ SWIFT_CLASS("_TtC10BlogReader11SettingCell")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class NSIndexPath;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC10BlogReader21SettingViewController")
 @interface SettingViewController : UITableViewController
@@ -350,6 +325,7 @@ SWIFT_CLASS("_TtC10BlogReader17WebViewBottomMenu")
 @class WKWindowFeatures;
 @class WKNavigation;
 @class MFMailComposeViewController;
+@class NSError;
 
 SWIFT_CLASS("_TtC10BlogReader17WebViewController")
 @interface WebViewController : UIViewController <GADBannerViewDelegate, MFMailComposeViewControllerDelegate, WKUIDelegate>

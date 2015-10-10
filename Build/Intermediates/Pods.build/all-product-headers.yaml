@@ -88,6 +88,11 @@
         },
         {
           'type': 'file',
+          'name': "UIImage+AFNetworking.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
+        },
+        {
+          'type': 'file',
           'name': "UIImageView+AFNetworking.h",
           'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
         },
@@ -145,6 +150,11 @@
         },
         {
           'type': 'file',
+          'name': "BFDefines.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Bolts/Bolts/Common/BFDefines.h"
+        },
+        {
+          'type': 'file',
           'name': "BFExecutor.h",
           'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Bolts/Bolts/Common/BFExecutor.h"
         },
@@ -193,154 +203,122 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/PageMenu.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "PageMenu-Swift.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/PageMenu.framework/Headers/PageMenu-Swift.h"
-        },
-        {
-          'type': 'file',
-          'name': "PageMenu-umbrella.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Target Support Files/PageMenu/PageMenu-umbrella.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/PageMenu.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Intermediates/Pods.build/Debug-iphonesimulator/PageMenu.build/module.modulemap"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
       'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Build/Products/Debug-iphonesimulator/Parse.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "PFACL.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFACL.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFACL.h"
         },
         {
           'type': 'file',
           'name': "PFAnalytics.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFAnalytics.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFAnalytics.h"
         },
         {
           'type': 'file',
           'name': "PFAnonymousUtils.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFAnonymousUtils.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFAnonymousUtils.h"
         },
         {
           'type': 'file',
           'name': "PFCloud.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFCloud.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFCloud.h"
         },
         {
           'type': 'file',
           'name': "PFConfig.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFConfig.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFConfig.h"
         },
         {
           'type': 'file',
           'name': "PFConstants.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFConstants.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFConstants.h"
         },
         {
           'type': 'file',
           'name': "PFFile.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFFile.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFFile.h"
         },
         {
           'type': 'file',
           'name': "PFGeoPoint.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFGeoPoint.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFGeoPoint.h"
         },
         {
           'type': 'file',
           'name': "PFInstallation.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFInstallation.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFInstallation.h"
         },
         {
           'type': 'file',
           'name': "PFNetworkActivityIndicatorManager.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
         },
         {
           'type': 'file',
           'name': "PFNullability.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFNullability.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFNullability.h"
         },
         {
           'type': 'file',
           'name': "PFObject+Subclass.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFObject+Subclass.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFObject+Subclass.h"
         },
         {
           'type': 'file',
           'name': "PFObject.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFObject.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFObject.h"
         },
         {
           'type': 'file',
           'name': "PFProduct.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFProduct.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFProduct.h"
         },
         {
           'type': 'file',
           'name': "PFPurchase.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFPurchase.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFPurchase.h"
         },
         {
           'type': 'file',
           'name': "PFPush.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFPush.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFPush.h"
         },
         {
           'type': 'file',
           'name': "PFQuery.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFQuery.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFQuery.h"
         },
         {
           'type': 'file',
           'name': "PFRelation.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFRelation.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFRelation.h"
         },
         {
           'type': 'file',
           'name': "PFRole.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFRole.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFRole.h"
         },
         {
           'type': 'file',
           'name': "PFSession.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFSession.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFSession.h"
         },
         {
           'type': 'file',
           'name': "PFSubclassing.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFSubclassing.h"
-        },
-        {
-          'type': 'file',
-          'name': "PFTwitterUtils.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFTwitterUtils.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFSubclassing.h"
         },
         {
           'type': 'file',
           'name': "PFUser.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PFUser.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFUser.h"
         },
         {
           'type': 'file',
-          'name': "PF_Twitter.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/PF_Twitter.h"
+          'name': "PFUserAuthenticationDelegate.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
         },
         {
           'type': 'file',
@@ -355,7 +333,7 @@
         {
           'type': 'file',
           'name': "Parse.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse.framework/Headers/Parse.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/Parse/Parse/Parse.h"
         }
       ]
     },

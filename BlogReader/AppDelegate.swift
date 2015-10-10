@@ -59,9 +59,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         let installation = PFInstallation.currentInstallation()
         installation.setDeviceTokenFromData(deviceToken)
-//        installation.saveInBackground()
-        installation.save()
-        print("got device id! \(deviceToken)")
+        installation.saveInBackgroundWithBlock { succeeded, error in
+            if error != nil {
+                print("parsePushUserAssign save error.")
+            }else {
+                print("success")
+            }
+        }
     }
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {

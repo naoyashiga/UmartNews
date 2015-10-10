@@ -17,124 +17,124 @@ provides-member:
 - ["C8PageMenu12CAPSPageMenu", ""]
 - ["OC8PageMenu12CAPSPageMenu27CAPSPageMenuScrollDirection", ""]
 provides-dynamic-lookup:
-- "unselectedMenuItemLabelColor"
-- "handleMenuItemTap"
-- "enableHorizontalBounce"
-- "lastControllerScrollViewContentOffset"
-- "tapTimer"
-- "menuItemSeparatorRoundEdges"
-- "setUpMenuItemView"
-- "hideTopMenuBar"
-- "moveSelectionIndicator"
-- "menuItemWidth"
-- "selectionIndicatorView"
-- "delegate"
-- "configureUserInterface"
-- "removePageAtIndex"
-- "setTitleText"
-- "controllerArray"
 - "centerMenuItems"
 - "didScrollAlready"
-- "addPageAtIndex"
-- "lastPageIndex"
-- "bottomMenuHairlineColor"
+- "tapTimer"
 - "didMoveToPage"
-- "menuItemSeparatorColor"
-- "totalMenuItemWidthIfDifferentWidths"
-- "scrollViewDidEndTapScrollingAnimation"
-- "selectionIndicatorHeight"
-- "menuItemSeparatorWidth"
-- "pagesAddedDictionary"
-- "menuItems"
-- "currentPageIndex"
-- "didTapMenuItemToScroll"
-- "pageIndexForOrientationChange"
-- "selectionIndicatorColor"
-- "scrollAnimationDurationOnMenuItemTap"
-- "menuHeight"
-- "menuScrollView"
-- "didLayoutSubviewsAfterRotation"
-- "menuItemWidths"
-- "scrollViewDidEndDecelerating"
-- "menuItemSeparatorPercentageHeight"
-- "useMenuLikeSegmentedControl"
-- "scrollMenuBackgroundColor"
+- "removePageAtIndex"
+- "moveSelectionIndicator"
+- "bottomMenuHairlineColor"
 - "selectedMenuItemLabelColor"
-- "viewDidLayoutSubviews"
-- "startingMenuMargin"
-- "titleLabel"
-- "menuMargin"
-- "currentOrientationIsPortrait"
-- "addBottomMenuHairline"
-- "menuItemFont"
-- "moveToPage"
-- "willMoveToPage"
-- "setUpUserInterface"
-- "menuItemSeparator"
-- "scrollViewDidScroll"
-- "controllerScrollView"
-- "startingPageForScroll"
+- "menuItemSeparatorWidth"
 - "viewBackgroundColor"
+- "delegate"
+- "enableHorizontalBounce"
+- "menuItemSeparatorColor"
+- "startingMenuMargin"
+- "menuMargin"
+- "handleMenuItemTap"
+- "controllerScrollView"
+- "menuItemSeparatorRoundEdges"
+- "menuItemWidth"
+- "selectionIndicatorColor"
+- "menuItemWidths"
+- "lastControllerScrollViewContentOffset"
+- "scrollMenuBackgroundColor"
+- "scrollAnimationDurationOnMenuItemTap"
+- "setTitleText"
+- "menuScrollView"
+- "menuHeight"
+- "addBottomMenuHairline"
+- "setUpMenuItemView"
+- "hideTopMenuBar"
+- "willMoveToPage"
+- "menuItemSeparator"
+- "menuItems"
+- "currentOrientationIsPortrait"
+- "selectionIndicatorHeight"
+- "menuItemFont"
+- "lastPageIndex"
+- "setUpUserInterface"
 - "menuItemWidthBasedOnTitleTextWidth"
+- "totalMenuItemWidthIfDifferentWidths"
+- "titleLabel"
+- "currentPageIndex"
+- "startingPageForScroll"
+- "moveToPage"
+- "didTapMenuItemToScroll"
+- "scrollViewDidScroll"
+- "scrollViewDidEndTapScrollingAnimation"
+- "controllerArray"
+- "unselectedMenuItemLabelColor"
+- "useMenuLikeSegmentedControl"
+- "pageIndexForOrientationChange"
+- "configureUserInterface"
+- "viewDidLayoutSubviews"
+- "menuItemSeparatorPercentageHeight"
+- "didLayoutSubviewsAfterRotation"
+- "scrollViewDidEndDecelerating"
+- "pagesAddedDictionary"
+- "addPageAtIndex"
+- "selectionIndicatorView"
 depends-top-level:
-- !private ">="
-- "UIViewController"
-- !private "&&"
-- "CAPSPageMenuDelegate"
-- "CAPSPageMenuOption"
-- !private "/"
-- "CGFloat"
-- !private "*"
-- !private "<"
-- "StringLiteralType"
-- !private "||"
-- !private "floor"
-- "NSCoder"
-- "UIColor"
-- "NSString"
-- !private "++"
-- !private "CGSizeMake"
-- !private "NSTimeInterval"
-- !private "NSTextAlignment"
-- "CGRect"
-- !private "UIDevice"
-- "Bool"
-- !private "UIApplication"
-- !private ">"
-- !private "CGRectMake"
-- !private "NSFontAttributeName"
-- "CAPSPageMenu"
-- !private "+="
-- !private "!"
-- "MenuItemView"
-- !private "-"
-- "Dictionary"
-- !private "Double"
-- !private "Array"
-- !private "NSStringDrawingOptions"
-- !private "~="
-- "=="
-- "String"
 - !private "Selector"
-- "UILabel"
-- !private "CGPoint"
-- !private "NSLayoutFormatOptions"
-- "AnyObject"
-- "UIGestureRecognizerDelegate"
-- !private "NSLayoutConstraint"
-- !private "Void"
-- "UIScrollViewDelegate"
-- "Int"
-- "NSTimer"
-- "UIFont"
+- !private "UIApplication"
 - "UIScrollView"
-- !private "..."
-- !private "!="
-- !private "+"
-- "UIView"
-- "UITapGestureRecognizer"
-- "BooleanLiteralType"
+- !private "++"
+- !private "NSTimeInterval"
 - !private "<="
+- "BooleanLiteralType"
+- "Dictionary"
+- "Bool"
+- "UIColor"
+- "CGFloat"
+- "UIFont"
+- !private "<"
+- "CAPSPageMenuOption"
+- !private "~="
+- "UILabel"
+- "=="
+- !private "/"
+- "UIViewController"
+- !private "NSLayoutConstraint"
+- "Int"
+- "UIGestureRecognizerDelegate"
+- "UIView"
+- !private "+"
+- "NSString"
+- "UIScrollViewDelegate"
+- "NSTimer"
+- !private "*"
+- !private "&&"
+- !private ">="
+- !private "||"
+- !private "CGPoint"
+- !private "floor"
+- !private "!="
+- "NSCoder"
+- !private "Double"
+- !private "NSLayoutFormatOptions"
+- !private "CGSizeMake"
+- !private "Void"
+- !private "CGRectMake"
+- !private "..."
+- !private "!"
+- "UITapGestureRecognizer"
+- !private "UIDevice"
+- "CAPSPageMenu"
+- "AnyObject"
+- !private "Array"
+- !private "+="
+- !private "-"
+- !private "NSFontAttributeName"
+- "CAPSPageMenuDelegate"
+- "String"
+- !private ">"
+- "MenuItemView"
+- !private "StringLiteralType"
+- "CGRect"
+- !private "NSTextAlignment"
+- !private "NSStringDrawingOptions"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -259,6 +259,7 @@ depends-member:
 - ["PSs9AnyObject", "selectionIndicatorView"]
 - !private ["PSs9AnyObject", "setContentOffset"]
 - ["PSs9AnyObject", "setTitleText"]
+- !private ["PSs9AnyObject", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs9AnyObject", "setUpMenuItemView"]
 - ["PSs9AnyObject", "setUpUserInterface"]
 - !private ["PSs9AnyObject", "sharedApplication"]
@@ -269,6 +270,7 @@ depends-member:
 - ["PSs9AnyObject", "startingPageForScroll"]
 - !private ["PSs9AnyObject", "statusBarOrientation"]
 - !private ["PSs9AnyObject", "subviews"]
+- ["PSs9AnyObject", "systemFontOfSize"]
 - ["PSs9AnyObject", "tapTimer"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textAlignment"]
@@ -276,7 +278,6 @@ depends-member:
 - !private ["PSs9AnyObject", "title"]
 - ["PSs9AnyObject", "titleLabel"]
 - ["PSs9AnyObject", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSs9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSs9AnyObject", "unselectedMenuItemLabelColor"]
 - ["PSs9AnyObject", "useMenuLikeSegmentedControl"]
 - !private ["PSs9AnyObject", "view"]
@@ -296,8 +297,10 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "RawValue"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "UsesLineFragmentOrigin"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
@@ -609,6 +612,7 @@ depends-member:
 - ["PSs11CVarArgType", "selectionIndicatorView"]
 - !private ["PSs11CVarArgType", "setContentOffset"]
 - ["PSs11CVarArgType", "setTitleText"]
+- !private ["PSs11CVarArgType", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs11CVarArgType", "setUpMenuItemView"]
 - ["PSs11CVarArgType", "setUpUserInterface"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
@@ -619,6 +623,7 @@ depends-member:
 - ["PSs11CVarArgType", "startingPageForScroll"]
 - !private ["PSs11CVarArgType", "statusBarOrientation"]
 - !private ["PSs11CVarArgType", "subviews"]
+- ["PSs11CVarArgType", "systemFontOfSize"]
 - ["PSs11CVarArgType", "tapTimer"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textAlignment"]
@@ -626,7 +631,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "title"]
 - ["PSs11CVarArgType", "titleLabel"]
 - ["PSs11CVarArgType", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSs11CVarArgType", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSs11CVarArgType", "unselectedMenuItemLabelColor"]
 - ["PSs11CVarArgType", "useMenuLikeSegmentedControl"]
 - !private ["PSs11CVarArgType", "view"]
@@ -813,6 +817,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "selectionIndicatorView"]
 - !private ["PSs23CustomStringConvertible", "setContentOffset"]
 - ["PSs23CustomStringConvertible", "setTitleText"]
+- !private ["PSs23CustomStringConvertible", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs23CustomStringConvertible", "setUpMenuItemView"]
 - ["PSs23CustomStringConvertible", "setUpUserInterface"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
@@ -824,6 +829,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "statusBarOrientation"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "subviews"]
+- ["PSs23CustomStringConvertible", "systemFontOfSize"]
 - ["PSs23CustomStringConvertible", "tapTimer"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textAlignment"]
@@ -831,7 +837,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "title"]
 - ["PSs23CustomStringConvertible", "titleLabel"]
 - ["PSs23CustomStringConvertible", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSs23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSs23CustomStringConvertible", "unselectedMenuItemLabelColor"]
 - ["PSs23CustomStringConvertible", "useMenuLikeSegmentedControl"]
 - !private ["PSs23CustomStringConvertible", "view"]
@@ -877,6 +882,7 @@ depends-member:
 - !private ["PSs9Equatable", "Center"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "Double"]
+- !private ["PSs9Equatable", "Element"]
 - !private ["PSs9Equatable", "Generator"]
 - !private ["PSs9Equatable", "Int"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
@@ -1008,6 +1014,7 @@ depends-member:
 - ["PSs9Equatable", "selectionIndicatorView"]
 - !private ["PSs9Equatable", "setContentOffset"]
 - ["PSs9Equatable", "setTitleText"]
+- !private ["PSs9Equatable", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs9Equatable", "setUpMenuItemView"]
 - ["PSs9Equatable", "setUpUserInterface"]
 - !private ["PSs9Equatable", "sharedApplication"]
@@ -1019,6 +1026,7 @@ depends-member:
 - ["PSs9Equatable", "startingPageForScroll"]
 - !private ["PSs9Equatable", "statusBarOrientation"]
 - !private ["PSs9Equatable", "subviews"]
+- ["PSs9Equatable", "systemFontOfSize"]
 - ["PSs9Equatable", "tapTimer"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textAlignment"]
@@ -1026,7 +1034,6 @@ depends-member:
 - !private ["PSs9Equatable", "title"]
 - ["PSs9Equatable", "titleLabel"]
 - ["PSs9Equatable", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSs9Equatable", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSs9Equatable", "unselectedMenuItemLabelColor"]
 - ["PSs9Equatable", "useMenuLikeSegmentedControl"]
 - !private ["PSs9Equatable", "view"]
@@ -1195,6 +1202,7 @@ depends-member:
 - ["PSs8Hashable", "selectionIndicatorView"]
 - !private ["PSs8Hashable", "setContentOffset"]
 - ["PSs8Hashable", "setTitleText"]
+- !private ["PSs8Hashable", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs8Hashable", "setUpMenuItemView"]
 - ["PSs8Hashable", "setUpUserInterface"]
 - !private ["PSs8Hashable", "sharedApplication"]
@@ -1205,6 +1213,7 @@ depends-member:
 - ["PSs8Hashable", "startingPageForScroll"]
 - !private ["PSs8Hashable", "statusBarOrientation"]
 - !private ["PSs8Hashable", "subviews"]
+- ["PSs8Hashable", "systemFontOfSize"]
 - ["PSs8Hashable", "tapTimer"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textAlignment"]
@@ -1212,7 +1221,6 @@ depends-member:
 - !private ["PSs8Hashable", "title"]
 - ["PSs8Hashable", "titleLabel"]
 - ["PSs8Hashable", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSs8Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSs8Hashable", "unselectedMenuItemLabelColor"]
 - ["PSs8Hashable", "useMenuLikeSegmentedControl"]
 - !private ["PSs8Hashable", "view"]
@@ -1434,6 +1442,7 @@ depends-member:
 - ["PSo8NSCoding", "selectionIndicatorView"]
 - !private ["PSo8NSCoding", "setContentOffset"]
 - ["PSo8NSCoding", "setTitleText"]
+- !private ["PSo8NSCoding", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo8NSCoding", "setUpMenuItemView"]
 - ["PSo8NSCoding", "setUpUserInterface"]
 - !private ["PSo8NSCoding", "showsHorizontalScrollIndicator"]
@@ -1449,7 +1458,6 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo8NSCoding", "unselectedMenuItemLabelColor"]
 - ["PSo8NSCoding", "useMenuLikeSegmentedControl"]
 - !private ["PSo8NSCoding", "view"]
@@ -1463,8 +1471,9 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "boundingRectWithSize"]
-- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "lightGrayColor"]
+- ["PSo9NSCopying", "systemFontOfSize"]
 - ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
@@ -1566,6 +1575,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "willMoveToParentViewController"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo18NSLayoutConstraint", "constraintsWithVisualFormat"]
+- !private ["VSC21NSLayoutFormatOptions", "Element"]
+- !private ["VSC21NSLayoutFormatOptions", "RawValue"]
 - !private ["VSC21NSLayoutFormatOptions", "init"]
 - !private ["PSo16NSMutableCopying", "boundingRectWithSize"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -1703,6 +1714,7 @@ depends-member:
 - ["CSo8NSObject", "selectionIndicatorView"]
 - !private ["CSo8NSObject", "setContentOffset"]
 - ["CSo8NSObject", "setTitleText"]
+- !private ["CSo8NSObject", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["CSo8NSObject", "setUpMenuItemView"]
 - ["CSo8NSObject", "setUpUserInterface"]
 - !private ["CSo8NSObject", "sharedApplication"]
@@ -1713,6 +1725,7 @@ depends-member:
 - ["CSo8NSObject", "startingPageForScroll"]
 - !private ["CSo8NSObject", "statusBarOrientation"]
 - !private ["CSo8NSObject", "subviews"]
+- ["CSo8NSObject", "systemFontOfSize"]
 - ["CSo8NSObject", "tapTimer"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
@@ -1720,7 +1733,6 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "titleLabel"]
 - ["CSo8NSObject", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo8NSObject", "unselectedMenuItemLabelColor"]
 - ["CSo8NSObject", "useMenuLikeSegmentedControl"]
 - !private ["CSo8NSObject", "view"]
@@ -1851,6 +1863,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "selectionIndicatorView"]
 - !private ["PSo16NSObjectProtocol", "setContentOffset"]
 - ["PSo16NSObjectProtocol", "setTitleText"]
+- !private ["PSo16NSObjectProtocol", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo16NSObjectProtocol", "setUpMenuItemView"]
 - ["PSo16NSObjectProtocol", "setUpUserInterface"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
@@ -1861,6 +1874,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "startingPageForScroll"]
 - !private ["PSo16NSObjectProtocol", "statusBarOrientation"]
 - !private ["PSo16NSObjectProtocol", "subviews"]
+- ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - ["PSo16NSObjectProtocol", "tapTimer"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
@@ -1868,7 +1882,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo16NSObjectProtocol", "unselectedMenuItemLabelColor"]
 - ["PSo16NSObjectProtocol", "useMenuLikeSegmentedControl"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1896,6 +1909,8 @@ depends-member:
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs21NilLiteralConvertible", "Stride"]
 - !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs13OptionSetType", "Element"]
+- !private ["PSs13OptionSetType", "RawValue"]
 - !private ["PSs13OptionSetType", "UsesLineFragmentOrigin"]
 - !private ["PSs13OptionSetType", "init"]
 - ["Sq", "Some"]
@@ -1920,6 +1935,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Center"]
+- !private ["PSs16RawRepresentable", "Element"]
 - !private ["PSs16RawRepresentable", "Left"]
 - ["PSs16RawRepresentable", "Other"]
 - ["PSs16RawRepresentable", "RawValue"]
@@ -1946,6 +1962,8 @@ depends-member:
 - !private ["PSs12SequenceType", "removeAll"]
 - !private ["PSs12SequenceType", "removeValueForKey"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Element"]
+- !private ["PSs14SetAlgebraType", "RawValue"]
 - !private ["PSs14SetAlgebraType", "UsesLineFragmentOrigin"]
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
@@ -2007,6 +2025,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "scrollsToTop"]
 - !private ["PSo29UIAccessibilityIdentification", "setContentOffset"]
 - ["PSo29UIAccessibilityIdentification", "setTitleText"]
+- !private ["PSo29UIAccessibilityIdentification", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo29UIAccessibilityIdentification", "setUpMenuItemView"]
 - !private ["PSo29UIAccessibilityIdentification", "showsHorizontalScrollIndicator"]
 - !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
@@ -2016,7 +2035,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "titleLabel"]
-- !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGRectMake"]
 - !private ["PSo12UIAppearance", "UILabel"]
@@ -2047,6 +2065,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "scrollsToTop"]
 - !private ["PSo12UIAppearance", "setContentOffset"]
 - ["PSo12UIAppearance", "setTitleText"]
+- !private ["PSo12UIAppearance", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo12UIAppearance", "setUpMenuItemView"]
 - !private ["PSo12UIAppearance", "showsHorizontalScrollIndicator"]
 - !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
@@ -2056,7 +2075,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "titleLabel"]
-- !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGPoint"]
@@ -2166,6 +2184,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "selectionIndicatorView"]
 - !private ["PSo21UIAppearanceContainer", "setContentOffset"]
 - ["PSo21UIAppearanceContainer", "setTitleText"]
+- !private ["PSo21UIAppearanceContainer", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", "setUpMenuItemView"]
 - ["PSo21UIAppearanceContainer", "setUpUserInterface"]
 - !private ["PSo21UIAppearanceContainer", "showsHorizontalScrollIndicator"]
@@ -2181,7 +2200,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", "unselectedMenuItemLabelColor"]
 - ["PSo21UIAppearanceContainer", "useMenuLikeSegmentedControl"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -2325,6 +2343,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "scrollsToTop"]
 - !private ["PSo17UICoordinateSpace", "setContentOffset"]
 - ["PSo17UICoordinateSpace", "setTitleText"]
+- !private ["PSo17UICoordinateSpace", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo17UICoordinateSpace", "setUpMenuItemView"]
 - !private ["PSo17UICoordinateSpace", "showsHorizontalScrollIndicator"]
 - !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
@@ -2334,7 +2353,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "titleLabel"]
-- !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["CSo8UIDevice", "currentDevice"]
 - !private ["CSo8UIDevice", "orientation"]
@@ -2369,6 +2387,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "scrollsToTop"]
 - !private ["PSo13UIDynamicItem", "setContentOffset"]
 - ["PSo13UIDynamicItem", "setTitleText"]
+- !private ["PSo13UIDynamicItem", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo13UIDynamicItem", "setUpMenuItemView"]
 - !private ["PSo13UIDynamicItem", "showsHorizontalScrollIndicator"]
 - !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
@@ -2378,9 +2397,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "titleLabel"]
-- !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo13UIDynamicItem", ""]
-- ["CSo6UIFont", "init"]
+- ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo19UIGestureRecognizer", "delegate"]
 - !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["CSo19UIGestureRecognizer", "locationInView"]
@@ -2604,6 +2622,7 @@ depends-member:
 - ["CSo11UIResponder", "selectionIndicatorView"]
 - !private ["CSo11UIResponder", "setContentOffset"]
 - ["CSo11UIResponder", "setTitleText"]
+- !private ["CSo11UIResponder", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["CSo11UIResponder", "setUpMenuItemView"]
 - ["CSo11UIResponder", "setUpUserInterface"]
 - !private ["CSo11UIResponder", "sharedApplication"]
@@ -2621,7 +2640,6 @@ depends-member:
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo11UIResponder", "unselectedMenuItemLabelColor"]
 - ["CSo11UIResponder", "useMenuLikeSegmentedControl"]
 - !private ["CSo11UIResponder", "view"]
@@ -2646,10 +2664,10 @@ depends-member:
 - !private ["CSo12UIScrollView", "scrollEnabled"]
 - !private ["CSo12UIScrollView", "scrollsToTop"]
 - !private ["CSo12UIScrollView", "setContentOffset"]
+- !private ["CSo12UIScrollView", "setTranslatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo12UIScrollView", "showsHorizontalScrollIndicator"]
 - !private ["CSo12UIScrollView", "showsVerticalScrollIndicator"]
 - !private ["CSo12UIScrollView", "subviews"]
-- !private ["CSo12UIScrollView", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
 - !private ["PSo20UIScrollViewDelegate", "CGPoint"]
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
@@ -2950,6 +2968,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "selectionIndicatorView"]
 - !private ["PSo18UITraitEnvironment", "setContentOffset"]
 - ["PSo18UITraitEnvironment", "setTitleText"]
+- !private ["PSo18UITraitEnvironment", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UITraitEnvironment", "setUpMenuItemView"]
 - ["PSo18UITraitEnvironment", "setUpUserInterface"]
 - !private ["PSo18UITraitEnvironment", "showsHorizontalScrollIndicator"]
@@ -2965,7 +2984,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "title"]
 - ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "totalMenuItemWidthIfDifferentWidths"]
-- !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UITraitEnvironment", "unselectedMenuItemLabelColor"]
 - ["PSo18UITraitEnvironment", "useMenuLikeSegmentedControl"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -3010,6 +3028,7 @@ depends-member:
 - !private ["CSo6UIView", "scrollsToTop"]
 - !private ["CSo6UIView", "setContentOffset"]
 - ["CSo6UIView", "setTitleText"]
+- !private ["CSo6UIView", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["CSo6UIView", "setUpMenuItemView"]
 - !private ["CSo6UIView", "showsHorizontalScrollIndicator"]
 - !private ["CSo6UIView", "showsVerticalScrollIndicator"]
@@ -3019,7 +3038,6 @@ depends-member:
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "titleLabel"]
-- !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo6UIView", ""]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "Array"]
@@ -3307,6 +3325,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "scrollsToTop"]
 - !private ["PSs12_Reflectable", "setContentOffset"]
 - ["PSs12_Reflectable", "setTitleText"]
+- !private ["PSs12_Reflectable", "setTranslatesAutoresizingMaskIntoConstraints"]
 - ["PSs12_Reflectable", "setUpMenuItemView"]
 - !private ["PSs12_Reflectable", "showsHorizontalScrollIndicator"]
 - !private ["PSs12_Reflectable", "showsVerticalScrollIndicator"]
@@ -3318,7 +3337,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "textAlignment"]
 - !private ["PSs12_Reflectable", "textColor"]
 - ["PSs12_Reflectable", "titleLabel"]
-- !private ["PSs12_Reflectable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSs12_Reflectable", "width"]
 - !private ["PSs12_Reflectable", "x"]
 - !private ["PSs12_Reflectable", "y"]
@@ -3502,4 +3520,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "afc138c54a498a3e3eb6417c60cc835c"
+interface-hash: "c8110b0d53a9117d18b489d2a408d77b"
