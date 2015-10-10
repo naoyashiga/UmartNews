@@ -1,1 +1,8 @@
-Pods/*
+build/
+DerivedData
+
+# Pods
+Pods
+
+# Mac
+.DS_Store
