@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D2591AC1911600E5DCC1 /* json.swift */; };
-		9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */; };
 		9A4209201ADD44A8007BD6CD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */; };
 		9A4209231ADD4566007BD6CD /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4209211ADD4566007BD6CD /* SettingCell.swift */; };
 		9A4209241ADD4566007BD6CD /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4209221ADD4566007BD6CD /* SettingCell.xib */; };
 		9A4209261ADD4CBB007BD6CD /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */; };
-		9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B90F51AC64DA300916614 /* ArticleViewController.swift */; };
-		9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B90F61AC64DA300916614 /* ArticleViewController.xib */; };
 		9A5B90FC1AC6A51200916614 /* WebViewBottomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B90FB1AC6A51200916614 /* WebViewBottomMenu.xib */; };
 		9A5B90FE1AC6A52B00916614 /* WebViewBottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B90FD1AC6A52B00916614 /* WebViewBottomMenu.swift */; };
 		9A5B91011AC7A22A00916614 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B91001AC7A22A00916614 /* HexColor.swift */; };
@@ -34,7 +30,6 @@
 		9A9DF0CF1A4FA315008749D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9DF0CE1A4FA315008749D5 /* Images.xcassets */; };
 		9A9DF0D21A4FA315008749D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9DF0D01A4FA315008749D5 /* LaunchScreen.xib */; };
 		9A9DF0DE1A4FA315008749D5 /* BlogReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9DF0DD1A4FA315008749D5 /* BlogReaderTests.swift */; };
-		9A9DF0E91A4FC527008749D5 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9DF0E81A4FC527008749D5 /* Entry.swift */; };
 		9A9DF0EC1A4FDF99008749D5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9DF0EA1A4FDF99008749D5 /* Cell.swift */; };
 		9A9DF0ED1A4FDF99008749D5 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9DF0EB1A4FDF99008749D5 /* Cell.xib */; };
 		9AD11F6A1AC2E8E500481308 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */; };
@@ -54,14 +49,10 @@
 
 /* Begin PBXFileReference section */
 		21A0CB1ECF9CB652CC79E093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		9A36D2591AC1911600E5DCC1 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
-		9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserManager.swift; sourceTree = "<group>"; };
 		9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9A4209211ADD4566007BD6CD /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		9A4209221ADD4566007BD6CD /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		9A5B90F51AC64DA300916614 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		9A5B90F61AC64DA300916614 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		9A5B90FB1AC6A51200916614 /* WebViewBottomMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewBottomMenu.xib; sourceTree = "<group>"; };
 		9A5B90FD1AC6A52B00916614 /* WebViewBottomMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewBottomMenu.swift; sourceTree = "<group>"; };
 		9A5B91001AC7A22A00916614 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
@@ -89,7 +80,6 @@
 		9A9DF0DC1A4FA315008749D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9DF0DD1A4FA315008749D5 /* BlogReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogReaderTests.swift; sourceTree = "<group>"; };
 		9A9DF0E71A4FA5BC008749D5 /* BlogReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlogReader-Bridging-Header.h"; sourceTree = "<group>"; };
-		9A9DF0E81A4FC527008749D5 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9A9DF0EA1A4FDF99008749D5 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		9A9DF0EB1A4FDF99008749D5 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		9AB161B51AF5C256001B3B15 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -155,8 +145,6 @@
 		9A5B90F11AC642EA00916614 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9A5B90F51AC64DA300916614 /* ArticleViewController.swift */,
-				9A5B90F61AC64DA300916614 /* ArticleViewController.xib */,
 				9A42091F1ADD44A8007BD6CD /* SettingViewController.swift */,
 				9A4209251ADD4CBB007BD6CD /* SettingViewController.xib */,
 				9A947C3D1A50D2D100E33966 /* WebViewController.swift */,
@@ -166,22 +154,6 @@
 				9A9DF0C91A4FA315008749D5 /* ViewController.swift */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		9A5B90F21AC6430700916614 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9A9DF0E81A4FC527008749D5 /* Entry.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		9A5B90F31AC6432000916614 /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				9A36D25B1AC1915D00E5DCC1 /* JsonParserManager.swift */,
-			);
-			name = Parser;
 			sourceTree = "<group>";
 		};
 		9A5B90F41AC6434600916614 /* View */ = {
@@ -240,15 +212,12 @@
 				9A5B91021AC7CCC700916614 /* Web */,
 				9A5B90FF1AC7A18D00916614 /* Config */,
 				9A5B90F11AC642EA00916614 /* Controller */,
-				9A5B90F21AC6430700916614 /* Model */,
-				9A5B90F31AC6432000916614 /* Parser */,
 				9A9DF0CB1A4FA315008749D5 /* Main.storyboard */,
 				9A9DF0CE1A4FA315008749D5 /* Images.xcassets */,
 				9A9DF0D01A4FA315008749D5 /* LaunchScreen.xib */,
 				9A9DF0E71A4FA5BC008749D5 /* BlogReader-Bridging-Header.h */,
 				9A5B90F41AC6434600916614 /* View */,
 				9AD11F691AC2E8E500481308 /* CAPSPageMenu.swift */,
-				9A36D2591AC1911600E5DCC1 /* json.swift */,
 				9A9DF0C51A4FA315008749D5 /* Supporting Files */,
 			);
 			path = BlogReader;
@@ -381,7 +350,6 @@
 				9A4209241ADD4566007BD6CD /* SettingCell.xib in Resources */,
 				9A9DF0D21A4FA315008749D5 /* LaunchScreen.xib in Resources */,
 				9A947C401A50D2D100E33966 /* WebViewController.xib in Resources */,
-				9A5B90F81AC64DA300916614 /* ArticleViewController.xib in Resources */,
 				9A9DF0CF1A4FA315008749D5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,15 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9DF0E91A4FC527008749D5 /* Entry.swift in Sources */,
 				9A9DF0EC1A4FDF99008749D5 /* Cell.swift in Sources */,
 				9A5B91011AC7A22A00916614 /* HexColor.swift in Sources */,
 				9AF29B3A1AE52D0B00E5BB0B /* siteName.swift in Sources */,
 				9A4209201ADD44A8007BD6CD /* SettingViewController.swift in Sources */,
 				9A4209231ADD4566007BD6CD /* SettingCell.swift in Sources */,
-				9A36D25A1AC1911600E5DCC1 /* json.swift in Sources */,
-				9A36D25C1AC1915D00E5DCC1 /* JsonParserManager.swift in Sources */,
-				9A5B90F71AC64DA300916614 /* ArticleViewController.swift in Sources */,
 				9A9DF0CA1A4FA315008749D5 /* ViewController.swift in Sources */,
 				9A947C3F1A50D2D100E33966 /* WebViewController.swift in Sources */,
 				9A9DF0C81A4FA315008749D5 /* AppDelegate.swift in Sources */,
@@ -595,7 +559,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = BlogReader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.BlogReader;
@@ -616,7 +580,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = BlogReader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.BlogReader;

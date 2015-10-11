@@ -1,8 +1,0 @@
-[
- {
-  "file": "/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReader/HexColor.swift",
-  "offset": 224,
-  "remove": 536,
-  "text": "alpha : CGFloat) -> UIColor {\n        hexStr = hexStr.stringByReplacingOccurrencesOfString(\"#\", withString: \"\")\n        let scanner = NSScanner(string: hexStr as String)\n        var color: UInt32 = 0\n        if scanner.scanHexInt(&color) {\n            let r = CGFloat((color & 0xFF0000) >> 16) / 255.0\n            let g = CGFloat((color & 0x00FF00) >> 8) / 255.0\n            let b = CGFloat(color & 0x0000FF) / 255.0\n            return UIColor(red:r,green:g,blue:b,alpha:alpha)\n        } else {\n            print(\"invalid hex string\", terminator: \"",
- }
-]

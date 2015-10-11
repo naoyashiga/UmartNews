@@ -1,5 +1,0 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "9ce9783e31ce0f01de270db812f4d3f1"
-build_time: [497773186, 244912000]
-inputs: 
-	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/BlogReaderTests/BlogReaderTests.swift": [473049109, 0]

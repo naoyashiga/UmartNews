@@ -29,18 +29,6 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
-  
-//        var matomeVC : ArticleViewController  = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
-//        matomeVC.parentNavigationController = self.navigationController
-//        matomeVC.feedURL = URL.MATOME.rawValue + matomeVC.checkFeedSite(myMatomes)
-//        matomeVC.title = "まとめ"
-//        matomeVC.setTableView()
-        
-//        var predictVC : ArticleViewController = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
-//        predictVC.parentNavigationController = self.navigationController
-//        predictVC.feedURL = URL.PREDICT.rawValue + predictVC.checkFeedSite(myPredicts)
-//        predictVC.title = "予想"
-//        predictVC.setTableView()
         
         let sponaviVC: WebViewController = WebViewController()
         sponaviVC.parentNavigationController = self.navigationController
@@ -66,20 +54,11 @@ class ViewController: UIViewController,GADBannerViewDelegate {
         newsVC.pageTitle = "ニュース"
         newsVC.title = "ニュース"
         
-//        var settingVC: SettingViewController = SettingViewController(nibName: "SettingViewController", bundle: nil)
-//        settingVC.parentNavigationController = self.navigationController
-//        settingVC.title = "設定"
-        
-//        println(matomeVC.feedURL)
-//        println(predictVC.feedURL)
         
         controllerArray.append(sponaviVC)
         controllerArray.append(newsVC)
         controllerArray.append(movieVC)
-//        controllerArray.append(matomeVC)
-//        controllerArray.append(predictVC)
         controllerArray.append(realtimeVC)
-//        controllerArray.append(settingVC)
         
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.scrollMenuBackgroundColor()),

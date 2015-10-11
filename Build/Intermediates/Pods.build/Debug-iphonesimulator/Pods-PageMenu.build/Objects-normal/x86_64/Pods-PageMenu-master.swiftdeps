@@ -1,5 +1,0 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "da1969e8463cfd61d796f8cc765dc4ec"
-build_time: [497773200, 411697000]
-inputs: 
-	"/Users/naoyashiga/Desktop/code/iOS/myProduct/BlogReader/Pods/PageMenu/Classes/CAPSPageMenu.swift": [497773198, 0]
